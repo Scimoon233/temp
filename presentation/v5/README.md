@@ -1,3 +1,5 @@
+> Latest version: [V6 — 17 slides; course-mapping page removed](../v6/README.md).
+
 # VineWeave Canopy — V5
 
 **18 slides including references.** This version removes plant-growth timing from the presentation as requested.
