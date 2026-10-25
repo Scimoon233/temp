@@ -1,3 +1,5 @@
+> Latest revision: [V7 — material reasoning, node/deflection and shading interpretation with source traceability](../v7/README.md).
+
 # VineWeave Canopy — V6
 
 **17 slides including references.** Removed the former page 2 course-requirement mapping table. The cover now leads directly into the final geometry and drawings. Plant-growth timing remains removed.
