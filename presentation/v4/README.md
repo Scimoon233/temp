@@ -1,3 +1,5 @@
+> 最新版本：[V5：已移除植物生长时间内容，共18页](../v5/README.md)。本目录为历史版本。
+
 # VineWeave Canopy — V4
 
 19-slide English presentation with illustrated cooling mechanisms and a plant-establishment concept.
