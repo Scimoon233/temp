@@ -1,0 +1,18 @@
+{
+  "skill": "ningzimu/codex-ppt-skill",
+  "reviewed_commit": "941dcaf",
+  "backend_used": "built-in image tool",
+  "tool_name": "image_gen.imagegen",
+  "mode": "edit with local reference image",
+  "image_count": 1,
+  "status": "sample_generated_awaiting_user_review",
+  "source_asset": "08_D_实际实体轴测.png",
+  "figure_fidelity": "Image backend re-rendered figure; not certified as pixel-exact CAD evidence.",
+  "actual_image_dimensions": [
+    1672,
+    941
+  ],
+  "model": "not exposed by tool",
+  "editable_objects": false,
+  "full_deck_started": false
+}
