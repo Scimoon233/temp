@@ -1,3 +1,5 @@
+> 最新修订：[V3：19页PPT及配套提交材料](../v3/README.md)。本目录保留20页历史版本。
+
 # VineWeave Canopy — Expanded Editable Draft V2
 
 **green building · Group 12 · 20 slides including the reference/Q&A page.**
