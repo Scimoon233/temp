@@ -1,0 +1,32 @@
+{
+  "mesh_horizontal_max_span_m": 6.909364180632823,
+  "span_definition": "Maximum pair distance of XY-projected exterior mesh vertices; approximate geometric envelope, not foliage diameter or usable area.",
+  "pair_xy_m": [
+    [
+      -2.17031103515625,
+      -2.90480029296875
+    ],
+    [
+      2.3593408203125,
+      2.31262890625
+    ]
+  ],
+  "support_endpoint_chord_angles_above_horizontal_deg": [
+    49.59963076836013,
+    46.11649511544465,
+    50.032487459453854,
+    45.9213506401981,
+    50.525702426546786,
+    50.52570242654677,
+    50.679301292405164,
+    50.67930129240516,
+    46.11649511544465,
+    49.59963076836012,
+    45.921350640198106,
+    50.03248745945385
+  ],
+  "angle_definition": "Angle above horizontal of the chord joining the two endpoints of each ground-reaching centreline; not local tangent or unique inclination of the curved member.",
+  "min_deg": 45.9213506401981,
+  "max_deg": 50.679301292405164,
+  "source": "Supplement D_BASE.3dm centre lines and D_BASE.npz exterior mesh; model-file calculation, not physical measurement."
+}
