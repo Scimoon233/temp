@@ -1,0 +1,140 @@
+{
+  "metric": "ideal continuous-leaf target overlap",
+  "latitude_N": 30,
+  "declination_deg": 23.44,
+  "solar_time_h": [
+    9,
+    15
+  ],
+  "interval_minutes": 15,
+  "frames": 25,
+  "max_absolute_curve_difference_percentage_points": 2.842170943040401e-14,
+  "dynamic_text": false,
+  "values": [
+    {
+      "solar_time_h": 9.0,
+      "overlap_percent": 47.15566152625073,
+      "source_curve_percent": 47.155661526250725
+    },
+    {
+      "solar_time_h": 9.25,
+      "overlap_percent": 50.95515412268991,
+      "source_curve_percent": 50.95515412268991
+    },
+    {
+      "solar_time_h": 9.5,
+      "overlap_percent": 55.07011631579296,
+      "source_curve_percent": 55.07011631579294
+    },
+    {
+      "solar_time_h": 9.75,
+      "overlap_percent": 60.039564767330674,
+      "source_curve_percent": 60.039564767330674
+    },
+    {
+      "solar_time_h": 10.0,
+      "overlap_percent": 65.50654278454971,
+      "source_curve_percent": 65.50654278454971
+    },
+    {
+      "solar_time_h": 10.25,
+      "overlap_percent": 70.7723802048107,
+      "source_curve_percent": 70.7723802048107
+    },
+    {
+      "solar_time_h": 10.5,
+      "overlap_percent": 75.79576381742402,
+      "source_curve_percent": 75.79576381742402
+    },
+    {
+      "solar_time_h": 10.75,
+      "overlap_percent": 81.01882159676518,
+      "source_curve_percent": 81.01882159676518
+    },
+    {
+      "solar_time_h": 11.0,
+      "overlap_percent": 86.38341216660314,
+      "source_curve_percent": 86.38341216660314
+    },
+    {
+      "solar_time_h": 11.25,
+      "overlap_percent": 91.72295924019801,
+      "source_curve_percent": 91.72295924019801
+    },
+    {
+      "solar_time_h": 11.5,
+      "overlap_percent": 95.76669431441528,
+      "source_curve_percent": 95.76669431441525
+    },
+    {
+      "solar_time_h": 11.75,
+      "overlap_percent": 97.95178473599358,
+      "source_curve_percent": 97.95178473599358
+    },
+    {
+      "solar_time_h": 12.0,
+      "overlap_percent": 98.7248145976471,
+      "source_curve_percent": 98.72481459764712
+    },
+    {
+      "solar_time_h": 12.25,
+      "overlap_percent": 97.95178473599357,
+      "source_curve_percent": 97.95178473599354
+    },
+    {
+      "solar_time_h": 12.5,
+      "overlap_percent": 95.76669431441523,
+      "source_curve_percent": 95.76669431441523
+    },
+    {
+      "solar_time_h": 12.75,
+      "overlap_percent": 91.72295924019798,
+      "source_curve_percent": 91.72295924019798
+    },
+    {
+      "solar_time_h": 13.0,
+      "overlap_percent": 86.38341216660315,
+      "source_curve_percent": 86.38341216660315
+    },
+    {
+      "solar_time_h": 13.25,
+      "overlap_percent": 81.01882159676518,
+      "source_curve_percent": 81.01882159676518
+    },
+    {
+      "solar_time_h": 13.5,
+      "overlap_percent": 75.79576381742399,
+      "source_curve_percent": 75.79576381742399
+    },
+    {
+      "solar_time_h": 13.75,
+      "overlap_percent": 70.77238020481072,
+      "source_curve_percent": 70.7723802048107
+    },
+    {
+      "solar_time_h": 14.0,
+      "overlap_percent": 65.50654278454971,
+      "source_curve_percent": 65.50654278454974
+    },
+    {
+      "solar_time_h": 14.25,
+      "overlap_percent": 60.039564767330546,
+      "source_curve_percent": 60.039564767330546
+    },
+    {
+      "solar_time_h": 14.5,
+      "overlap_percent": 55.07011631579296,
+      "source_curve_percent": 55.07011631579296
+    },
+    {
+      "solar_time_h": 14.75,
+      "overlap_percent": 50.95515412269004,
+      "source_curve_percent": 50.95515412269004
+    },
+    {
+      "solar_time_h": 15.0,
+      "overlap_percent": 47.155661526250775,
+      "source_curve_percent": 47.155661526250775
+    }
+  ]
+}

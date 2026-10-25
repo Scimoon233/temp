@@ -1,3 +1,5 @@
+> Latest version: [V8 — animated shade footprint on page 12](../v8/README.md).
+
 # VineWeave Canopy — V7
 
 **18 English slides including references.** Material choice, node/deflection explanation and shade interpretation revised using the supplied project materials.

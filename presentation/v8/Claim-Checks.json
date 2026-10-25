@@ -1,0 +1,43 @@
+{
+  "source_files": {
+    "Cost-Analysis.xlsx": "49d114b1bcb7ad3f20460ad2f8c53d7e7c9410b3bb539667523041a1f9c0d587",
+    "02_\u53c2\u6570\u4e0e\u751f\u957f\u8986\u76d6_\u6c47\u603b.csv": "66ac6b635d2f02863b4870ab5d76d04b27af1d3011a48084163545ccc6a86970",
+    "05_\u76f8\u540c50\u8986\u76d6_\u5206\u5e03\u654f\u611f\u6027.csv": "fa57f175449d304cab67e1747305f2c84d3bd8b6884f0db20264c295e23c3f4b"
+  },
+  "beam": {
+    "L_mm": 6650.0,
+    "E_N_per_mm2": 10000.0,
+    "I_mm4": 2010619.29829747,
+    "q_N_per_mm": 0.0793806774617584,
+    "simply_supported_mm": 100.533387276407,
+    "ideal_fixed_mm": 20.1066774552815,
+    "adopted_target_mm": 33.25,
+    "ratios_to_target": [
+      3.023560519591188,
+      0.6047121039182406
+    ]
+  },
+  "parameter_means": {
+    "D_BASE": 60.19719328472306,
+    "W_SMALL": 52.27950152921584,
+    "W_LARGE": 66.14345280947457,
+    "H_LOW": 62.649088019210524,
+    "H_HIGH": 57.7691593134604,
+    "R_SOFT": 61.77524674947555,
+    "R_ROUND": 59.08988638663063
+  },
+  "baseline_cover_means": {
+    "0.0": 40.21868884193895,
+    "0.2": 48.63711463942608,
+    "0.5": 60.19719328472306,
+    "0.8": 67.91126834429677,
+    "0.95": 70.6954503684305
+  },
+  "cover_80_to_95_gain_percentage_points": 2.7841820241337274,
+  "same_50_cover_noon": {
+    "inner_spreading": 77.46705386350395,
+    "dispersed": 71.36623270068685,
+    "edge_first": 62.61639604308695
+  },
+  "interpretation": "Arithmetic checks only; source inputs, plant/optical assumptions and ideal restraints remain assumptions."
+}

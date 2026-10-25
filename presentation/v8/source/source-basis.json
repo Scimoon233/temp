@@ -1,0 +1,132 @@
+{
+  "1": {
+    "sources": [
+      "User-supplied team-allocation screenshot; project title approved in conversation.",
+      "P1: final Rhino model and project modelling reports."
+    ],
+    "basis": "Cover roles follow the supplied five-person allocation; no dates or school logo."
+  },
+  "2": {
+    "sources": [
+      "P1: original project report §03 actual canopy geometry.",
+      "Supplement 数据/00_结构参数与Rhino检查.json; original final-model mesh/centre-lines.",
+      "research/supplemental-geometric-check.json: geometry derived from the supplied baseline mesh and support curves."
+    ],
+    "basis": "Dimensions ≈6.22×6.66×3.48m; maximum projected span ≈6.91m; support endpoint-chord angles ≈45.9–50.7°. Model-derived descriptors, not measured site dimensions."
+  },
+  "3": {
+    "sources": [
+      "Original analysis report §02 支架—植物—降温作用逻辑, table 遮阴/辐射/蒸腾/空气流动.",
+      "Original report: 没有把遮阴率换算为确定温降; no measured temperature/wind/Tmrt/UTCI results."
+    ],
+    "basis": "Source: 植物遮阴减少人体和地面直接太阳暴露; 叶片水分蒸发涉及潜热交换，收益受供水、气孔和天气影响; 开敞侧界保留侧向通道. Arrows explain reported mechanisms, not simulated fields."
+  },
+  "4": {
+    "sources": [
+      "Cost-Analysis.xlsx / 材料比选!A17:G18; 几何与用量 section B.",
+      "Cost-Analysis.xlsx / 规格与连接!A4:E5; 模块化建造分析!A3."
+    ],
+    "basis": "Source split: 47 crown members, 219.28m, solid Ø80 bamboo; 12 ground-reaching steel Ø80×4 supports, 69.38m. Support text: 受压为主兼受风弯; crown text: 挠度在铰接下不满足L/200."
+  },
+  "5": {
+    "sources": [
+      "Cost-Analysis.xlsx / 材料比选!A6:O13, selected rows 6,7,11,12,13.",
+      "Cost-Analysis.xlsx / 选型决策矩阵!A32:B34."
+    ],
+    "basis": "Five displayed rows retain workbook inputs. Cost assumes all 288.66m use that row’s material; it is not the final hybrid unit cost. Durability and environmental scoring are workbook judgements, not verified product lifetimes."
+  },
+  "6": {
+    "sources": [
+      "Cost-Analysis.xlsx / 材料比选!A17:G18, A23:H24.",
+      "Cost-Analysis.xlsx / 挠度校核!A21:G23 and A46:B46.",
+      "Cost-Analysis.xlsx / 选型决策矩阵!A2:B2 and A28:B34; 规格与连接!A4:E5; 模块化建造分析!A3."
+    ],
+    "basis": "Workbook assigns steel to compression/wind-bending support role; tabulated EI steel145.2049 vs bamboo20.1062kN·m². Decision matrix requires feasibility gates in addition to scores. Row46 explicitly says 必须由结构同学出刚接节点详图并验算转动刚度 and the ≥3×simple-support assumption must hold. Five criteria follow the supplied rubric/workbook; no new performance result is claimed."
+  },
+  "7": {
+    "sources": [
+      "Cost-Analysis.xlsx / 挠度校核!B6:B16, A21:G23, A31:J32, A46:B46.",
+      "Cost-Analysis.xlsx / 模块化建造分析!A3."
+    ],
+    "basis": "Same simplified 6.65m solidØ80 bamboo member; E10GPa, wet foliage18kg/m² inputs; deflections100.5333873/20.1066775mm. Adopted6650/200=33.25mm; ratios3.02356 and0.60471. Node plate/sleeve/grout/adhesive/bolts are proposed in source, not verified restraint."
+  },
+  "8": {
+    "sources": [
+      "Cost-Analysis.xlsx / 造价明细, seven category totals and materials detail."
+    ],
+    "basis": "Seven-category sum 51,675.7187099CNY; materials30,549.3022975CNY; 12 nodes×1,000CNY=12,000CNY. All displayed prices remain estimates; component rows are included in total."
+  },
+  "9": {
+    "sources": [
+      "Cost-Analysis.xlsx / 材料比选 carbon summary, adopted hybrid row.",
+      "Cost-Analysis.xlsx / 模块化建造分析 and original report maintenance/interface proposals."
+    ],
+    "basis": "Adopted estimate: members1581.19629365 + base1088.64 + other150 =2819.83629365kgCO₂e; base38.61%. Factor boundaries not verified; no biogenic credit. Maintenance text follows protection/inspection proposals."
+  },
+  "10": {
+    "sources": [
+      "Cost-Analysis.xlsx / 爬藤植物选择!A5:H7 and A14:B14.",
+      "Cost-Analysis.xlsx / 模块化建造分析!A10:H10.",
+      "Original analysis report §07 plant interface: 确认当地气候、攀附方式、根区、叶重、风荷载及落叶/落果维护."
+    ],
+    "basis": "Source identifies Parthenocissus tricuspidata as main, Combretum indicum companion, Campsis grandiflora alternative; proposes2+1 plants,1.2m³ substrate and drip. Local suitability/attachment are checks, not new verified botanical claims."
+  },
+  "11": {
+    "sources": [
+      "Original project report and 分析参数与汇总.json: ideal continuous-leaf projection.",
+      "Supplement D_Structure_and_Plant_Cover_Simulation.docx, §01–02; 数据/模拟参数与汇总.json."
+    ],
+    "basis": "Supplement formula Aeq=Abare+(1−tau)(Aleaf−Aoverlap), tau=.15 assumed; same5×5m target excludingr.75m. Ideal leaf-envelope overlap and equivalent direct-beam blockage have different definitions; neither is temperature or total solar attenuation."
+  },
+  "12": {
+    "sources": [
+      "Original 04_图表与计算数据/01_原参数_C_D_典型时刻遮阴.csv and 02_原参数_C_D_15分钟遮阴曲线.csv, final-model rows.",
+      "Original report §结论与依据; §07 application and §08 evaluation.",
+      "Same supplied projection functions and baseline envelope; Ideal-Animation-Check.json cross-checks all 25 frames against the unchanged source curve."
+    ],
+    "basis": "09/12/15 solstice overlap47.2/98.7/47.2%; 09–15 means75.3% solstice and49.8% equinox. Source advises seating by use time and reporting weakest periods; noon peak cannot describe the whole window. Animation varies solar time only in 15-minute steps. Pale green shows projected leaf envelope; dark green is its intersection with the same target. The moving time dot is illustrative playback, not observed footage."
+  },
+  "13": {
+    "sources": [
+      "Supplement 数据/02_参数与生长覆盖_汇总.csv: Solstice, cover=.5, seven cases.",
+      "Supplement 数据/00_结构参数与Rhino检查.json and report §01–02."
+    ],
+    "basis": "Expansion52.2795–66.1435%; height57.7692–62.6491%; corner59.0899–61.7752% (rounded). Largest tested max–min spread is expansion; this does not compare sensitivities per unit change. Source: a larger crown at equal cover percentage also requires more planted area; equal percentage does not imply equal material or plant inputs."
+  },
+  "14": {
+    "sources": [
+      "Supplement 数据/02_参数与生长覆盖_汇总.csv: baseline Solstice cover0/.2/.5/.8/.95.",
+      "Supplement 数据/05_相同50覆盖_分布敏感性.csv: cover=.5, solar time12.",
+      "Supplement report §02: compare seat locations during occupied hours; same-cover spatial placement matters."
+    ],
+    "basis": "Mean blockage40.2187/48.6371/60.1972/67.9113/70.6955%;80→95 cover gives70.69545−67.91127=2.78418percentage points≈2.8pp. Noon patterns inner_spreading/dispersed/outer_first give77.4671/71.3662/62.6164%. These are distinct comparisons, not growth-time predictions."
+  },
+  "15": {
+    "sources": [
+      "Original report §07 application scenarios and §08 evaluation/validation.",
+      "Supplement report §02; fixed-cover daytime-shadow GIF and related CSV."
+    ],
+    "basis": "Source: compare seating during occupied hours; allow root/water/maintenance/circulation; measure shaded/unshaded environmental variables. No actual-street or measured-comfort result supplied."
+  },
+  "16": {
+    "sources": [
+      "Cost-Analysis.xlsx / 模块化建造分析!A3:H10 and labour/assembly sections.",
+      "Cost-Analysis.xlsx / 造价明细 labour and counterweight entries."
+    ],
+    "basis": "Source modules: crown/supports/nodes/base/planting; grouting requires curing and changes reversibility. Base9072kg and labour14person-days are source estimates, not certified foundation or calendar programme."
+  },
+  "17": {
+    "sources": [
+      "P1 supplied Rhino/GH model; P3 workbook; P2/P5 analysis reports and datasets.",
+      "Supplement 数据/01_参数与生长覆盖_时段结果.csv and native-model checks."
+    ],
+    "basis": "Work summary traces three supplied streams; seven parameter cases, five cover states and1750main result rows. Remaining checks reflect explicitly assumed inputs and unverified nodes/site conditions."
+  },
+  "18": {
+    "sources": [
+      "Original analysis report bibliography entries for Watanabe etal2014, Hoelscher etal2016, NOAA and UTCI.",
+      "User-provided project files P1–P5."
+    ],
+    "basis": "Bibliographic leads were supplied by the project; original-source checks remain pending. No DOI or new literature conclusion is invented."
+  }
+}

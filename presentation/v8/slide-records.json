@@ -1,0 +1,110 @@
+[
+  {
+    "number": 1,
+    "title": "VineWeave Canopy",
+    "section": "Project cover",
+    "source": "Project model P1; supplied team allocation."
+  },
+  {
+    "number": 2,
+    "title": "Define the final geometry—and how it is measured",
+    "section": "Geometry & drawings",
+    "source": "Model records P1 and supplemental geometric check. Centre-line views; exterior dimensions rounded. Drawing sheets accompany the PPT."
+  },
+  {
+    "number": 3,
+    "title": "How the canopy can improve pedestrian comfort",
+    "section": "Form & cooling logic",
+    "source": "Shade: project P2/P5. Greening mechanisms: [1,2]. Arrows are conceptual; no temperature or airflow field is simulated."
+  },
+  {
+    "number": 4,
+    "title": "Assign materials to the roles they must perform",
+    "section": "Material strategy",
+    "source": "Project take-off and proposed member schedule (P1, P3). Sections and material mass remain preliminary specifications."
+  },
+  {
+    "number": 5,
+    "title": "Read the material inputs before making the choice",
+    "section": "Material selection",
+    "source": "Source: material-comparison workbook (P3). *Preliminary inputs; product, processing and factor boundaries need verification."
+  },
+  {
+    "number": 6,
+    "title": "Why steel supports and an engineered-bamboo crown?",
+    "section": "Material decision",
+    "source": "Design rationale P1/P3/P4. Screening values are preliminary; the hybrid strategy is not an optimised or certified structure."
+  },
+  {
+    "number": 7,
+    "title": "The beam check sets a requirement for the joint",
+    "section": "Connections",
+    "source": "P3 simplified beam check: self-weight + assumed 18 kg/m² wet foliage. E = 10 GPa and adopted L/200 need product/design confirmation."
+  },
+  {
+    "number": 8,
+    "title": "The unit budget includes fabrication, installation and care",
+    "section": "Budget",
+    "source": "Source: Cost-Analysis.xlsx (P3). All rates remain reference estimates rather than confirmed quotations."
+  },
+  {
+    "number": 9,
+    "title": "Account for the members, base and maintenance needs",
+    "section": "Carbon & maintenance",
+    "source": "Workbook estimate (P3). Factor boundaries and node inclusion require checking; no biogenic-carbon credit is taken."
+  },
+  {
+    "number": 10,
+    "title": "Keep the planting mix conditional on the site",
+    "section": "Planting strategy",
+    "source": "Project planting screen P3. Botanical traits, attachment and local suitability need site/nursery confirmation."
+  },
+  {
+    "number": 11,
+    "title": "Two shade metrics answer different questions",
+    "section": "Analysis method",
+    "source": "Solar geometry: NOAA [3]. Project methods/assumptions P2/P5. Reference zone is not net usable floor area; no temperature change is calculated."
+  },
+  {
+    "number": 12,
+    "title": "A noon peak does not ensure all-day shade",
+    "section": "Shade performance",
+    "source": "Project projection P2/P5. GIF uses the same continuous leaf envelope, target and 25 solar times as the solstice curve; no new scenario."
+  },
+  {
+    "number": 13,
+    "title": "Expanding the crown raises mean blockage: 52.3% → 66.1%",
+    "section": "Geometry sensitivity",
+    "source": "Project parameter study (P5). Controls are not uniform scaling; larger cover percentage does not imply equal plant/material input."
+  },
+  {
+    "number": 14,
+    "title": "Coverage amount alone does not determine useful shade",
+    "section": "Spatial plant cover",
+    "source": "Project spatial-cover calculation (P5). Frame/leaf overlap deducted, τ = 0.15; equivalent direct-beam blockage, not cooling."
+  },
+  {
+    "number": 15,
+    "title": "Put occupied-hour shade into the layout decision",
+    "section": "Application",
+    "source": "Conceptual application P4; fixed-50%-cover projection P5. No real-site compliance or measured comfort result is claimed; method lead [4]."
+  },
+  {
+    "number": 16,
+    "title": "Coordinate prefabricated modules and site interfaces",
+    "section": "Modular construction",
+    "source": "Project member/assembly and cost schedule (P3, P4). Proposed detail and labour quantities, not a tested construction programme."
+  },
+  {
+    "number": 17,
+    "title": "Connect geometry, construction and useful shade",
+    "section": "Work summary",
+    "source": "Synthesis of project records P1–P5. Product, joint and site-specific evidence are the next verification priorities."
+  },
+  {
+    "number": 18,
+    "title": "References and project evidence",
+    "section": "References / Q&A",
+    "source": "Literature entries were supplied with project records; original-source checks remain pending. Unverified factors are not presented as certified standards."
+  }
+]
