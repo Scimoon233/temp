@@ -2,6 +2,9 @@
 
 **green building · Group 12 · 20 slides including the reference/Q&A page.**
 
+> **New course-requirement check:** the supplied screenshot says “Less than 20 pages”. This V2 file still contains 20 pages and therefore needs compression to at most 19. The cover already includes task allocation. See [the full requirement audit](../../research/Course-Requirement-Audit.md) for drawing, parameter and one-page-brief gaps. This notice does not mean the deck has already been revised.
+
+
 - **[View all slides](Preview.md)**
 - **[Editable PowerPoint](VineWeave-Canopy-v2.pptx)**
 - **[Static PDF](VineWeave-Canopy-v2.pdf)**
