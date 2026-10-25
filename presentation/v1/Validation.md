@@ -3,7 +3,7 @@
 Passed checks:
 
 - 19 slides and 19 static PDF pages.
-- Native editable text on every slide; two native tables.
+- Native editable text on every slide; one native material table and editable team-credit text.
 - Five native charts with five embedded Excel workbooks.
 - Chart caches match the selected deflection, cost, carbon, width and cover inputs.
 - Two embedded GIFs retain all 5/25 frames.
@@ -20,3 +20,7 @@ Not established by these checks:
 - Engineering safety, real-world plant growth, site thermal performance or independent verification of all published references.
 
 The editable PPT is the review draft; PDF/browser images use static frames for animations.
+
+## Cover revision
+
+The cover now leads with the project title and model. All five names and core responsibilities are retained in a compact bottom band. Revised cover bounds, names and static rendering were checked. The remaining 18 content pages are unchanged.

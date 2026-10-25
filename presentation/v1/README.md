@@ -45,3 +45,7 @@ See [Validation.md](Validation.md). All 19 pages were rendered and visually revi
 [Source generator](source/build_deck.cjs) · [Scientific-figure generator](source/prepare_assets.py) · [Chart inputs](assets/chart-data.json)
 
 Source scripts refer to the attached project inputs in the onboarding workspace; those original private uploads are not duplicated into this directory. The PPT and PDF are self-contained.
+
+## Cover update
+
+The project title is now dominant; the five team roles occupy a compact lower band instead of a full-slide table. This update only changes the cover, not the proposed expanded V2 content.

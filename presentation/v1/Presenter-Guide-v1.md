@@ -1,16 +1,16 @@
 # VineWeave Canopy — Presenter Guide
 
-Spoken draft: 985 words, not rehearsed. Chinese cues and Q&A are not part of the timed talk.
+Spoken draft: 985 words including transitions; not rehearsed. Chinese cues and Q&A are not part of the timed talk.
 
 ## 01 | VineWeave Canopy
 
-中文提示：介绍五位成员分工，不逐字读完整表格。
+中文提示：标题与项目目标为主，简要带过底部五人分工；不逐字读完整任务表。
 
-We are presenting VineWeave Canopy as an integrated group project. Our work connects form and parametric modelling, materials and construction, and shading and application. Presentation production and English delivery bring these three design modules together. This first slide records each member’s responsibility.
+We present VineWeave Canopy, a tree-like support system combining climbing plants with pedestrian shade. Our work connects parametric geometry, material and construction choices, and shading performance. The team responsibilities are summarised below. We begin with the public-space problem and the design goals.
 
 Transition: First, the public-space problem.
 
-Q&A: Are all listed outcomes validated? These are team responsibilities; the following slides distinguish completed analysis from proposed work.
+Q&A: Where are the detailed responsibilities? The names and core roles remain on the cover; the supplied allocation and planning document retain the full task descriptions.
 
 ## 02 | A shaded pause point in public space
 
