@@ -1,3 +1,5 @@
+> Latest version: [V9 — plant wet-mass inputs and beam-load source linkage](../v9/README.md).
+
 # VineWeave Canopy — V8
 
 **18 slides including references. Page 12 now uses an animated ideal-shadow footprint.**

@@ -1,0 +1,33 @@
+{
+  "original_file": "Cost-Analysis.xlsx",
+  "sha256": "49d114b1bcb7ad3f20460ad2f8c53d7e7c9410b3bb539667523041a1f9c0d587",
+  "screening_ranges": [
+    {
+      "name": "爬山虎",
+      "scientific_name": "Parthenocissus tricuspidata",
+      "climbing_method": "卷须末端吸盘",
+      "wet_mass_kg_per_m2_reference": "10–18",
+      "source_cells": "爬藤植物选择!A5:F5"
+    },
+    {
+      "name": "使君子",
+      "scientific_name": "Combretum indicum",
+      "climbing_method": "缠绕",
+      "wet_mass_kg_per_m2_reference": "10–18",
+      "source_cells": "爬藤植物选择!A7:F7"
+    },
+    {
+      "name": "凌霄",
+      "scientific_name": "Campsis grandiflora",
+      "climbing_method": "气生根",
+      "wet_mass_kg_per_m2_reference": "15–25",
+      "source_cells": "爬藤植物选择!A6:F6"
+    }
+  ],
+  "beam_input": {
+    "value": 18,
+    "source": "挠度校核!B6/D6",
+    "source_note": "取自【爬藤植物选择】爬山虎 10–18，取上限"
+  },
+  "verification_status": "Workbook transcription checked; external primary sources and area basis NOT verified."
+}

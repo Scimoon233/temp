@@ -1,0 +1,4151 @@
+{
+  "basis": {
+    "1": {
+      "sources": [
+        "User-supplied team-allocation screenshot; project title approved in conversation.",
+        "P1: final Rhino model and project modelling reports."
+      ],
+      "basis": "Cover roles follow the supplied five-person allocation; no dates or school logo."
+    },
+    "2": {
+      "sources": [
+        "P1: original project report §03 actual canopy geometry.",
+        "Supplement 数据/00_结构参数与Rhino检查.json; original final-model mesh/centre-lines.",
+        "research/supplemental-geometric-check.json: geometry derived from the supplied baseline mesh and support curves."
+      ],
+      "basis": "Dimensions ≈6.22×6.66×3.48m; maximum projected span ≈6.91m; support endpoint-chord angles ≈45.9–50.7°. Model-derived descriptors, not measured site dimensions."
+    },
+    "3": {
+      "sources": [
+        "Original analysis report §02 支架—植物—降温作用逻辑, table 遮阴/辐射/蒸腾/空气流动.",
+        "Original report: 没有把遮阴率换算为确定温降; no measured temperature/wind/Tmrt/UTCI results."
+      ],
+      "basis": "Source: 植物遮阴减少人体和地面直接太阳暴露; 叶片水分蒸发涉及潜热交换，收益受供水、气孔和天气影响; 开敞侧界保留侧向通道. Arrows explain reported mechanisms, not simulated fields."
+    },
+    "4": {
+      "sources": [
+        "Cost-Analysis.xlsx / 材料比选!A17:G18; 几何与用量 section B.",
+        "Cost-Analysis.xlsx / 规格与连接!A4:E5; 模块化建造分析!A3."
+      ],
+      "basis": "Source split: 47 crown members, 219.28m, solid Ø80 bamboo; 12 ground-reaching steel Ø80×4 supports, 69.38m. Support text: 受压为主兼受风弯; crown text: 挠度在铰接下不满足L/200."
+    },
+    "5": {
+      "sources": [
+        "Cost-Analysis.xlsx / 材料比选!A6:O13, selected rows 6,7,11,12,13.",
+        "Cost-Analysis.xlsx / 选型决策矩阵!A32:B34."
+      ],
+      "basis": "Five displayed rows retain workbook inputs. Cost assumes all 288.66m use that row’s material; it is not the final hybrid unit cost. Durability and environmental scoring are workbook judgements, not verified product lifetimes."
+    },
+    "6": {
+      "sources": [
+        "Cost-Analysis.xlsx / 材料比选!A17:G18, A23:H24.",
+        "Cost-Analysis.xlsx / 挠度校核!A21:G23 and A46:B46.",
+        "Cost-Analysis.xlsx / 选型决策矩阵!A2:B2 and A28:B34; 规格与连接!A4:E5; 模块化建造分析!A3."
+      ],
+      "basis": "Workbook assigns steel to compression/wind-bending support role; tabulated EI steel145.2049 vs bamboo20.1062kN·m². Decision matrix requires feasibility gates in addition to scores. Row46 explicitly says 必须由结构同学出刚接节点详图并验算转动刚度 and the ≥3×simple-support assumption must hold. Five criteria follow the supplied rubric/workbook; no new performance result is claimed."
+    },
+    "7": {
+      "sources": [
+        "Cost-Analysis.xlsx / 挠度校核!B6:B16, A21:G23, A31:J32, A46:B46.",
+        "Cost-Analysis.xlsx / 模块化建造分析!A3.",
+        "Cost-Analysis.xlsx / 挠度校核!B6:D6 and 爬藤植物选择!F5; presentation p10 now links this load input."
+      ],
+      "basis": "Same simplified 6.65m solidØ80 bamboo member; E10GPa, wet foliage18kg/m² inputs; deflections100.5333873/20.1066775mm. Adopted6650/200=33.25mm; ratios3.02356 and0.60471. Node plate/sleeve/grout/adhesive/bolts are proposed in source, not verified restraint."
+    },
+    "8": {
+      "sources": [
+        "Cost-Analysis.xlsx / 造价明细, seven category totals and materials detail."
+      ],
+      "basis": "Seven-category sum 51,675.7187099CNY; materials30,549.3022975CNY; 12 nodes×1,000CNY=12,000CNY. All displayed prices remain estimates; component rows are included in total."
+    },
+    "9": {
+      "sources": [
+        "Cost-Analysis.xlsx / 材料比选 carbon summary, adopted hybrid row.",
+        "Cost-Analysis.xlsx / 模块化建造分析 and original report maintenance/interface proposals."
+      ],
+      "basis": "Adopted estimate: members1581.19629365 + base1088.64 + other150 =2819.83629365kgCO₂e; base38.61%. Factor boundaries not verified; no biogenic credit. Maintenance text follows protection/inspection proposals."
+    },
+    "10": {
+      "sources": [
+        "Cost-Analysis.xlsx / 爬藤植物选择!B5:F7; A2:B2; A14:B15.",
+        "Cost-Analysis.xlsx / 挠度校核!B6:D6.",
+        "Original analysis report §07: check local climate, climbing method, root space, leaf mass, wind and maintenance."
+      ],
+      "basis": "The workbook assigns Parthenocissus tricuspidata 10–18kg/m² and adhesive tendrils, Combretum indicum 10–18kg/m² and twining, Campsis grandiflora 15–25kg/m² and aerial roots. Its plant-screen row2 labels wet mass a reference order requiring source checking. Deflection B6=18 and D6 explicitly cite the Boston ivy upper bound, not a measured mixed canopy. The seasonal-leaf-loss line is screening intent, not a verified claim about local Rangoon creeper winter behaviour. Alternative substitution requires reviewing the changed upper range. Source mix2+1, substrate1.2m³ and drip/care remain. No growth-time estimate, LAI-based mass derivation or cold-tolerance threshold is introduced."
+    },
+    "11": {
+      "sources": [
+        "Original project report and 分析参数与汇总.json: ideal continuous-leaf projection.",
+        "Supplement D_Structure_and_Plant_Cover_Simulation.docx, §01–02; 数据/模拟参数与汇总.json."
+      ],
+      "basis": "Supplement formula Aeq=Abare+(1−tau)(Aleaf−Aoverlap), tau=.15 assumed; same5×5m target excludingr.75m. Ideal leaf-envelope overlap and equivalent direct-beam blockage have different definitions; neither is temperature or total solar attenuation."
+    },
+    "12": {
+      "sources": [
+        "Original 04_图表与计算数据/01_原参数_C_D_典型时刻遮阴.csv and 02_原参数_C_D_15分钟遮阴曲线.csv, final-model rows.",
+        "Original report §结论与依据; §07 application and §08 evaluation.",
+        "Same supplied projection functions and baseline envelope; Ideal-Animation-Check.json cross-checks all 25 frames against the unchanged source curve."
+      ],
+      "basis": "09/12/15 solstice overlap47.2/98.7/47.2%; 09–15 means75.3% solstice and49.8% equinox. Source advises seating by use time and reporting weakest periods; noon peak cannot describe the whole window. Animation varies solar time only in 15-minute steps. Pale green shows projected leaf envelope; dark green is its intersection with the same target. The moving time dot is illustrative playback, not observed footage."
+    },
+    "13": {
+      "sources": [
+        "Supplement 数据/02_参数与生长覆盖_汇总.csv: Solstice, cover=.5, seven cases.",
+        "Supplement 数据/00_结构参数与Rhino检查.json and report §01–02."
+      ],
+      "basis": "Expansion52.2795–66.1435%; height57.7692–62.6491%; corner59.0899–61.7752% (rounded). Largest tested max–min spread is expansion; this does not compare sensitivities per unit change. Source: a larger crown at equal cover percentage also requires more planted area; equal percentage does not imply equal material or plant inputs."
+    },
+    "14": {
+      "sources": [
+        "Supplement 数据/02_参数与生长覆盖_汇总.csv: baseline Solstice cover0/.2/.5/.8/.95.",
+        "Supplement 数据/05_相同50覆盖_分布敏感性.csv: cover=.5, solar time12.",
+        "Supplement report §02: compare seat locations during occupied hours; same-cover spatial placement matters."
+      ],
+      "basis": "Mean blockage40.2187/48.6371/60.1972/67.9113/70.6955%;80→95 cover gives70.69545−67.91127=2.78418percentage points≈2.8pp. Noon patterns inner_spreading/dispersed/outer_first give77.4671/71.3662/62.6164%. These are distinct comparisons, not growth-time predictions."
+    },
+    "15": {
+      "sources": [
+        "Original report §07 application scenarios and §08 evaluation/validation.",
+        "Supplement report §02; fixed-cover daytime-shadow GIF and related CSV."
+      ],
+      "basis": "Source: compare seating during occupied hours; allow root/water/maintenance/circulation; measure shaded/unshaded environmental variables. No actual-street or measured-comfort result supplied."
+    },
+    "16": {
+      "sources": [
+        "Cost-Analysis.xlsx / 模块化建造分析!A3:H10 and labour/assembly sections.",
+        "Cost-Analysis.xlsx / 造价明细 labour and counterweight entries."
+      ],
+      "basis": "Source modules: crown/supports/nodes/base/planting; grouting requires curing and changes reversibility. Base9072kg and labour14person-days are source estimates, not certified foundation or calendar programme."
+    },
+    "17": {
+      "sources": [
+        "P1 supplied Rhino/GH model; P3 workbook; P2/P5 analysis reports and datasets.",
+        "Supplement 数据/01_参数与生长覆盖_时段结果.csv and native-model checks."
+      ],
+      "basis": "Work summary traces three supplied streams; seven parameter cases, five cover states and1750main result rows. Remaining checks reflect explicitly assumed inputs and unverified nodes/site conditions."
+    },
+    "18": {
+      "sources": [
+        "Original analysis report bibliography entries for Watanabe etal2014, Hoelscher etal2016, NOAA and UTCI.",
+        "User-provided project files P1–P5."
+      ],
+      "basis": "Bibliographic leads were supplied by the project; original-source checks remain pending. No DOI or new literature conclusion is invented."
+    }
+  },
+  "statements": [
+    {
+      "slide": 1,
+      "location": "页面文字",
+      "statement": "GREEN BUILDING",
+      "basis": "1"
+    },
+    {
+      "slide": 1,
+      "location": "页面文字",
+      "statement": "GROUP 12",
+      "basis": "1"
+    },
+    {
+      "slide": 1,
+      "location": "页面文字",
+      "statement": "VineWeave",
+      "basis": "1"
+    },
+    {
+      "slide": 1,
+      "location": "页面文字",
+      "statement": "Canopy",
+      "basis": "1"
+    },
+    {
+      "slide": 1,
+      "location": "页面文字",
+      "statement": "A tree-like climbing-plant support",
+      "basis": "1"
+    },
+    {
+      "slide": 1,
+      "location": "页面文字",
+      "statement": "for pedestrian shade",
+      "basis": "1"
+    },
+    {
+      "slide": 1,
+      "location": "页面文字",
+      "statement": "Parametric design  ·  Planting  ·  Shade performance",
+      "basis": "1"
+    },
+    {
+      "slide": 1,
+      "location": "页面文字",
+      "statement": "TEAM & RESPONSIBILITIES",
+      "basis": "1"
+    },
+    {
+      "slide": 1,
+      "location": "页面文字",
+      "statement": "臧唯羽",
+      "basis": "1"
+    },
+    {
+      "slide": 1,
+      "location": "页面文字",
+      "statement": "Form & parametric",
+      "basis": "1"
+    },
+    {
+      "slide": 1,
+      "location": "页面文字",
+      "statement": "modelling",
+      "basis": "1"
+    },
+    {
+      "slide": 1,
+      "location": "页面文字",
+      "statement": "林新淇",
+      "basis": "1"
+    },
+    {
+      "slide": 1,
+      "location": "页面文字",
+      "statement": "Materials &",
+      "basis": "1"
+    },
+    {
+      "slide": 1,
+      "location": "页面文字",
+      "statement": "construction",
+      "basis": "1"
+    },
+    {
+      "slide": 1,
+      "location": "页面文字",
+      "statement": "虞寒哲",
+      "basis": "1"
+    },
+    {
+      "slide": 1,
+      "location": "页面文字",
+      "statement": "Shade performance",
+      "basis": "1"
+    },
+    {
+      "slide": 1,
+      "location": "页面文字",
+      "statement": "& application",
+      "basis": "1"
+    },
+    {
+      "slide": 1,
+      "location": "页面文字",
+      "statement": "徐世程",
+      "basis": "1"
+    },
+    {
+      "slide": 1,
+      "location": "页面文字",
+      "statement": "PPT production",
+      "basis": "1"
+    },
+    {
+      "slide": 1,
+      "location": "页面文字",
+      "statement": "& integration",
+      "basis": "1"
+    },
+    {
+      "slide": 1,
+      "location": "页面文字",
+      "statement": "陈淼",
+      "basis": "1"
+    },
+    {
+      "slide": 1,
+      "location": "页面文字",
+      "statement": "English presentation",
+      "basis": "1"
+    },
+    {
+      "slide": 1,
+      "location": "页面文字",
+      "statement": "& Q&A",
+      "basis": "1"
+    },
+    {
+      "slide": 1,
+      "location": "takeaway",
+      "statement": "Introduce the project before the team credits.",
+      "basis": "1"
+    },
+    {
+      "slide": 1,
+      "location": "script",
+      "statement": "VineWeave Canopy combines climbing plants with a tree-like support to provide pedestrian shade.",
+      "basis": "1"
+    },
+    {
+      "slide": 1,
+      "location": "script",
+      "statement": "Our group connects parametric geometry, material and construction choices, and shading analysis.",
+      "basis": "1"
+    },
+    {
+      "slide": 1,
+      "location": "script",
+      "statement": "The names below identify our responsibilities.",
+      "basis": "1"
+    },
+    {
+      "slide": 1,
+      "location": "script",
+      "statement": "We will explain both the design decisions and the evidence supporting them.",
+      "basis": "1"
+    },
+    {
+      "slide": 1,
+      "location": "transition",
+      "statement": "First, the final geometry and its drawing definitions.",
+      "basis": "1"
+    },
+    {
+      "slide": 1,
+      "location": "qa",
+      "statement": "Where are the full roles?",
+      "basis": "1"
+    },
+    {
+      "slide": 1,
+      "location": "qa",
+      "statement": "The cover retains the core allocation; the planning document records the complete supplied descriptions.",
+      "basis": "1"
+    },
+    {
+      "slide": 2,
+      "location": "页面文字",
+      "statement": "GREEN BUILDING",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "页面文字",
+      "statement": "GEOMETRY & DRAWINGS",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "页面文字",
+      "statement": "Define the final geometry—and how it is measured",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "页面文字",
+      "statement": "Dimensioned plan/elevation views; a final parameter schedule, separate from sensitivity settings.",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "页面文字",
+      "statement": "Model records P1 and supplemental geometric check.",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "页面文字",
+      "statement": "Centre-line views; exterior dimensions rounded.",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "页面文字",
+      "statement": "Drawing sheets accompany the PPT.",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "页面文字",
+      "statement": "02",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "页面文字",
+      "statement": "6.22 m",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "页面文字",
+      "statement": "6.66 m",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "页面文字",
+      "statement": "PLAN",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "页面文字",
+      "statement": "3.48 m",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "页面文字",
+      "statement": "ELEVATION",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "页面文字",
+      "statement": "Curved support inclination is defined by its endpoint chord, not a local tangent.",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "表格",
+      "statement": "FINAL PARAMETER",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "表格",
+      "statement": "VALUE / DEFINITION",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "表格",
+      "statement": "Overall height",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "表格",
+      "statement": "≈3.48 m",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "表格",
+      "statement": "Plan extents",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "表格",
+      "statement": "≈6.22 × 6.66 m",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "表格",
+      "statement": "Maximum horizontal span",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "表格",
+      "statement": "≈6.91 m, exterior mesh",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "表格",
+      "statement": "Support inclination*",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "表格",
+      "statement": "45.9–50.7° to horizontal",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "表格",
+      "statement": "Member exterior diameter",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "表格",
+      "statement": "80 mm",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "表格",
+      "statement": "Corner / expansion",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "表格",
+      "statement": "0.85 / 1.08",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "页面文字",
+      "statement": "*Angle of each ground-reaching centre-line endpoint chord.",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "页面文字",
+      "statement": "Not a uniform member slope.",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "takeaway",
+      "statement": "Final dimensions need explicit definitions and readable technical views.",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "script",
+      "statement": "The final geometry has an overall height of about three point four eight metres and a plan extent of six point two two by six point six six metres.",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "script",
+      "statement": "Its approximate maximum horizontal exterior span is six point nine one metres.",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "script",
+      "statement": "For these curved supports, inclination is defined by the endpoint chord above horizontal.",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "script",
+      "statement": "The accompanying drawing sheets explain that definition and the measured range.",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "transition",
+      "statement": "Next, link those features to environmental potential.",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "qa",
+      "statement": "Is 6.91 metres a circular diameter?",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "qa",
+      "statement": "No.",
+      "basis": "2"
+    },
+    {
+      "slide": 2,
+      "location": "qa",
+      "statement": "It is the maximum pair distance in the projected exterior mesh, not a foliage diameter or net usable width.",
+      "basis": "2"
+    },
+    {
+      "slide": 3,
+      "location": "页面文字",
+      "statement": "GREEN BUILDING",
+      "basis": "3"
+    },
+    {
+      "slide": 3,
+      "location": "页面文字",
+      "statement": "FORM & COOLING LOGIC",
+      "basis": "3"
+    },
+    {
+      "slide": 3,
+      "location": "页面文字",
+      "statement": "How the canopy can improve pedestrian comfort",
+      "basis": "3"
+    },
+    {
+      "slide": 3,
+      "location": "页面文字",
+      "statement": "Three physical pathways, with the strength of evidence shown next to each.",
+      "basis": "3"
+    },
+    {
+      "slide": 3,
+      "location": "页面文字",
+      "statement": "Shade: project P2/P5.",
+      "basis": "3"
+    },
+    {
+      "slide": 3,
+      "location": "页面文字",
+      "statement": "Greening mechanisms: [1,2].",
+      "basis": "3"
+    },
+    {
+      "slide": 3,
+      "location": "页面文字",
+      "statement": "Arrows are conceptual; no temperature or airflow field is simulated.",
+      "basis": "3"
+    },
+    {
+      "slide": 3,
+      "location": "页面文字",
+      "statement": "03",
+      "basis": "3"
+    },
+    {
+      "slide": 3,
+      "location": "页面文字",
+      "statement": "01  SHADE → LOWER EXPOSURE",
+      "basis": "3"
+    },
+    {
+      "slide": 3,
+      "location": "页面文字",
+      "statement": "Direct sun on people and ground",
+      "basis": "3"
+    },
+    {
+      "slide": 3,
+      "location": "页面文字",
+      "statement": "02  AIRFLOW",
+      "basis": "3"
+    },
+    {
+      "slide": 3,
+      "location": "页面文字",
+      "statement": "Open sides retain possible air paths.",
+      "basis": "3"
+    },
+    {
+      "slide": 3,
+      "location": "页面文字",
+      "statement": "Dense foliage can also add resistance.",
+      "basis": "3"
+    },
+    {
+      "slide": 3,
+      "location": "页面文字",
+      "statement": "03  PLANT WATER",
+      "basis": "3"
+    },
+    {
+      "slide": 3,
+      "location": "页面文字",
+      "statement": "Evapotranspiration may exchange latent heat; it needs healthy, watered plants.",
+      "basis": "3"
+    },
+    {
+      "slide": 3,
+      "location": "页面文字",
+      "statement": "01  DIRECT SUN",
+      "basis": "3"
+    },
+    {
+      "slide": 3,
+      "location": "页面文字",
+      "statement": "MODELLED",
+      "basis": "3"
+    },
+    {
+      "slide": 3,
+      "location": "页面文字",
+      "statement": "Geometry + leaf location",
+      "basis": "3"
+    },
+    {
+      "slide": 3,
+      "location": "页面文字",
+      "statement": "change useful shade.",
+      "basis": "3"
+    },
+    {
+      "slide": 3,
+      "location": "页面文字",
+      "statement": "02 / 03: QUALITATIVE MECHANISMS",
+      "basis": "3"
+    },
+    {
+      "slide": 3,
+      "location": "页面文字",
+      "statement": "Shade % does not equal cooling °C.",
+      "basis": "3"
+    },
+    {
+      "slide": 3,
+      "location": "takeaway",
+      "statement": "Follow the sunlight, air and plant-water arrows; only shade is quantified here.",
+      "basis": "3"
+    },
+    {
+      "slide": 3,
+      "location": "script",
+      "statement": "The crown and foliage intercept direct sun before it reaches people and the ground.",
+      "basis": "3"
+    },
+    {
+      "slide": 3,
+      "location": "script",
+      "statement": "The solar arrows identify the pathway quantified in our optical scenarios.",
+      "basis": "3"
+    },
+    {
+      "slide": 3,
+      "location": "script",
+      "statement": "Blue arrows show potential air paths through open sides, not a simulated wind improvement.",
+      "basis": "3"
+    },
+    {
+      "slide": 3,
+      "location": "script",
+      "statement": "The dashed plant-water arrows indicate possible evapotranspiration, which depends on healthy plants and water.",
+      "basis": "3"
+    },
+    {
+      "slide": 3,
+      "location": "script",
+      "statement": "Denser foliage can also resist airflow.",
+      "basis": "3"
+    },
+    {
+      "slide": 3,
+      "location": "transition",
+      "statement": "Material assignment follows the structural roles.",
+      "basis": "3"
+    },
+    {
+      "slide": 3,
+      "location": "qa",
+      "statement": "Do these arrows show simulated temperature or wind?",
+      "basis": "3"
+    },
+    {
+      "slide": 3,
+      "location": "qa",
+      "statement": "No.",
+      "basis": "3"
+    },
+    {
+      "slide": 3,
+      "location": "qa",
+      "statement": "They explain physical mechanisms; the project quantifies shade, not cooling degrees or wind speed.",
+      "basis": "3"
+    },
+    {
+      "slide": 4,
+      "location": "页面文字",
+      "statement": "GREEN BUILDING",
+      "basis": "4"
+    },
+    {
+      "slide": 4,
+      "location": "页面文字",
+      "statement": "MATERIAL STRATEGY",
+      "basis": "4"
+    },
+    {
+      "slide": 4,
+      "location": "页面文字",
+      "statement": "Assign materials to the roles they must perform",
+      "basis": "4"
+    },
+    {
+      "slide": 4,
+      "location": "页面文字",
+      "statement": "Steel at the ground-reaching supports; proposed engineered bamboo across the crown.",
+      "basis": "4"
+    },
+    {
+      "slide": 4,
+      "location": "页面文字",
+      "statement": "Project take-off and proposed member schedule (P1, P3).",
+      "basis": "4"
+    },
+    {
+      "slide": 4,
+      "location": "页面文字",
+      "statement": "Sections and material mass remain preliminary specifications.",
+      "basis": "4"
+    },
+    {
+      "slide": 4,
+      "location": "页面文字",
+      "statement": "04",
+      "basis": "4"
+    },
+    {
+      "slide": 4,
+      "location": "表格",
+      "statement": "ZONE",
+      "basis": "4"
+    },
+    {
+      "slide": 4,
+      "location": "表格",
+      "statement": "PROPOSED SECTION",
+      "basis": "4"
+    },
+    {
+      "slide": 4,
+      "location": "表格",
+      "statement": "LENGTH",
+      "basis": "4"
+    },
+    {
+      "slide": 4,
+      "location": "表格",
+      "statement": "12 steel supports",
+      "basis": "4"
+    },
+    {
+      "slide": 4,
+      "location": "表格",
+      "statement": "Q355B tube\nØ80 × 4 mm",
+      "basis": "4"
+    },
+    {
+      "slide": 4,
+      "location": "表格",
+      "statement": "69.38 m",
+      "basis": "4"
+    },
+    {
+      "slide": 4,
+      "location": "表格",
+      "statement": "47 bamboo crown members",
+      "basis": "4"
+    },
+    {
+      "slide": 4,
+      "location": "表格",
+      "statement": "Engineered bamboo\nsolid Ø80 mm",
+      "basis": "4"
+    },
+    {
+      "slide": 4,
+      "location": "表格",
+      "statement": "219.28 m",
+      "basis": "4"
+    },
+    {
+      "slide": 4,
+      "location": "表格",
+      "statement": "TOTAL",
+      "basis": "4"
+    },
+    {
+      "slide": 4,
+      "location": "表格",
+      "statement": "59 members",
+      "basis": "4"
+    },
+    {
+      "slide": 4,
+      "location": "表格",
+      "statement": "288.66 m",
+      "basis": "4"
+    },
+    {
+      "slide": 4,
+      "location": "页面文字",
+      "statement": "Steel supports are proposed for force transfer and connection detailing.",
+      "basis": "4"
+    },
+    {
+      "slide": 4,
+      "location": "页面文字",
+      "statement": "Crown bamboo requires stiffness, treatment and fabrication checks.",
+      "basis": "4"
+    },
+    {
+      "slide": 4,
+      "location": "takeaway",
+      "statement": "The quantity schedule links a clear material role to a specific part of the model.",
+      "basis": "4"
+    },
+    {
+      "slide": 4,
+      "location": "script",
+      "statement": "The take-off gives twelve ground-reaching supports and forty-seven crown members, with a total centre-line length of two hundred and eighty-eight point six six metres.",
+      "basis": "4"
+    },
+    {
+      "slide": 4,
+      "location": "script",
+      "statement": "We propose an eighty-by-four millimetre steel tube for supports and solid engineered bamboo for the crown.",
+      "basis": "4"
+    },
+    {
+      "slide": 4,
+      "location": "script",
+      "statement": "This is a material strategy, not proof that either zone is safe.",
+      "basis": "4"
+    },
+    {
+      "slide": 4,
+      "location": "transition",
+      "statement": "The screening table shows the inputs; the next decision is how to use them.",
+      "basis": "4"
+    },
+    {
+      "slide": 4,
+      "location": "qa",
+      "statement": "Does the exterior model contain the final wall thickness?",
+      "basis": "4"
+    },
+    {
+      "slide": 4,
+      "location": "qa",
+      "statement": "No.",
+      "basis": "4"
+    },
+    {
+      "slide": 4,
+      "location": "qa",
+      "statement": "The pipe exterior and proposed material section must be distinguished.",
+      "basis": "4"
+    },
+    {
+      "slide": 5,
+      "location": "页面文字",
+      "statement": "GREEN BUILDING",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "页面文字",
+      "statement": "MATERIAL SELECTION",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "页面文字",
+      "statement": "Read the material inputs before making the choice",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "页面文字",
+      "statement": "Representative screening inputs: section resistance, conductivity, carbon factor and equal-length material cost.",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "页面文字",
+      "statement": "Source: material-comparison workbook (P3). *Preliminary inputs; product, processing and factor boundaries need verification.",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "页面文字",
+      "statement": "05",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "MATERIAL / SECTION",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "BENDING*\nkN·m",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "λ*\nW/(m·K)",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "CARBON*\nkgCO₂e/kg",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "MATERIAL COST*\nCNY / 288.66 m",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "Q355B tube Ø80×4",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "6.14",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "50",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "2.15",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "18,394",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "Q355B tube Ø80×3",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "4.78",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "50",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "2.15",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "13,983",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "Engineered bamboo Ø80",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "1.01",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "0.22",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "0.40",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "10,158",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "Treated timber Ø80",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "0.85",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "0.14",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "1.10",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "6,530",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "Raw bamboo Ø80",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "0.40",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "0.18",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "0.25",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "4,330",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "DURABILITY",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "ENVIRONMENTAL ADAPTABILITY",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "Protect steel coatings; treat bamboo; detail inspection and replacement.",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "表格",
+      "statement": "Check moisture, UV, wind exposure, local supply and plant suitability.",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "takeaway",
+      "statement": "Material screening includes mechanical and practical conditions, not only carbon.",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "script",
+      "statement": "These are preliminary screening inputs.",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "script",
+      "statement": "Each cost column assumes the same full member length; it is not the adopted unit budget.",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "script",
+      "statement": "Steel offers much greater nominal bending capacity.",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "script",
+      "statement": "Engineered bamboo is proposed for the crown, but stiffness, treatment and product-specific evidence are essential.",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "script",
+      "statement": "Raw bamboo’s low reference cost does not remove its variability and maintenance issues.",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "transition",
+      "statement": "These inputs motivate a hybrid strategy, with conditions attached.",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "qa",
+      "statement": "Are these all verified design values?",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "qa",
+      "statement": "No.",
+      "basis": "5"
+    },
+    {
+      "slide": 5,
+      "location": "qa",
+      "statement": "They are workbook screening inputs, and the bamboo identity and properties must be confirmed consistently.",
+      "basis": "5"
+    },
+    {
+      "slide": 6,
+      "location": "页面文字",
+      "statement": "GREEN BUILDING",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "页面文字",
+      "statement": "MATERIAL DECISION",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "页面文字",
+      "statement": "Why steel supports and an engineered-bamboo crown?",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "页面文字",
+      "statement": "Match structural roles first; weigh cost and environmental inputs together with practical constraints.",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "页面文字",
+      "statement": "Design rationale P1/P3/P4.",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "页面文字",
+      "statement": "Screening values are preliminary; the hybrid strategy is not an optimised or certified structure.",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "页面文字",
+      "statement": "06",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "页面文字",
+      "statement": "STEEL • 12 GROUND-REACHING MEMBERS",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "页面文字",
+      "statement": "Prioritise stiffness and force transfer",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "页面文字",
+      "statement": "The workbook assigns steel to supports under compression and wind bending.",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "页面文字",
+      "statement": "Its tabulated section stiffness EI exceeds the proposed bamboo section.",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "页面文字",
+      "statement": "ENGINEERED BAMBOO • 47 CROWN MEMBERS",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "页面文字",
+      "statement": "Use material benefits where feasible",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "页面文字",
+      "statement": "The workbook adopts bamboo for the crown using cost and carbon inputs.",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "页面文字",
+      "statement": "It also requires restrained joints and verification of node rotational stiffness.",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "页面文字",
+      "statement": "DURABILITY",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "页面文字",
+      "statement": "Coat steel; protect and inspect bamboo.",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "页面文字",
+      "statement": "COST",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "页面文字",
+      "statement": "Include joints, installation and care.",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "页面文字",
+      "statement": "CONDUCTIVITY",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "页面文字",
+      "statement": "A material property, not a cooling result.",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "页面文字",
+      "statement": "CARBON",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "页面文字",
+      "statement": "Verify product factors and boundaries.",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "页面文字",
+      "statement": "ADAPTABILITY",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "页面文字",
+      "statement": "Check moisture, UV and local supply.",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "页面文字",
+      "statement": "Source decision: bamboo crown + steel supports; node rotational stiffness still requires verification.",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "takeaway",
+      "statement": "The material strategy follows structural roles and keeps feasibility conditions explicit.",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "script",
+      "statement": "The workbook combines screening with a structural feasibility gate.",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "script",
+      "statement": "Steel is assigned to supports under compression and wind bending.",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "script",
+      "statement": "Bamboo is adopted for the crown using cost and carbon inputs, but the deflection sheet requires node rotational-stiffness verification.",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "script",
+      "statement": "The lower cards summarise the five material criteria.",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "script",
+      "statement": "Member-input savings do not establish a lower total unit cost.",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "transition",
+      "statement": "The next check shows why crown stiffness makes the joints important.",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "qa",
+      "statement": "Does the material screen establish a lower total unit cost?",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "qa",
+      "statement": "No.",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "qa",
+      "statement": "It compares equal-length member inputs.",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "qa",
+      "statement": "The separate unit budget includes nodes, installation and care.",
+      "basis": "6"
+    },
+    {
+      "slide": 6,
+      "location": "qa",
+      "statement": "Low conductivity also does not establish a measured temperature benefit.",
+      "basis": "6"
+    },
+    {
+      "slide": 7,
+      "location": "页面文字",
+      "statement": "GREEN BUILDING",
+      "basis": "7"
+    },
+    {
+      "slide": 7,
+      "location": "页面文字",
+      "statement": "CONNECTIONS",
+      "basis": "7"
+    },
+    {
+      "slide": 7,
+      "location": "页面文字",
+      "statement": "The beam check sets a requirement for the joint",
+      "basis": "7"
+    },
+    {
+      "slide": 7,
+      "location": "页面文字",
+      "statement": "Same member and loading assumptions; different ideal end restraints produce different deflections.",
+      "basis": "7"
+    },
+    {
+      "slide": 7,
+      "location": "页面文字",
+      "statement": "P3 beam check: self-weight + assumed wet foliage 18 kg/m² (plant input, p10).",
+      "basis": "7"
+    },
+    {
+      "slide": 7,
+      "location": "页面文字",
+      "statement": "E = 10 GPa and L/200 are adopted inputs.",
+      "basis": "7"
+    },
+    {
+      "slide": 7,
+      "location": "页面文字",
+      "statement": "07",
+      "basis": "7"
+    },
+    {
+      "slide": 7,
+      "location": "页面文字",
+      "statement": "SIMPLIFIED MEMBER: L = 6.65 m  ·  SOLID Ø80 mm",
+      "basis": "7"
+    },
+    {
+      "slide": 7,
+      "location": "图表数据",
+      "statement": "Simply supported: 100.533387276407",
+      "basis": "7"
+    },
+    {
+      "slide": 7,
+      "location": "图表数据",
+      "statement": "Adopted L/200 target: 33.25",
+      "basis": "7"
+    },
+    {
+      "slide": 7,
+      "location": "图表数据",
+      "statement": "Ideal fixed ends: 20.1066774552815",
+      "basis": "7"
+    },
+    {
+      "slide": 7,
+      "location": "页面文字",
+      "statement": "Simple support: 3.02 × target   |   Ideal fixity: 0.60 × target",
+      "basis": "7"
+    },
+    {
+      "slide": 7,
+      "location": "页面文字",
+      "statement": "PROPOSED SUPPORT-HEAD NODE",
+      "basis": "7"
+    },
+    {
+      "slide": 7,
+      "location": "页面文字",
+      "statement": "Plate + sleeve + adhesive + bolts",
+      "basis": "7"
+    },
+    {
+      "slide": 7,
+      "location": "页面文字",
+      "statement": "Concept: restraint is not yet demonstrated.",
+      "basis": "7"
+    },
+    {
+      "slide": 7,
+      "location": "页面文字",
+      "statement": "Next: verify joint rotation and whole-frame behaviour before claiming compliance.",
+      "basis": "7"
+    },
+    {
+      "slide": 7,
+      "location": "takeaway",
+      "statement": "The adopted target is numerically between two ideal beam results; node verification is explicitly required by the workbook.",
+      "basis": "7"
+    },
+    {
+      "slide": 7,
+      "location": "script",
+      "statement": "The same six point six five metre bamboo-member calculation gives one hundred point five millimetres with simple supports and twenty point one with ideal fixed ends.",
+      "basis": "7"
+    },
+    {
+      "slide": 7,
+      "location": "script",
+      "statement": "The adopted target is thirty-three point two five millimetres, shown between them.",
+      "basis": "7"
+    },
+    {
+      "slide": 7,
+      "location": "script",
+      "statement": "This makes rotational restraint a design requirement to investigate.",
+      "basis": "7"
+    },
+    {
+      "slide": 7,
+      "location": "script",
+      "statement": "The proposed node does not prove that restraint, and the member check does not verify the whole frame.",
+      "basis": "7"
+    },
+    {
+      "slide": 7,
+      "location": "transition",
+      "statement": "The proposed node also has a significant budget allowance.",
+      "basis": "7"
+    },
+    {
+      "slide": 7,
+      "location": "qa",
+      "statement": "What must be verified next?",
+      "basis": "7"
+    },
+    {
+      "slide": 7,
+      "location": "qa",
+      "statement": "Product stiffness, node moment–rotation behaviour, load transfer and the whole frame under relevant loads.",
+      "basis": "7"
+    },
+    {
+      "slide": 7,
+      "location": "qa",
+      "statement": "The supplied workbook explicitly requires a node detail and rotational-stiffness verification.",
+      "basis": "7"
+    },
+    {
+      "slide": 8,
+      "location": "页面文字",
+      "statement": "GREEN BUILDING",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "页面文字",
+      "statement": "BUDGET",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "页面文字",
+      "statement": "The unit budget includes fabrication, installation and care",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "页面文字",
+      "statement": "Preliminary total: CNY 51,676 per unit—not simply the price of the members.",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "页面文字",
+      "statement": "Source: Cost-Analysis.xlsx (P3).",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "页面文字",
+      "statement": "All rates remain reference estimates rather than confirmed quotations.",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "页面文字",
+      "statement": "08",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "图表数据",
+      "statement": "Materials: 30549.3022975",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "图表数据",
+      "statement": "Installation: 6050.0",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "图表数据",
+      "statement": "Other: 5679.6828674",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "图表数据",
+      "statement": "Fabrication: 5241.733545",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "图表数据",
+      "statement": "Maintenance: 2300.0",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "图表数据",
+      "statement": "Planting: 1165.0",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "图表数据",
+      "statement": "Transport: 690.0",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "页面文字",
+      "statement": "MATERIALS = 59.1% OF TOTAL",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "表格",
+      "statement": "KEY COMPONENT",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "表格",
+      "statement": "CNY",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "表格",
+      "statement": "Bamboo crown",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "表格",
+      "statement": "7,716",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "表格",
+      "statement": "Steel supports",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "表格",
+      "statement": "4,421",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "表格",
+      "statement": "12 rigid-head nodes",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "表格",
+      "statement": "12,000",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "表格",
+      "statement": "Counterweight",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "表格",
+      "statement": "3,402",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "页面文字",
+      "statement": "These component rows are part of the full total.",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "页面文字",
+      "statement": "Nodes are a larger allowance than the primary steel members.",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "takeaway",
+      "statement": "The budget makes the node trade-off visible.",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "script",
+      "statement": "The preliminary total is approximately fifty-one thousand six hundred and seventy-six yuan.",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "script",
+      "statement": "Materials are fifty-nine percent of this total; the other categories include fabrication, installation and care.",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "script",
+      "statement": "Within materials, twelve proposed nodes account for twelve thousand yuan, more than the primary steel members.",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "script",
+      "statement": "The component table is only part of the overall cost, not an additional total.",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "transition",
+      "statement": "Next, the carbon and maintenance picture.",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "qa",
+      "statement": "Are the node prices confirmed?",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "qa",
+      "statement": "No.",
+      "basis": "8"
+    },
+    {
+      "slide": 8,
+      "location": "qa",
+      "statement": "They are the most uncertain allowance and need a defined detail and supplier quotation.",
+      "basis": "8"
+    },
+    {
+      "slide": 9,
+      "location": "页面文字",
+      "statement": "GREEN BUILDING",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "页面文字",
+      "statement": "CARBON & MAINTENANCE",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "页面文字",
+      "statement": "Account for the members, base and maintenance needs",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "页面文字",
+      "statement": "Current carbon estimate: approximately 2,820 kgCO₂e per unit.",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "页面文字",
+      "statement": "Workbook estimate (P3).",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "页面文字",
+      "statement": "Factor boundaries and node inclusion require checking; no biogenic-carbon credit is taken.",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "页面文字",
+      "statement": "09",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "图表数据",
+      "statement": "Primary members: 1581.19629365",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "图表数据",
+      "statement": "Counterweight: 1088.64",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "图表数据",
+      "statement": "Other components: 150.0",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "页面文字",
+      "statement": "≈ 2,820",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "页面文字",
+      "statement": "kgCO₂e / unit",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "表格",
+      "statement": "CONTRIBUTOR",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "表格",
+      "statement": "kgCO₂e",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "表格",
+      "statement": "Primary members",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "表格",
+      "statement": "1,581",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "表格",
+      "statement": "Counterweight",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "表格",
+      "statement": "1,089",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "表格",
+      "statement": "Other components",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "表格",
+      "statement": "150",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "页面文字",
+      "statement": "Counterweight ≈ 39% of the current estimate",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "表格",
+      "statement": "STEEL",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "表格",
+      "statement": "BAMBOO",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "表格",
+      "statement": "CONNECTIONS",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "表格",
+      "statement": "Protect coating",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "表格",
+      "statement": "Treat and inspect",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "表格",
+      "statement": "Check fixings and grout",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "takeaway",
+      "statement": "The estimate helps identify contributors and care responsibilities.",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "script",
+      "statement": "The primary members and counterweight dominate the current carbon estimate.",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "script",
+      "statement": "The counterweight contributes about thirty-nine percent, so foundation decisions also matter.",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "script",
+      "statement": "We show the adopted estimate rather than claiming a verified life-cycle result.",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "script",
+      "statement": "Outdoor performance also needs coating care, bamboo treatment and connection inspection.",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "script",
+      "statement": "Product factors and the allowance for actual node materials still require checking.",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "transition",
+      "statement": "Plant choice adds another set of requirements.",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "qa",
+      "statement": "Is stored biological carbon deducted?",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "qa",
+      "statement": "No.",
+      "basis": "9"
+    },
+    {
+      "slide": 9,
+      "location": "qa",
+      "statement": "It is not credited in this estimate, and factor boundaries are not yet fully aligned.",
+      "basis": "9"
+    },
+    {
+      "slide": 10,
+      "location": "页面文字",
+      "statement": "GREEN BUILDING",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "页面文字",
+      "statement": "PLANTING STRATEGY",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "页面文字",
+      "statement": "Link the planting screen to the assumed load",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "页面文字",
+      "statement": "Source mix: 2 Boston ivy + 1 Rangoon creeper; local suitability and attachment still need confirmation.",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "页面文字",
+      "statement": "*Wet mass: workbook P3 screening ranges; primary sources and area basis remain unverified.",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "页面文字",
+      "statement": "Not measured plant loads.",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "页面文字",
+      "statement": "10",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "页面文字",
+      "statement": "SCREENING INTENT: seasonal leaf loss + attachment to Ø80 rods",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "页面文字",
+      "statement": "PRIMARY • 2 PLANTS",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "页面文字",
+      "statement": "Boston ivy",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "页面文字",
+      "statement": "Parthenocissus tricuspidata",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "页面文字",
+      "statement": "Tendrils with adhesive pads",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "页面文字",
+      "statement": "Wet mass*: 10–18 kg/m²",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "页面文字",
+      "statement": "Confirm support attachment.",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "页面文字",
+      "statement": "COMPANION • 1 PLANT",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "页面文字",
+      "statement": "Rangoon creeper",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "页面文字",
+      "statement": "Combretum indicum",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "页面文字",
+      "statement": "Twining climber",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "页面文字",
+      "statement": "Wet mass*: 10–18 kg/m²",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "页面文字",
+      "statement": "Confirm local climate suitability.",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "页面文字",
+      "statement": "ALTERNATIVE ONLY",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "页面文字",
+      "statement": "Trumpet creeper",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "页面文字",
+      "statement": "Campsis grandiflora",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "页面文字",
+      "statement": "Aerial roots",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "页面文字",
+      "statement": "Wet mass*: 15–25 kg/m²",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "页面文字",
+      "statement": "Reassess load before substitution.",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "页面文字",
+      "statement": "BEAM LOAD INPUT (p7): 18 kg/m²",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "页面文字",
+      "statement": "Upper end of Boston ivy’s 10–18 kg/m² workbook range.",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "页面文字",
+      "statement": "ROOTS + CARE: source allowance of 1.2 m³ substrate, drip irrigation, training and pruning.",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "takeaway",
+      "statement": "Trace the adopted 18 kg/m² to the workbook, while keeping the range provisional.",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "script",
+      "statement": "The workbook selects two Boston ivy plants and one Rangoon creeper.",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "script",
+      "statement": "Its screening considers seasonal leaf loss and attachment to the rods.",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "script",
+      "statement": "Boston ivy uses tendrils with adhesive pads; Rangoon creeper twines; trumpet creeper has aerial roots.",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "script",
+      "statement": "The first two have workbook wet-mass ranges of ten to eighteen kilograms per square metre.",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "script",
+      "statement": "The beam calculation adopts eighteen, explicitly taking the upper end of the Boston ivy range.",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "script",
+      "statement": "These are unverified reference inputs, not measured loads.",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "script",
+      "statement": "The alternative range reaches twenty-five, so substitution requires a load review.",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "transition",
+      "statement": "Next, the optical method used to evaluate shade.",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "qa",
+      "statement": "Where does 18 kg/m² come from?",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "qa",
+      "statement": "Cost-Analysis.xlsx, 挠度校核 B6/D6, cites the upper end of the Boston ivy 10–18 range in 爬藤植物选择 F5.",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "qa",
+      "statement": "The source publication and area basis still need checking.",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "qa",
+      "statement": "No LAI/leaf-thickness calculation is supplied.",
+      "basis": "10"
+    },
+    {
+      "slide": 10,
+      "location": "qa",
+      "statement": "Local climate, attachment, roots and care also require confirmation.",
+      "basis": "10"
+    },
+    {
+      "slide": 11,
+      "location": "页面文字",
+      "statement": "GREEN BUILDING",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "页面文字",
+      "statement": "ANALYSIS METHOD",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "页面文字",
+      "statement": "Two shade metrics answer different questions",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "页面文字",
+      "statement": "30°N · assumed X=east/Y=north · true solar time 09–15 · same reference zone.",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "页面文字",
+      "statement": "Solar geometry: NOAA [3].",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "页面文字",
+      "statement": "Project methods/assumptions P2/P5.",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "页面文字",
+      "statement": "Reference zone is not net usable floor area; no temperature change is calculated.",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "页面文字",
+      "statement": "11",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "页面文字",
+      "statement": "01",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "页面文字",
+      "statement": "SUN DIRECTION",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "页面文字",
+      "statement": "02",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "页面文字",
+      "statement": "MODEL + LEAVES",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "页面文字",
+      "statement": "03",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "页面文字",
+      "statement": "SHADOW PROJECTION",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "页面文字",
+      "statement": "04",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "页面文字",
+      "statement": "TARGET INTERSECTION",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "页面文字",
+      "statement": "01  IDEAL LEAF-SHADOW OVERLAP",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "页面文字",
+      "statement": "Where could a continuous leaf envelope cast shade?",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "页面文字",
+      "statement": "Leaf-envelope shadow on target ÷ target area.",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "页面文字",
+      "statement": "Used for the ideal daily / solar-season result.",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "页面文字",
+      "statement": "02  EQUIVALENT DIRECT-BEAM BLOCKAGE",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "页面文字",
+      "statement": "How much direct beam do the frame and assumed leaves block?",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "页面文字",
+      "statement": "Accounts for frame/leaf overlap and assumed leaf transmittance τ = 0.15; used for sensitivity tests.",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "页面文字",
+      "statement": "COMMON TARGET: 5 × 5 m MINUS r = 0.75 m → 23.23 m²",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "页面文字",
+      "statement": "Compare results within the same metric and time window; do not add the two percentages.",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "takeaway",
+      "statement": "Identify the metric and time window before interpreting any percentage.",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "script",
+      "statement": "The first metric measures ideal leaf-envelope shadow on the target.",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "script",
+      "statement": "The second includes frame shadows, assumed leaf patches, their overlap and transmittance.",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "script",
+      "statement": "We use the first for the daily and solar-season result, and the second for parameter and coverage comparisons.",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "script",
+      "statement": "The target is shared, but the percentages are not interchangeable.",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "script",
+      "statement": "Neither is a temperature reduction.",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "transition",
+      "statement": "First, read the ideal daily result across the full time window.",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "qa",
+      "statement": "What is the second formula?",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "qa",
+      "statement": "Aeq = Abare + (1 − τ)(Aleaf − Aoverlap), then divide by the target area.",
+      "basis": "11"
+    },
+    {
+      "slide": 11,
+      "location": "qa",
+      "statement": "It is equivalent direct-beam blockage under the stated optical assumptions, not total solar-energy attenuation.",
+      "basis": "11"
+    },
+    {
+      "slide": 12,
+      "location": "页面文字",
+      "statement": "GREEN BUILDING",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "页面文字",
+      "statement": "SHADE PERFORMANCE",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "页面文字",
+      "statement": "A noon peak does not ensure all-day shade",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "页面文字",
+      "statement": "Metric 01: ideal leaf-shadow overlap.",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "页面文字",
+      "statement": "The animation follows the existing 09–15 solar-time samples.",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "页面文字",
+      "statement": "Project projection P2/P5.",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "页面文字",
+      "statement": "GIF uses the same continuous leaf envelope, target and 25 solar times as the solstice curve; no new scenario.",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "页面文字",
+      "statement": "12",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "页面文字",
+      "statement": "09:00",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "页面文字",
+      "statement": "12:00",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "页面文字",
+      "statement": "15:00",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "页面文字",
+      "statement": "MOVING DOT: SOLAR TIME  •  15-MINUTE STEPS",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "页面文字",
+      "statement": "SOLSTICE • KEY VALUES",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "页面文字",
+      "statement": "09:00",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "页面文字",
+      "statement": "47.2%",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "页面文字",
+      "statement": "12:00",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "页面文字",
+      "statement": "98.7%",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "页面文字",
+      "statement": "15:00",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "页面文字",
+      "statement": "47.2%",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "页面文字",
+      "statement": "Leaf-envelope shadow",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "页面文字",
+      "statement": "Overlap within target",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "09:00: 47.155661526250725",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 50.95515412268991",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 55.07011631579294",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 60.039564767330674",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "10:00: 65.50654278454971",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 70.7723802048107",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 75.79576381742402",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 81.01882159676518",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "11:00: 86.38341216660314",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 91.72295924019801",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 95.76669431441525",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 97.95178473599358",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "12:00: 98.72481459764712",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 97.95178473599354",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 95.76669431441523",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 91.72295924019798",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "13:00: 86.38341216660315",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 81.01882159676518",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 75.79576381742399",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 70.7723802048107",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "14:00: 65.50654278454974",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 60.039564767330546",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 55.07011631579296",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 50.95515412269004",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "15:00: 47.155661526250775",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "09:00: 21.806368574443294",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 29.687120625398375",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 35.13483151321812",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 38.232603296876206",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "10:00: 40.84379456356151",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 44.42122578139083",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 49.75245498148766",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 54.723445258224686",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "11:00: 59.36744916873808",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 63.71937827724124",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 67.5361638686349",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 69.0650903902777",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "12:00: 69.55856994686033",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 69.06509039027779",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 67.53616386863492",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 63.71937827724119",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "13:00: 59.367449168738254",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 54.72344525822474",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 49.75245498148764",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 44.421225781390774",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "14:00: 40.84379456356133",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 38.23260329687617",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 35.13483151321814",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "None: 29.68712062539837",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "图表数据",
+      "statement": "15:00: 21.806368574443294",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "页面文字",
+      "statement": "09–15 TIME MEAN",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "页面文字",
+      "statement": "Solstice 75.3%",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "页面文字",
+      "statement": "Equinox 49.8%",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "takeaway",
+      "statement": "Read the animated footprint and the whole time window, not only the noon peak.",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "script",
+      "statement": "The animation follows the existing solstice samples from nine to fifteen solar time.",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "script",
+      "statement": "Overlap is about forty-seven percent at nine and fifteen, and almost ninety-nine percent at noon.",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "script",
+      "statement": "The curve retains the full sequence and the equinox solar case, with time means of about seventy-five and fifty percent.",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "script",
+      "statement": "The noon peak cannot stand for the whole use period: morning and afternoon exposure must be checked when placing seating.",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "script",
+      "statement": "The equinox comparison changes solar conditions, not plant leaf cover.",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "transition",
+      "statement": "We then change one geometric control at a time.",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "qa",
+      "statement": "Does the GIF add a new simulation?",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "qa",
+      "statement": "No.",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "qa",
+      "statement": "It animates the same ideal leaf-envelope projection at the existing 25 solar times.",
+      "basis": "12"
+    },
+    {
+      "slide": 12,
+      "location": "qa",
+      "statement": "Its overlap values were checked against the unchanged solstice curve.",
+      "basis": "12"
+    },
+    {
+      "slide": 13,
+      "location": "页面文字",
+      "statement": "GREEN BUILDING",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "页面文字",
+      "statement": "GEOMETRY SENSITIVITY",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "页面文字",
+      "statement": "Expanding the crown raises mean blockage: 52.3% → 66.1%",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "页面文字",
+      "statement": "Metric 02: 09–15 mean blockage; one control at a time, 50% plan cover, solstice and τ = 0.15.",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "页面文字",
+      "statement": "Project parameter study (P5).",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "页面文字",
+      "statement": "Controls are not uniform scaling; larger cover percentage does not imply equal plant/material input.",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "页面文字",
+      "statement": "13",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "页面文字",
+      "statement": "SMALLER CROWN",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "页面文字",
+      "statement": "BASELINE",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "页面文字",
+      "statement": "LARGER CROWN",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "表格",
+      "statement": "CONTROL",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "表格",
+      "statement": "TESTED SETTINGS",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "表格",
+      "statement": "MEAN BLOCKAGE: LOW / BASE / HIGH",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "表格",
+      "statement": "Upper expansion",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "表格",
+      "statement": "0.92 / 1.08 / 1.24",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "表格",
+      "statement": "52.3% / 60.2% / 66.1%",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "表格",
+      "statement": "Upper-height control",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "表格",
+      "statement": "−0.4 / 0 / +0.4 m",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "表格",
+      "statement": "62.6% / 60.2% / 57.8%",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "表格",
+      "statement": "Corner factor",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "表格",
+      "statement": "0.55 / 0.85 / 1.00",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "表格",
+      "statement": "61.8% / 60.2% / 59.1%",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "页面文字",
+      "statement": "Wider crown → more planted area at the same cover percentage; input quantities are not held equal.",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "takeaway",
+      "statement": "The crown-width result is part of a broader seven-model parameter study.",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "script",
+      "statement": "Seven cases change expansion, upper-height control or corner factor one at a time.",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "script",
+      "statement": "At fifty percent cover, expansion changes mean blockage from fifty-two point three to sixty-six point one percent.",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "script",
+      "statement": "The table retains the other results.",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "script",
+      "statement": "The source report cautions that a larger crown at equal cover needs more planted area.",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "script",
+      "statement": "These shade comparisons do not hold inputs equal or establish an optimum.",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "transition",
+      "statement": "Next, keep the structure fixed and change foliage.",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "qa",
+      "statement": "Does the height control shift the whole model by 0.4 metres?",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "qa",
+      "statement": "No.",
+      "basis": "13"
+    },
+    {
+      "slide": 13,
+      "location": "qa",
+      "statement": "It is smoothly weighted; actual maximum heights must be read from the geometry records.",
+      "basis": "13"
+    },
+    {
+      "slide": 14,
+      "location": "页面文字",
+      "statement": "GREEN BUILDING",
+      "basis": "14"
+    },
+    {
+      "slide": 14,
+      "location": "页面文字",
+      "statement": "SPATIAL PLANT COVER",
+      "basis": "14"
+    },
+    {
+      "slide": 14,
+      "location": "页面文字",
+      "statement": "Coverage amount alone does not determine useful shade",
+      "basis": "14"
+    },
+    {
+      "slide": 14,
+      "location": "页面文字",
+      "statement": "Metric 02: fixed structure, five spatial-cover scenarios; 09–15 mean blockage under the same assumptions.",
+      "basis": "14"
+    },
+    {
+      "slide": 14,
+      "location": "页面文字",
+      "statement": "Project spatial-cover calculation (P5).",
+      "basis": "14"
+    },
+    {
+      "slide": 14,
+      "location": "页面文字",
+      "statement": "Frame/leaf overlap deducted, τ = 0.15; equivalent direct-beam blockage, not cooling.",
+      "basis": "14"
+    },
+    {
+      "slide": 14,
+      "location": "页面文字",
+      "statement": "14",
+      "basis": "14"
+    },
+    {
+      "slide": 14,
+      "location": "图表数据",
+      "statement": "0%: 40.21868884193895",
+      "basis": "14"
+    },
+    {
+      "slide": 14,
+      "location": "图表数据",
+      "statement": "20%: 48.63711463942608",
+      "basis": "14"
+    },
+    {
+      "slide": 14,
+      "location": "图表数据",
+      "statement": "50%: 60.19719328472306",
+      "basis": "14"
+    },
+    {
+      "slide": 14,
+      "location": "图表数据",
+      "statement": "80%: 67.91126834429677",
+      "basis": "14"
+    },
+    {
+      "slide": 14,
+      "location": "图表数据",
+      "statement": "95%: 70.6954503684305",
+      "basis": "14"
+    },
+    {
+      "slide": 14,
+      "location": "页面文字",
+      "statement": "09–15 MEAN DIRECT-BEAM BLOCKAGE (%)",
+      "basis": "14"
+    },
+    {
+      "slide": 14,
+      "location": "页面文字",
+      "statement": "PLAN COVER (%)",
+      "basis": "14"
+    },
+    {
+      "slide": 14,
+      "location": "页面文字",
+      "statement": "80 → 95% cover adds only 2.8 pp here.",
+      "basis": "14"
+    },
+    {
+      "slide": 14,
+      "location": "页面文字",
+      "statement": "VIEW SEQUENCE: 0 → 20 → 50 → 80 → 95% PLAN COVER",
+      "basis": "14"
+    },
+    {
+      "slide": 14,
+      "location": "页面文字",
+      "statement": "Same 50% cover: noon blockage varies from 62.6% to 77.5%.",
+      "basis": "14"
+    },
+    {
+      "slide": 14,
+      "location": "页面文字",
+      "statement": "Leaf location matters.",
+      "basis": "14"
+    },
+    {
+      "slide": 14,
+      "location": "takeaway",
+      "statement": "The package tests both cover quantity and where that cover is placed.",
+      "basis": "14"
+    },
+    {
+      "slide": 14,
+      "location": "script",
+      "statement": "The curve separates plan cover from mean direct-beam blockage.",
+      "basis": "14"
+    },
+    {
+      "slide": 14,
+      "location": "script",
+      "statement": "Bare members already provide shade at zero leaf cover.",
+      "basis": "14"
+    },
+    {
+      "slide": 14,
+      "location": "script",
+      "statement": "From eighty to ninety-five percent cover, mean blockage increases by only two point eight percentage points in these scenarios.",
+      "basis": "14"
+    },
+    {
+      "slide": 14,
+      "location": "script",
+      "statement": "Separately, at the same fifty percent cover, the three layouts give noon blockage from sixty-two point six to seventy-seven point five percent.",
+      "basis": "14"
+    },
+    {
+      "slide": 14,
+      "location": "script",
+      "statement": "The supplied report therefore asks us to consider leaf location and occupied-hour seating, not coverage alone.",
+      "basis": "14"
+    },
+    {
+      "slide": 14,
+      "location": "transition",
+      "statement": "We connect that moving footprint to public use.",
+      "basis": "14"
+    },
+    {
+      "slide": 14,
+      "location": "qa",
+      "statement": "Why is 95% cover not 95% blockage?",
+      "basis": "14"
+    },
+    {
+      "slide": 14,
+      "location": "qa",
+      "statement": "Target intersection, frame overlap, leaf placement and transmittance all affect the metric.",
+      "basis": "14"
+    },
+    {
+      "slide": 15,
+      "location": "页面文字",
+      "statement": "GREEN BUILDING",
+      "basis": "15"
+    },
+    {
+      "slide": 15,
+      "location": "页面文字",
+      "statement": "APPLICATION",
+      "basis": "15"
+    },
+    {
+      "slide": 15,
+      "location": "页面文字",
+      "statement": "Put occupied-hour shade into the layout decision",
+      "basis": "15"
+    },
+    {
+      "slide": 15,
+      "location": "页面文字",
+      "statement": "A rest node must coordinate seating, through movement, roots and a substantial base.",
+      "basis": "15"
+    },
+    {
+      "slide": 15,
+      "location": "页面文字",
+      "statement": "Conceptual application P4; fixed-50%-cover projection P5.",
+      "basis": "15"
+    },
+    {
+      "slide": 15,
+      "location": "页面文字",
+      "statement": "No real-site compliance or measured comfort result is claimed; method lead [4].",
+      "basis": "15"
+    },
+    {
+      "slide": 15,
+      "location": "页面文字",
+      "statement": "15",
+      "basis": "15"
+    },
+    {
+      "slide": 15,
+      "location": "页面文字",
+      "statement": "FIXED 50% PLAN COVER • SOLAR TIME 09:00 → 15:00",
+      "basis": "15"
+    },
+    {
+      "slide": 15,
+      "location": "页面文字",
+      "statement": "01",
+      "basis": "15"
+    },
+    {
+      "slide": 15,
+      "location": "页面文字",
+      "statement": "SEATING LOCATION",
+      "basis": "15"
+    },
+    {
+      "slide": 15,
+      "location": "页面文字",
+      "statement": "Use the occupied-hour footprint, not just the crown outline or shadow centroid.",
+      "basis": "15"
+    },
+    {
+      "slide": 15,
+      "location": "页面文字",
+      "statement": "02",
+      "basis": "15"
+    },
+    {
+      "slide": 15,
+      "location": "页面文字",
+      "statement": "SPACE FOR ACCESS & ROOTS",
+      "basis": "15"
+    },
+    {
+      "slide": 15,
+      "location": "页面文字",
+      "statement": "Allow for circulation, counterweight, root zone, irrigation and maintenance.",
+      "basis": "15"
+    },
+    {
+      "slide": 15,
+      "location": "页面文字",
+      "statement": "03",
+      "basis": "15"
+    },
+    {
+      "slide": 15,
+      "location": "页面文字",
+      "statement": "VALIDATE THE OUTCOME",
+      "basis": "15"
+    },
+    {
+      "slide": 15,
+      "location": "页面文字",
+      "statement": "Confirm site and planting; compare radiation, temperature, humidity and wind.",
+      "basis": "15"
+    },
+    {
+      "slide": 15,
+      "location": "takeaway",
+      "statement": "A practical layout must use the real occupied area, not only a reference square.",
+      "basis": "15"
+    },
+    {
+      "slide": 15,
+      "location": "script",
+      "statement": "The animation holds cover fixed while the sun moves.",
+      "basis": "15"
+    },
+    {
+      "slide": 15,
+      "location": "script",
+      "statement": "Seating should be checked during occupied hours, with room for circulation, the counterweight, roots and maintenance.",
+      "basis": "15"
+    },
+    {
+      "slide": 15,
+      "location": "script",
+      "statement": "The next verification step is a real-site assessment with simultaneous shaded and unshaded environmental observations.",
+      "basis": "15"
+    },
+    {
+      "slide": 15,
+      "location": "script",
+      "statement": "The current analysis does not establish net usable shaded floor area or a measured comfort improvement.",
+      "basis": "15"
+    },
+    {
+      "slide": 15,
+      "location": "transition",
+      "statement": "The last design link is construction organisation.",
+      "basis": "15"
+    },
+    {
+      "slide": 15,
+      "location": "qa",
+      "statement": "Are sensors a new project module here?",
+      "basis": "15"
+    },
+    {
+      "slide": 15,
+      "location": "qa",
+      "statement": "No.",
+      "basis": "15"
+    },
+    {
+      "slide": 15,
+      "location": "qa",
+      "statement": "This is the existing validation proposal, not a new monitoring-system design.",
+      "basis": "15"
+    },
+    {
+      "slide": 16,
+      "location": "页面文字",
+      "statement": "GREEN BUILDING",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "页面文字",
+      "statement": "MODULAR CONSTRUCTION",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "页面文字",
+      "statement": "Coordinate prefabricated modules and site interfaces",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "页面文字",
+      "statement": "Numbered components help assembly; long members, heavy base and grouted joints constrain it.",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "页面文字",
+      "statement": "Project member/assembly and cost schedule (P3, P4).",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "页面文字",
+      "statement": "Proposed detail and labour quantities, not a tested construction programme.",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "页面文字",
+      "statement": "16",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "表格",
+      "statement": "MODULE",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "表格",
+      "statement": "WHAT IS PREPARED",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "表格",
+      "statement": "Crown",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "表格",
+      "statement": "47 formed/treatment-ready bamboo members",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "表格",
+      "statement": "Supports",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "表格",
+      "statement": "12 proposed galvanised steel members",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "表格",
+      "statement": "Connections",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "表格",
+      "statement": "Head nodes, sleeves, clamps and base flange",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "表格",
+      "statement": "Foundation",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "表格",
+      "statement": "Precast counterweight with anchorage",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "表格",
+      "statement": "Planting",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "表格",
+      "statement": "2 + 1 plants, substrate and drip provision",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "页面文字",
+      "statement": "01",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "页面文字",
+      "statement": "Prefab, treat & number",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "页面文字",
+      "statement": "02",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "页面文字",
+      "statement": "Lift base and set out",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "页面文字",
+      "statement": "03",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "页面文字",
+      "statement": "Support, align & assemble",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "页面文字",
+      "statement": "04",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "页面文字",
+      "statement": "Grout, cure & recheck",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "页面文字",
+      "statement": "05",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "页面文字",
+      "statement": "Plant, train & restore",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "页面文字",
+      "statement": "14 person-days estimated ≠ 14 calendar days.",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "页面文字",
+      "statement": "The ≈9.07 t base controls lifting; grouted nodes limit lossless reversal.",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "takeaway",
+      "statement": "The assembly work is more specific than a generic prefabrication claim.",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "script",
+      "statement": "The proposal divides the system into crown members, supports, connections, base and planting.",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "script",
+      "statement": "Numbering and preassembly help site organisation.",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "script",
+      "statement": "However, the heavy counterweight governs lifting, and the sleeve-and-grout node requires curing and checks.",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "script",
+      "statement": "The fourteen-person-day allowance is labour, not a calendar programme.",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "script",
+      "statement": "A fully dry, losslessly reversible system should not be claimed.",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "transition",
+      "statement": "Finally, our delivered work and its next checks.",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "qa",
+      "statement": "Is the node a finished construction detail?",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "qa",
+      "statement": "No.",
+      "basis": "16"
+    },
+    {
+      "slide": 16,
+      "location": "qa",
+      "statement": "Its geometry, stiffness, fabrication and quality controls need to be resolved together.",
+      "basis": "16"
+    },
+    {
+      "slide": 17,
+      "location": "页面文字",
+      "statement": "GREEN BUILDING",
+      "basis": "17"
+    },
+    {
+      "slide": 17,
+      "location": "页面文字",
+      "statement": "WORK SUMMARY",
+      "basis": "17"
+    },
+    {
+      "slide": 17,
+      "location": "页面文字",
+      "statement": "Connect geometry, construction and useful shade",
+      "basis": "17"
+    },
+    {
+      "slide": 17,
+      "location": "页面文字",
+      "statement": "Three design workstreams now have traceable outputs.",
+      "basis": "17"
+    },
+    {
+      "slide": 17,
+      "location": "页面文字",
+      "statement": "Synthesis of project records P1–P5.",
+      "basis": "17"
+    },
+    {
+      "slide": 17,
+      "location": "页面文字",
+      "statement": "Product, joint and site-specific evidence are the next verification priorities.",
+      "basis": "17"
+    },
+    {
+      "slide": 17,
+      "location": "页面文字",
+      "statement": "17",
+      "basis": "17"
+    },
+    {
+      "slide": 17,
+      "location": "页面文字",
+      "statement": "GEOMETRY",
+      "basis": "17"
+    },
+    {
+      "slide": 17,
+      "location": "页面文字",
+      "statement": "Rhino/GH model and parameters",
+      "basis": "17"
+    },
+    {
+      "slide": 17,
+      "location": "页面文字",
+      "statement": "Final form, drawings and material take-off",
+      "basis": "17"
+    },
+    {
+      "slide": 17,
+      "location": "页面文字",
+      "statement": "MATERIALS & BUILD-UP",
+      "basis": "17"
+    },
+    {
+      "slide": 17,
+      "location": "页面文字",
+      "statement": "Screening, sections, budget and modules",
+      "basis": "17"
+    },
+    {
+      "slide": 17,
+      "location": "页面文字",
+      "statement": "Proposed interfaces and implementation constraints",
+      "basis": "17"
+    },
+    {
+      "slide": 17,
+      "location": "页面文字",
+      "statement": "PERFORMANCE",
+      "basis": "17"
+    },
+    {
+      "slide": 17,
+      "location": "页面文字",
+      "statement": "Time-dependent shade and sensitivity",
+      "basis": "17"
+    },
+    {
+      "slide": 17,
+      "location": "页面文字",
+      "statement": "Geometry, cover and spatial-distribution effects",
+      "basis": "17"
+    },
+    {
+      "slide": 17,
+      "location": "页面文字",
+      "statement": "7 PARAMETER MODELS",
+      "basis": "17"
+    },
+    {
+      "slide": 17,
+      "location": "页面文字",
+      "statement": "5 COVER STATES",
+      "basis": "17"
+    },
+    {
+      "slide": 17,
+      "location": "页面文字",
+      "statement": "1,750 TIME-STEP RESULTS",
+      "basis": "17"
+    },
+    {
+      "slide": 17,
+      "location": "页面文字",
+      "statement": "Next: confirm products and joints, check plant suitability, and test the real site.",
+      "basis": "17"
+    },
+    {
+      "slide": 17,
+      "location": "takeaway",
+      "statement": "The contribution is a connected body of design work with a clear evidence boundary.",
+      "basis": "17"
+    },
+    {
+      "slide": 17,
+      "location": "script",
+      "statement": "The group delivers a parametric form and take-off, a proposed material and build-up strategy, and reproducible shade scenarios.",
+      "basis": "17"
+    },
+    {
+      "slide": 17,
+      "location": "script",
+      "statement": "The supplement adds seven parameter models, five cover states and seventeen hundred and fifty time-step results.",
+      "basis": "17"
+    },
+    {
+      "slide": 17,
+      "location": "script",
+      "statement": "These outputs make the design decisions traceable.",
+      "basis": "17"
+    },
+    {
+      "slide": 17,
+      "location": "script",
+      "statement": "Product data, joint behaviour, plant suitability and real-site performance are the next checks.",
+      "basis": "17"
+    },
+    {
+      "slide": 17,
+      "location": "script",
+      "statement": "Thank you.",
+      "basis": "17"
+    },
+    {
+      "slide": 17,
+      "location": "transition",
+      "statement": "We welcome your questions.",
+      "basis": "17"
+    },
+    {
+      "slide": 17,
+      "location": "qa",
+      "statement": "What can be stated most confidently?",
+      "basis": "17"
+    },
+    {
+      "slide": 17,
+      "location": "qa",
+      "statement": "The defined project geometry and the calculated shade scenarios under their explicit assumptions.",
+      "basis": "17"
+    },
+    {
+      "slide": 18,
+      "location": "页面文字",
+      "statement": "GREEN BUILDING",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "页面文字",
+      "statement": "REFERENCES / Q&A",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "页面文字",
+      "statement": "References and project evidence",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "页面文字",
+      "statement": "Method sources and project inputs are separate; drawings, brief and schedules accompany the deck.",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "页面文字",
+      "statement": "Literature entries were supplied with project records; original-source checks remain pending.",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "页面文字",
+      "statement": "Unverified factors are not presented as certified standards.",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "页面文字",
+      "statement": "18",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "页面文字",
+      "statement": "[1] OUTDOOR SHADE & COMFORT",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "页面文字",
+      "statement": "Watanabe et al. (2014).",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "页面文字",
+      "statement": "Evaluation of outdoor thermal comfort in sunlight, building shade, and pergola shade during summer in a humid subtropical region.",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "页面文字",
+      "statement": "Building and Environment, 82, 556–565.",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "页面文字",
+      "statement": "[2] GREENING MECHANISMS",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "页面文字",
+      "statement": "Hoelscher et al. (2016).",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "页面文字",
+      "statement": "Quantifying cooling effects of facade greening: Shading, transpiration and insulation.",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "页面文字",
+      "statement": "Energy and Buildings, 114, 283–290.",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "页面文字",
+      "statement": "[3] SOLAR GEOMETRY",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "页面文字",
+      "statement": "NOAA Global Monitoring Division.",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "页面文字",
+      "statement": "General Solar Position Calculations.",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "页面文字",
+      "statement": "gml.noaa.gov/grad/solcalc/solareqns.PDF",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "页面文字",
+      "statement": "[4] COMFORT METHOD",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "页面文字",
+      "statement": "UTCI Calculator / COST Action 730.",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "页面文字",
+      "statement": "www.utci.org/utci_calc.php",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "页面文字",
+      "statement": "Method lead only; no project UTCI result is reported.",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "页面文字",
+      "statement": "PROJECT RECORDS",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "页面文字",
+      "statement": "P1 Model & take-off  •  P2 Ideal shade analysis  •  P3 Cost-Analysis.xlsx",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "页面文字",
+      "statement": "P4 Proposed design & build-up  •  P5 Parameter and spatial-cover simulation",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "页面文字",
+      "statement": "Project models, optical scenarios and estimates are identified separately from published literature.",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "takeaway",
+      "statement": "Source labels let the audience distinguish literature, project calculations and proposals.",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "script",
+      "statement": "This is a reference and question page, not part of the planned spoken sequence.",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "script",
+      "statement": "It identifies the literature leads and project evidence.",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "script",
+      "statement": "Specific product parameters and standards still require original-source checks.",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "transition",
+      "statement": "Return to the relevant result slide during questions.",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "qa",
+      "statement": "Why are some data preliminary?",
+      "basis": "18"
+    },
+    {
+      "slide": 18,
+      "location": "qa",
+      "statement": "The supplied package contains assumptions and estimates that have not all been traced to product-specific or primary evidence.",
+      "basis": "18"
+    }
+  ]
+}
