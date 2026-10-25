@@ -1,0 +1,154 @@
+[
+  {
+    "slide": 1,
+    "title": "VineWeave Canopy",
+    "takeaway": "Five complementary roles connect design, analysis and presentation.",
+    "script": "We are presenting VineWeave Canopy as an integrated group project. Our work connects form and parametric modelling, materials and construction, and shading and application. Presentation production and English delivery bring these three design modules together. This first slide records each member’s responsibility.",
+    "transition": "First, the public-space problem.",
+    "qa": "Are all listed outcomes validated? These are team responsibilities; the following slides distinguish completed analysis from proposed work."
+  },
+  {
+    "slide": 2,
+    "title": "A shaded pause point in public space",
+    "takeaway": "The project targets local shade, not a street-wide cooling claim.",
+    "script": "Our starting point is a short pedestrian pause in an exposed public space. We combine a broad climbing-plant support with open circulation around it. Shading is intended to reduce direct solar exposure. Actual air-temperature and thermal-comfort changes would still need valid environmental measurements or modelling.",
+    "transition": "Here is the proposed geometry.",
+    "qa": "How much cooling is achieved? No temperature reduction has been measured or calculated in this project."
+  },
+  {
+    "slide": 3,
+    "title": "A broad crown on a compact tree-like support",
+    "takeaway": "The geometry creates an elevated climbing envelope while concentrating the supports.",
+    "script": "The model has fifty-nine members. Its extent is about six point two two by six point six six metres, with a height around three point four eight metres. The plan and elevation show the broad crown and converging supports. These are geometric dimensions, separate from structural verification.",
+    "transition": "Now, the crown layout.",
+    "qa": "Does a valid model establish safety? No. Closed CAD geometry does not verify member capacity, joints, foundations or wind resistance."
+  },
+  {
+    "slide": 4,
+    "title": "A climbing envelope with open edges",
+    "takeaway": "The crown, opening and open sides each have a defined design role.",
+    "script": "The crown provides a framework for climbing plants. The central opening is retained in the analysis, but its future leaf boundary depends on growth and pruning. Around the support, open sides leave space for movement. They express an airflow intention rather than a proven ventilation effect.",
+    "transition": "Next, material roles.",
+    "qa": "Will the central leaf hole remain open? Only under the stated maintenance assumption; real vegetation could grow across it."
+  },
+  {
+    "slide": 5,
+    "title": "Assign materials by structural role",
+    "takeaway": "Different member roles motivate different materials.",
+    "script": "Classifying the centre lines by whether they reach the ground gives twelve supports and forty-seven crown members. Steel is proposed for the support zone and engineered bamboo for the crown. The coloured view shows this assignment; neither zone has passed a complete structural analysis.",
+    "transition": "Here are the screening inputs.",
+    "qa": "Why must the supports be steel? Steel is the proposed choice; a unique-material necessity has not been established by complete load and stability analysis."
+  },
+  {
+    "slide": 6,
+    "title": "Material selection balances several requirements",
+    "takeaway": "Screening values help frame a choice but do not replace product-specific evidence.",
+    "script": "This is a preliminary screen, not a certified specification. The conductivity and carbon factors are workbook inputs. The bamboo product identity, strength, stiffness, density and carbon data must be matched consistently before final selection. A favourable material factor alone does not establish a feasible system.",
+    "transition": "Connection restraint is the next condition.",
+    "qa": "Are glubam and scrimber interchangeable? No. Their manufacturing routes and properties can differ, so we retain the generic engineered-bamboo label for now."
+  },
+  {
+    "slide": 7,
+    "title": "Connection restraint governs deflection",
+    "takeaway": "The calculation identifies a restraint requirement, not a proven joint solution.",
+    "script": "Here the same six point six five metre member is checked under two ideal boundary conditions. Relative to the adopted deflection limit, the simply supported result is about three, while the ideal fixed-end result is about zero point six. This illustrates why connection restraint matters. It does not prove that twelve proposed nodes provide these restraints throughout the complete canopy.",
+    "transition": "This also affects the budget.",
+    "qa": "Have the joints passed? No. A detailed joint and global structural model, with verified material inputs, is still required."
+  },
+  {
+    "slide": 8,
+    "title": "A preliminary budget of CNY 51,676 per unit",
+    "takeaway": "Connections form a substantial part of the estimated cost.",
+    "script": "The estimated unit total is about fifty-one thousand six hundred and seventy-six yuan. The chart includes materials, fabrication, transport, installation, planting, maintenance and other costs. Nodes account for twelve thousand yuan within materials. These are preliminary allowances, not supplier quotations.",
+    "transition": "Next, the carbon contributors.",
+    "qa": "Is the price confirmed? No. Node fabrication and the other rates require actual supplier and contractor quotations."
+  },
+  {
+    "slide": 9,
+    "title": "Track embodied carbon—and long-term care",
+    "takeaway": "The estimate is useful for identifying contributors, but its boundary is not yet certified.",
+    "script": "The preliminary total is about two thousand eight hundred and twenty kilograms of carbon-dioxide equivalent per unit. Primary members contribute the largest share, while the counterweight contributes roughly thirty-nine percent. The bamboo factor, processing boundary and allowance for connection components still need verification. We do not credit biogenic carbon storage or present this as a verified whole-life assessment.",
+    "transition": "Now, the planting requirements.",
+    "qa": "Is this verified A1–A3 carbon? Not yet. Factor-specific boundaries must first be aligned and checked."
+  },
+  {
+    "slide": 10,
+    "title": "Plant choice is part of the performance design",
+    "takeaway": "Choose plants through their climbing behaviour, local suitability and maintenance needs.",
+    "script": "These are candidate plants from the project screen. Boston ivy, trumpet creeper and Rangoon creeper climb in different ways. Their suitability must be checked against local climate, anchorage, root space and maintenance. In particular, we have not established a common seasonal pattern or a reliable time to full canopy cover.",
+    "transition": "Next, the environmental intention.",
+    "qa": "How soon will the plants cover the canopy? No growth duration has been calibrated; species, site and care evidence are needed."
+  },
+  {
+    "slide": 11,
+    "title": "Open sides and a porous crown",
+    "takeaway": "Shading and airflow should not be treated as the same type of result.",
+    "script": "Shading is the direct geometric mechanism studied here. The open edges retain potential lateral airflow paths, but dense vegetation may also resist airflow. The dashed arrows describe an intention, not simulated wind. We do not infer a chimney effect from the central opening or transfer a cooling number from a different greening project.",
+    "transition": "Here are the analytical assumptions.",
+    "qa": "Does the opening improve ventilation? It is a hypothesis. A site-specific flow model or measurement is needed to establish an effect."
+  },
+  {
+    "slide": 12,
+    "title": "Make the assumptions—and the metrics—explicit",
+    "takeaway": "The following percentages are meaningful only with their metric and assumptions.",
+    "script": "We assume thirty degrees north, true solar time and no surrounding obstructions. The target is a fixed reference zone, not net usable floor area. Ideal overlap uses a continuous leaf envelope. Equivalent blockage adds the frame, spatial leaf patches and assumed transmittance. Neither metric is a temperature change.",
+    "transition": "First, the ideal shadow footprint.",
+    "qa": "Why two metrics? One isolates geometric overlap; the other adds explicit frame and optical assumptions. Their percentages should not be substituted for each other."
+  },
+  {
+    "slide": 13,
+    "title": "Noon overlap does not mean all-day shade",
+    "takeaway": "The position of the shadow matters as much as the noon percentage.",
+    "script": "The three views use the same scale and target. At nine and fifteen solar time, ideal overlap is about forty-seven percent. At noon it reaches nearly ninety-nine percent, while the six-hour mean is seventy-five point three percent. This is a hypothetical continuous-leaf envelope. It is not a prediction that real vegetation will provide continuous shade throughout the day.",
+    "transition": "Next, crown width at fixed cover.",
+    "qa": "Does 98.7 percent describe actual planting? No. It is the ideal leaf-envelope geometric overlap at solstice noon under the stated assumptions."
+  },
+  {
+    "slide": 14,
+    "title": "Crown width changes useful shade",
+    "takeaway": "A larger crown increases blockage in this controlled comparison, not necessarily overall design quality.",
+    "script": "At fifty percent plan cover, increasing crown width raises mean equivalent blockage from fifty-two point three to sixty point two and sixty-six point one percent. But the larger crown requires more member length and more planted area. The comparison does not hold inputs equal or establish an optimum.",
+    "transition": "Now, cover at fixed geometry.",
+    "qa": "Is the larger model the best design? Shade is only one criterion; structural capacity, space, material and maintenance have not been jointly optimised."
+  },
+  {
+    "slide": 15,
+    "title": "Foliage development changes blockage",
+    "takeaway": "Coverage is a spatial scenario, not a biological timetable.",
+    "script": "The frame already blocks some sunlight before foliage develops. Holding the structure fixed, the zero, fifty and ninety-five percent cover scenarios give mean direct-beam blockage of about forty, sixty and seventy-one percent. The animation includes two additional intermediate states. These are nested spatial-cover scenarios, not a timetable for real plant growth or a measured seasonal cycle.",
+    "transition": "Next, relate shade to occupied space.",
+    "qa": "How many years to ninety-five percent? We have not calibrated growth duration. That requires species, site, planting and maintenance evidence."
+  },
+  {
+    "slide": 16,
+    "title": "Place seating for the occupied hours",
+    "takeaway": "A useful shade calculation must eventually use the real occupied area.",
+    "script": "The cover stays at fifty percent as the sun changes direction. Seating should follow occupied-hour shade, rather than only the support centre or noon footprint. A real layout must also account for the counterweight, roots and circulation. This reference square is not a verified net usable area.",
+    "transition": "Finally, the assembly strategy.",
+    "qa": "Is this a real street layout? No. A site-specific plan and paired environmental validation are still needed."
+  },
+  {
+    "slide": 17,
+    "title": "Prefabricate components; manage site complexity",
+    "takeaway": "Prefabrication is an opportunity; the node detail is a construction constraint.",
+    "script": "The proposal uses factory forming, treatment, preassembly and numbering before site installation. The simplified sequence then positions the base, assembles the frame, grouts and cures the nodes, and finishes with inspection and planting. The workbook estimates fourteen person-days, not fourteen calendar days. Grouting also means that completely dry, losslessly reversible construction should not be claimed.",
+    "transition": "We close with the main contribution.",
+    "qa": "Can it be easily moved? Relocation and individual replacement depend on the final joints, lifting design and foundation arrangement; they are not yet verified."
+  },
+  {
+    "slide": 18,
+    "title": "Useful shade—with a clear path to validation",
+    "takeaway": "The contribution is a traceable concept and scenario analysis, with implementation conditions stated clearly.",
+    "script": "VineWeave combines a tree-like support, climbing vegetation and a proposed material and assembly strategy. The analysis shows how geometry, foliage and sun position affect shade within an explicit target. The next stage is to confirm the bamboo product, connection behaviour and real site conditions before claiming structural or thermal performance. Thank you; we welcome your questions.",
+    "transition": "Thank you. We welcome your questions.",
+    "qa": "What is the strongest demonstrated result? The traceable geometric and direct-beam shade scenarios, under their stated assumptions."
+  },
+  {
+    "slide": 19,
+    "title": "Sources and evidence boundaries",
+    "takeaway": "References support methods and mechanisms; project evidence remains distinct.",
+    "script": "This slide is available for questions and is not part of the planned spoken sequence. Literature and method entries are source leads supplied in the project material; their original-source checks remain pending. Project records identify the model, calculations, estimate and proposals.",
+    "transition": "Return to the relevant result slide during questions.",
+    "qa": "Do the references validate all material factors? No. Product properties, specific standards and factor boundaries require further checks."
+  }
+]

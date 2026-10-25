@@ -1,0 +1,116 @@
+[
+  {
+    "number": 1,
+    "title": "VineWeave Canopy",
+    "section": "Team",
+    "source": "Team responsibilities follow the supplied group allocation."
+  },
+  {
+    "number": 2,
+    "title": "A shaded pause point in public space",
+    "section": "Design intent",
+    "source": "Mechanism references: [1,2]. Project design: P4. Thermal improvement is an objective, not a measured result."
+  },
+  {
+    "number": 3,
+    "title": "A broad crown on a compact tree-like support",
+    "section": "Design & geometry",
+    "source": "Source: project model and geometry records (P1). Dimensions rounded; exterior geometry diameter 80 mm."
+  },
+  {
+    "number": 4,
+    "title": "A climbing envelope with open edges",
+    "section": "Design & geometry",
+    "source": "Sources: project geometry and proposed layout (P1, P4). The leaf envelope is hypothetical."
+  },
+  {
+    "number": 5,
+    "title": "Assign materials by structural role",
+    "section": "Materials",
+    "source": "Sources: project centreline classification and material schedule (P1, P3). Proposed material assignment—not a safety certification."
+  },
+  {
+    "number": 6,
+    "title": "Material selection balances several requirements",
+    "section": "Materials",
+    "source": "Source: material-input workbook (P3). *Reference inputs—not independently verified product data or quotations."
+  },
+  {
+    "number": 7,
+    "title": "Connection restraint governs deflection",
+    "section": "Structural feasibility",
+    "source": "Source: simplified deflection workbook (P3). Bamboo inputs and actual joint restraint require verification."
+  },
+  {
+    "number": 8,
+    "title": "A preliminary budget of CNY 51,676 per unit",
+    "section": "Cost & carbon",
+    "source": "Source: Cost-Analysis.xlsx (P3). Preliminary estimate—not supplier quotations; node price is particularly uncertain."
+  },
+  {
+    "number": 9,
+    "title": "Track embodied carbon—and long-term care",
+    "section": "Cost & carbon",
+    "source": "Source: workbook carbon estimate (P3). Preliminary factors; boundaries, processing and node inclusion need verification."
+  },
+  {
+    "number": 10,
+    "title": "Plant choice is part of the performance design",
+    "section": "Planting",
+    "source": "Source: project planting screen (P3). Local suitability, wet loads and phenology require confirmation."
+  },
+  {
+    "number": 11,
+    "title": "Open sides and a porous crown",
+    "section": "Environmental intent",
+    "source": "Mechanisms: [1,2]. Airflow sketch: project concept (P4), not a wind-field simulation."
+  },
+  {
+    "number": 12,
+    "title": "Make the assumptions—and the metrics—explicit",
+    "section": "Analysis method",
+    "source": "Solar method: NOAA [3]. Reference zone and optical scenarios: project analysis (P2, P5)."
+  },
+  {
+    "number": 13,
+    "title": "Noon overlap does not mean all-day shade",
+    "section": "Shade results",
+    "source": "Source: project geometric projection (P2). Summer solstice; 30°N; assumed leaf envelope and orientation."
+  },
+  {
+    "number": 14,
+    "title": "Crown width changes useful shade",
+    "section": "Parameter study",
+    "source": "Source: parameter and spatial-cover simulation (P5). Solstice 09–15 mean; τ = 0.15; assumed conditions."
+  },
+  {
+    "number": 15,
+    "title": "Foliage development changes blockage",
+    "section": "Plant-cover scenarios",
+    "source": "Source: spatial-cover simulation (P5). Solstice 09–15 mean; frame/leaf overlap deducted; τ = 0.15."
+  },
+  {
+    "number": 16,
+    "title": "Place seating for the occupied hours",
+    "section": "Application",
+    "source": "Sources: project design and fixed-50%-cover projection (P4, P5). Proposed comfort validation may follow [4]."
+  },
+  {
+    "number": 17,
+    "title": "Prefabricate components; manage site complexity",
+    "section": "Construction",
+    "source": "Sources: project build-up and cost workbook (P3, P4). Labour, curing, transport and lifting assumptions require confirmation."
+  },
+  {
+    "number": 18,
+    "title": "Useful shade—with a clear path to validation",
+    "section": "Conclusion",
+    "source": "Project synthesis (P1–P5). Scenario evidence supports the concept, not an engineering or measured-comfort certification."
+  },
+  {
+    "number": 19,
+    "title": "Sources and evidence boundaries",
+    "section": "Reference / Q&A",
+    "source": "Literature details were supplied with the project; original-source verification remains pending."
+  }
+]
