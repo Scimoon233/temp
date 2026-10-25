@@ -1,0 +1,124 @@
+# 参考资料适用性审查与逐页引用安排
+
+审查状态：完成现有材料及论点的适配性检查、来源缺口整理和页面标注安排。尝试访问 Crossref、NOAA、UTCI、Circular Ecology 时均被当前网络代理以 403 拒绝；未完成在线书目核验、标准逐条核对或论文全文阅读。以下“适用”表示主题及用途合理，不等于原文已经核实。
+
+## 一、审查结论
+
+文献框架基本合理：棚架热舒适研究支持遮阴的研究动机；绿化机制文献用于解释遮阴、蒸腾等路径；NOAA 支持太阳位置计算；UTCI 用于说明舒适评价所需输入。项目自有模型、CSV 和工作簿分别提供几何、投影结果及概算。
+
+不能用这些资料直接证明本方案降温幅度、风速改善、结构安全或植物生长周期。材料常数、因子及价格仍有缺口，不能通过增加一个引用编号将假设变成已证实事实。
+
+## 二、正式引用候选清单
+
+固定编号便于后续制作；在成稿前逐条核验书目信息及实际支撑内容，不将本清单直接当作已核实参考页。
+
+### [1] 棚架与户外热舒适
+
+现有材料给出的条目：Watanabe et al. (2014). Evaluation of outdoor thermal comfort in sunlight, building shade, and pergola shade during summer in a humid subtropical region. Building and Environment, 82, 556–565.
+
+现有链接：https://www.sciencedirect.com/science/article/pii/S0360132314003229
+
+适用：第 2 页设计目标、第 11 页遮阴与热舒适机制、第 15 页验证思路。
+
+限制：当地气候、棚架构造和植被不同，论文结果不能当作本方案效果。作者全名、页码、DOI、具体结论待核；本轮不补造 DOI，也不引用未经阅读的数值。
+
+### [2] 绿化作用机制
+
+现有材料给出的条目：Hoelscher et al. (2016). Quantifying cooling effects of facade greening: Shading, transpiration and insulation. Energy and Buildings, 114, 283–290.
+
+现有链接：https://www.sciencedirect.com/science/article/pii/S0378778815300761
+
+适用：解释遮阴与蒸腾是不同机制，用于第 2、11 页。
+
+限制：研究对象为立面绿化，不能直接外推到独立树形冠架；其隔热机制与本项目不完全相同。不能支撑本方案中央孔抽风效果或数值温降。书目及全文待核。
+
+### [3] NOAA 太阳位置方法
+
+NOAA Global Monitoring Division. General Solar Position Calculations.
+
+现有链接：https://gml.noaa.gov/grad/solcalc/solareqns.PDF
+
+适用：第 12 页的太阳角度、时角和太阳时间方法。
+
+限制：项目报告采用理想化赤纬、真太阳时与几何投影，最终应标明实际采用的公式与简化。NOAA 不验证本项目模型、叶面假设或遮阴结果。发布年份未核，不自填年份。
+
+### [4] UTCI 方法入口
+
+UTCI. UTCI Calculator.
+
+现有链接：https://www.utci.org/utci_calc.php
+
+适用：第 15 页说明评估 UTCI 需要有效温度、湿度、辐射与风速输入。
+
+限制：网页计算入口不是本方案已完成 UTCI 计算的证据。10 m 风速及适用范围在原文核实后再列；没有必要把细节塞进主页面。若只展示验证流程，可仅写“Evaluate thermal comfort after collecting valid radiation and weather inputs [4]”。完整计算时需再补操作方法论文或技术文档，不能只靠网页入口。
+
+## 三、标准与数据库候选——未核准前不伪装成已验证引用
+
+| 临时编号 | 来源线索 | 拟支持内容 | 本轮处理 |
+| --- | --- | --- | --- |
+| S1 | GB/T 51366-2019 表 A.0.1 | 钢、混凝土参考碳因子 | 保留待核；需核材料类别、系统边界、钢材加工/镀锌是否包含 |
+| S2 | GB 50176-2016 附录 B.1；ISO 10456 | 导热系数 | 保留待核；不能无条件支持 Q355B、304、处理木全部所用数值 |
+| S3 | GB/T 1591-2018 | Q355B 名义屈服强度 | 需核厚度与产品范围；名义屈服强度不等于设计强度 |
+| S4 | GB 50017-2017 | 钢材物理参数、服务性控制 | 需核 E 的具体取值；210 GPa 不直接当已验证规范值；L/200 不直接宣称适用于竹杆 |
+| S5 | GB 50009-2012 | 风荷载方法 | 只有实际展示风荷载/配重计算时才列；0.55 kN/m² 与适用地点、重现期待核 |
+| DB1 | ICE / Circular Ecology | 304、木材等碳因子 | FAQ 不足以支持精确因子；需具体版本、材料条目与边界；当前不把 6.15/1.10 标为已核数据库值 |
+
+GB 50135、GB/T 50081、GB 50010、ISO 21930、EN 15804 暂不默认加入正式参考页，除非明确实际采用的条款或计算方法。不能为了显得完整而堆列标准。
+
+S/DB 是内部待核编号，不作为正式成稿的“已核引用”。核实后再纳入正式编号序列，并补齐年版、完整名称、条目或页码。
+
+## 四、目前必须保留的证据缺口
+
+- 工程竹产品身份未统一：glubam、bamboo scrimber 与重组竹不能直接混用。碳因子 0.40、λ=0.22、f=20 MPa、E=10 GPa、密度 1050 kg/m³ 尚需与同一具体产品匹配的出处。
+- LAI、湿重、季节叶量、成冠年限缺物种和场地条件下的具体依据，不能引用泛泛的绿化机制论文替代。
+- 通风影响尚无直接对应研究或本项目风场证据：中央开口、覆盖密度及侧界的影响写成“待验证的设计假设”，不靠 [1]/[2] 冒充支持。
+- 造价全部为概算，不能标成文献价或已取得的供应商报价。
+- 节点刚度及配重安全未完成工程验证；简化梁计算不是节点实测。
+- A1–A3 是待对齐的目标边界；目前不声称所有因子已同边界核实，不抵扣生物碳固存。
+
+## 五、项目自有来源编号
+
+- P1：用户提供最终 Rhino 模型、参数 JSON 与几何图。用于尺寸、构件和布局；引作“项目模型提取数据”，不是本轮独立测量。
+- P2：用户提供遮阴分析报告、CSV、光学参数及计算脚本。用于太阳/叶面假设与项目阴影结果。
+- P3：Cost-Analysis.xlsx。用于材料选型输入、简化挠度计算、成本与碳排概算；有新旧文字冲突。
+- P4：本组设计及维护/施工建议。属于方案，不冒充试验验证。
+
+对外统一称“Project model / Project shade calculation / Project estimate”，不展示源文件的版本字母。
+
+## 六、逐页标注安排（18 页）
+
+| 页码 | 页面主题 | 必要标注与位置 | 推荐英文短注 |
+| --- | --- | --- | --- |
+| 1 | 成员分工 | 用户截图为依据；无需学术引用 | 无需页脚文献 |
+| 2 | 项目目标 | 遮阴与热舒适关系的句末 [1]；蒸腾机制若出现加 [2] | Shading motivates the design [1]; cooling performance is not measured. |
+| 3 | 几何参数 | 尺寸与模型图下方 P1 | Source: project model (P1). |
+| 4 | 冠层布局 | 设计图下方 P1/P4；功能判断写意图 | Project design (P1, P4); airflow paths are conceptual. |
+| 5 | 材料分区 | 12/47 与长度图下方 P1/P3 | Source: project take-off and material schedule (P1, P3). |
+| 6 | 材料比选 | 每类材料常数在对应表格单元或来源列标 S/DB；未核值加星号 | *Preliminary material inputs; product-specific evidence pending. |
+| 7 | 节点与可行性 | 挠度图下 P3；输入/边界写在图旁；L/200 不能冒称规范确定要求 | Simplified beam calculation (P3); joint restraint assumed, not verified. |
+| 8 | 造价 | 总价卡片与图表下 P3，并紧邻写 estimate | Preliminary estimate: approximately CNY 51,676/unit (P3); not a quotation. |
+| 9 | 碳排与维护 | 总量/组成图下 P3；因子逐项来源放备注/表格，竹因子加星号 | Preliminary carbon estimate (P3); factor boundaries and bamboo data require verification. |
+| 10 | 植物 | 候选表注明 P3；湿重、LAI 若保留须就地标假设 | Proposed planting (P3); species suitability and load inputs require confirmation. |
+| 11 | 通风与机制 | 遮阴/蒸腾句末 [1,2]；气流示意单独标 P4/假设 | Conceptual airflow—not simulated (P4). 不让 [1,2] 看似支持全部气流结论 |
+| 12 | 遮阴方法 | 太阳方法旁 [3]；叶面和参考区旁 P2 | Solar geometry: [3]. Leaf envelope and target zone: project assumptions (P2). |
+| 13 | 时段结果 | 每张阴影图/曲线下 P2，条件紧邻图例 | Project shade calculation (P2); 30°N, true solar time, assumed leaf envelope. |
+| 14 | 拓展预留 | 暂无新增结果不预填引用；收到内容后按模型、方法、植物依据分别标 | Source and assumptions to be added with the extension results. |
+| 15 | 应用及验证 | 应用图下 P4；舒适评价流程旁 [4]，不暗示已经计算 | Proposed validation plan (P4); UTCI input requirements: [4]. |
+| 16 | 模块化施工 | 流程及人工日下 P3/P4；标概念和估算 | Proposed sequence (P3, P4); labour and curing assumptions require confirmation. |
+| 17 | 结论 | 通常无需新增引用；如重复具体数据，沿用相同来源短注 | 不新增未在正文解释的技术结论 |
+| 18 | 参考与备份 | 列正文实际引用的完整条目＋项目来源说明 | Separately identify published sources, project calculations and pending evidence. |
+
+## 七、标注的具体排版规则
+
+1. 引用放在它支持的句子或数字旁；图表来源放图下。不能仅在最后放参考页而正文不标。
+2. 统一用数字编号 [1]—[4] 等；P1—P4 专门表示项目资料。标准/数据库未核时暂用内部 S/DB 编号，定稿前核准再正式编号。
+3. 引用编号、短来源与证据状态同时区分。编号不意味着可靠性已经确认。
+4. 正文论点旁的 [n] 使用正常可读字号；图脚建议 12—14 pt，至少保证投影可读。来源文字太长时只留作者年份或编号，完整信息放参考页/备注。
+5. 材料比较表避免整张表只挂一个标准：导热、强度、碳因子分别对应来源，未核值明确标星号。
+6. 未来重绘图标“Adapted from [n]”；项目自行计算标“Project calculation”；AI 装饰不作为证据。
+7. 最终参考页优先保留约 6—8 条真正使用的外部来源；项目数据来源单列。若文字过密，可在不突破页数限制下将待核明细留到备注或配套说明，不缩成不可读文字。
+8. 投稿式完整文献列表尚未形成：当前 [1]—[4] 是候选。在线原文核验受阻时，正式交付应报告此限制，不能写“全部文献已验证”。
+
+## 八、下一步核验的具体需求
+
+需要可访问 NOAA、UTCI、Crossref、Circular Ecology，以及相关标准原文和论文。当前代理拒绝的主机包括 api.crossref.org、gml.noaa.gov、www.utci.org、circularecology.com。网络可用或用户补充论文/标准原文后，核对书目和实际条款，再更新来源清单；不因当前访问失败编造 DOI、页码或原文引句。
