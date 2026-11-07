@@ -1,11 +1,13 @@
 {
   "status": "PASS",
   "source": "course_essay/Hangzhou_Passive_Cooling_Course_Essay.md",
-  "source_sha256": "312e976ec55fef3d5da64905b519b02762c01489ebb45ef72a84214422e5557d",
-  "version": "Chinese reading version of English course essay",
+  "source_sha256": "1c465e6fff07bdaef2544d8f1e20bd32132cf52cc3451790be7155d2274e289b",
+  "version": "Chinese reading version v1.2",
   "new_model_runs": 0,
   "table_rows_identical": true,
   "references_unchanged": true,
   "pdf_pages": 4,
-  "editorial_revision": "v1.1"
+  "layout": "Same front matter and two-column organization as the English paper",
+  "course_submission": false,
+  "model_results_changed": false
 }

@@ -21,60 +21,12 @@ mdtable='|'+'|'.join(headers)+'|\n|'+'|'.join(['---']*5)+'|\n'+'\n'.join('|'+'|'
 text=text.replace('TABLE_PLACEHOLDER',mdtable).replace('REFERENCES_PLACEHOLDER',refs.strip())
 (OUT/'杭州住宅被动降温_英文短稿对应中文版.md').write_text(text)
 
-def setfont(run,size=12):
- run.font.name='Times New Roman';run.font.size=Pt(size)
- rf=run._element.get_or_add_rPr().rFonts
- if rf is None:rf=OxmlElement('w:rFonts');run._element.rPr.insert(0,rf)
- for k in list(rf.attrib):
-  if k.endswith('Theme'):del rf.attrib[k]
- for k in ['ascii','hAnsi','cs']:rf.set(qn('w:'+k),'Times New Roman')
- rf.set(qn('w:eastAsia'),'Noto Serif CJK SC')
-
-def runs(p,line):
- pos=0
- for m in re.finditer(r'\[([^\]]+)\]\(([^)]+)\)',line):
-  if m.start()>pos:setfont(p.add_run(line[pos:m.start()]))
-  h=OxmlElement('w:hyperlink');h.set(qn('r:id'),p.part.relate_to(m[2],RT.HYPERLINK,is_external=True));r=OxmlElement('w:r');pr=OxmlElement('w:rPr');rf=OxmlElement('w:rFonts');rf.set(qn('w:ascii'),'Times New Roman');rf.set(qn('w:hAnsi'),'Times New Roman');pr.append(rf);sz=OxmlElement('w:sz');sz.set(qn('w:val'),'24');pr.append(sz);r.append(pr);t=OxmlElement('w:t');t.text=m[1];r.append(t);h.append(r);p._p.append(h);pos=m.end()
- if pos<len(line):setfont(p.add_run(line[pos:]))
-
-doc=Document();sec=doc.sections[0];sec.page_width=Cm(21);sec.page_height=Cm(29.7)
-sec.top_margin=sec.bottom_margin=sec.left_margin=sec.right_margin=Cm(2.54)
-for name in ['Normal','Title','Heading 1']:
- s=doc.styles[name];s.font.name='Times New Roman';s.font.size=Pt(12);s.font.color.rgb=RGBColor(0,0,0)
- s.element.get_or_add_rPr().rFonts.set(qn('w:eastAsia'),'Noto Serif CJK SC')
- s.paragraph_format.line_spacing=1.;s.paragraph_format.space_after=Pt(6)
- if name!='Normal':s.font.bold=True;s.paragraph_format.keep_with_next=True
-lines=text.splitlines();i=0
-while i<len(lines):
- line=lines[i].strip()
- if not line:i+=1;continue
- if line.startswith('|'):
-  table=doc.add_table(rows=1,cols=5);table.style='Light Shading Accent 1'
-  for j,c in enumerate(headers):table.rows[0].cells[j].text=c
-  table.rows[0]._tr.get_or_add_trPr().append(OxmlElement('w:tblHeader'))
-  for row in rows:
-   for cell,value in zip(table.add_row().cells,row):cell.text=value
-  for row in table.rows:
-   row._tr.get_or_add_trPr().append(OxmlElement('w:cantSplit'))
-   for cell in row.cells:
-    for p in cell.paragraphs:
-     p.paragraph_format.line_spacing=1.;p.paragraph_format.space_after=Pt(3)
-     for r in p.runs:setfont(r)
-  while i<len(lines) and lines[i].startswith('|'):i+=1
-  continue
- if line.startswith('# '):p=doc.add_paragraph(style='Title');runs(p,line[2:]);p.alignment=WD_ALIGN_PARAGRAPH.CENTER
- elif line.startswith('## '):p=doc.add_paragraph(style='Heading 1');runs(p,line[3:]);p.paragraph_format.space_before=Pt(5)
- else:p=doc.add_paragraph();runs(p,line)
- p.paragraph_format.line_spacing=1.;p.paragraph_format.keep_together=True
- i+=1
-footer=sec.footer.paragraphs[0];footer.alignment=WD_ALIGN_PARAGRAPH.CENTER
-field=OxmlElement('w:fldSimple');field.set(qn('w:instr'),'PAGE');footer._p.append(field)
-doc.core_properties.title='杭州住宅原型的夏季降温：英文短稿对应中文版';doc.core_properties.author=''
-path=OUT/'杭州住宅被动降温_英文短稿对应中文版.docx';doc.save(path)
+from journal_course_layout import build_chinese
+build_chinese(ROOT, OUT, text, rows)
 # Translation checks: table rows copied exactly; key reported values must remain.
 for value in ['17.5%','17.7%','7.01%','6.44%','2.12°C','1.85°C','2172.0','2179.8','164','206','50.11°C','47.84°C','457.7','507.9','243.7','0.006%']:
  assert value in text,value
 assert refs.strip() in text
 status={'status':'PASS','source':'course_essay/Hangzhou_Passive_Cooling_Course_Essay.md','source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'version':'Chinese reading version of English course essay','new_model_runs':0,'table_rows_identical':True,'references_unchanged':True}
 (OUT/'TRANSLATION_CHECKS.json').write_text(json.dumps(status,ensure_ascii=False,indent=2))
-print('Chinese reading version saved:',path)
+print('Chinese reading version saved:',OUT)

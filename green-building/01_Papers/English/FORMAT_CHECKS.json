@@ -1,26 +1,52 @@
 {
   "status": "PASS",
+  "version": "v1.2",
   "pages": 3,
-  "paper": "A4",
-  "margin_cm": 2.54,
+  "references_included": true,
   "font": "Times New Roman",
-  "pdf_embedded_fonts": [
-    "TimesNewRomanPS-BoldMT",
-    "TimesNewRomanPSMT"
-  ],
   "text_size_pt": 12,
   "pdf_text_sizes_pt": [
     12.0
   ],
+  "pdf_embedded_fonts": [
+    "TimesNewRomanPS-BoldMT",
+    "TimesNewRomanPS-ItalicMT",
+    "TimesNewRomanPSMT"
+  ],
   "line_spacing": "single",
-  "word_line_spacing": "240, auto",
-  "references_included": true,
+  "paper": "A4",
+  "margin_cm": {
+    "top": 1.65,
+    "bottom": 1.65,
+    "left": 1.5,
+    "right": 1.5
+  },
+  "body_columns": 2,
+  "front_matter_columns_cm": [
+    5.05,
+    12.95
+  ],
+  "reference_layout": "Jacobs et al. (2019), published version, DOI 10.1016/j.scitotenv.2019.04.087",
+  "front_matter": [
+    "Title",
+    "Reserved author/affiliation block",
+    "Highlights",
+    "Original graphical abstract",
+    "Keywords",
+    "Abstract"
+  ],
+  "final_section": "4. Discussion and conclusions",
   "tables": 1,
-  "figures": 0,
-  "all_paper_sections_present": true,
-  "core_results_present": true,
-  "notes": "Course-specified requirements checked; A4 and margins are layout choices, not screenshot requirements. No institutional similarity report was obtained.",
-  "editorial_revision": "v1.1: outcomes, mechanisms and design implications",
-  "numerical_results_changed": false,
-  "table_and_references_unchanged": true
+  "graphical_abstracts": 1,
+  "table_values_unchanged": true,
+  "references_unchanged": true,
+  "model_results_changed": false,
+  "visual_review": "All English pages and Chinese table/body pages inspected; caption and narrow Case header corrected.",
+  "author_information": "Awaiting real author name and affiliation; block reserved.",
+  "course_overrides": [
+    "12 pt Times New Roman",
+    "Single spacing",
+    "2–3 pages including references"
+  ],
+  "notes": "A4 and margins are layout choices. The course paper has its own header; publisher marks and journal publication metadata are not reproduced."
 }

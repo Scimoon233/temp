@@ -11,48 +11,48 @@
   },
   {
     "path": "01_Papers/Chinese_Reading/TRANSLATION_CHECKS.json",
-    "bytes": 379,
-    "sha256": "f91ff4074a9fc8049676f0ef9c3673085f0f2cac7c18a4498a0081dcd78be99e"
+    "bytes": 474,
+    "sha256": "53a8c9ab0b189fcf59cc1a9f33febd96188fc256dbd1bc21ec7e781998491826"
   },
   {
     "path": "01_Papers/Chinese_Reading/杭州住宅被动降温_英文短稿对应中文版.docx",
-    "bytes": 42939,
-    "sha256": "3cc2d508a66d7b5271a47b9df5b2ed89771ae92ead41afe28a7e0c09d3fbdca2"
+    "bytes": 82500,
+    "sha256": "769b03ddff66918cfccf99297c0141ff452e920f3efd51f2bebd1d3a8bcc971e"
   },
   {
     "path": "01_Papers/Chinese_Reading/杭州住宅被动降温_英文短稿对应中文版.md",
-    "bytes": 8727,
-    "sha256": "48bc9a0a761f5dc7ead54ac499e168c82eb286afa1434b6ba25f9cf9e58f8c23"
+    "bytes": 8796,
+    "sha256": "b707363a413eb3d66c716243b4f43e8de7943ea44c13a937909e9eaed2ac744a"
   },
   {
     "path": "01_Papers/Chinese_Reading/杭州住宅被动降温_英文短稿对应中文版.pdf",
-    "bytes": 280158,
-    "sha256": "927aa39089861515eeb16edaf49406457f7f28006dbc58f385bfa8b57afe3a52"
+    "bytes": 339377,
+    "sha256": "fde72da4ea558d98fddcf21c72e8f33a4a077173f96a7a6f97447ad1e3859f8b"
   },
   {
     "path": "01_Papers/English/FORMAT_CHECKS.json",
-    "bytes": 769,
-    "sha256": "a52e6c36c2e386140e55645dc8c228981ee45518514f0631d6f15841f2ac4da7"
+    "bytes": 1452,
+    "sha256": "95414cca50b8af9914acc15499221a02a3a592d26db100ba2fc7ab94b6f37647"
   },
   {
     "path": "01_Papers/English/Hangzhou_Passive_Cooling_Course_Essay.docx",
-    "bytes": 42722,
-    "sha256": "1ef2c719a59755b6c90a328d0609c4e9d7c566742850c0cbb8be5075461b47d6"
+    "bytes": 82128,
+    "sha256": "0094e0e12fbebfee90fb39effffebde796b8fa92f819f9d1f9b271198c20ebe2"
   },
   {
     "path": "01_Papers/English/Hangzhou_Passive_Cooling_Course_Essay.md",
-    "bytes": 10010,
-    "sha256": "312e976ec55fef3d5da64905b519b02762c01489ebb45ef72a84214422e5557d"
+    "bytes": 10332,
+    "sha256": "1c465e6fff07bdaef2544d8f1e20bd32132cf52cc3451790be7155d2274e289b"
   },
   {
     "path": "01_Papers/English/Hangzhou_Passive_Cooling_Course_Essay.pdf",
-    "bytes": 109119,
-    "sha256": "02f364b04eb56b3d645c130c372e9f73cc17e57466a22b293b86125135c6e52f"
+    "bytes": 177047,
+    "sha256": "47652f1c1357a8b738f1ea075db089a024f7c7f97f6513b740823ca78c9612cd"
   },
   {
     "path": "01_Papers/English/PROVENANCE.json",
-    "bytes": 959,
-    "sha256": "f29a1ebd2f4091da50f81c20082999b48388c808baf04885d14837d257d2b671"
+    "bytes": 1040,
+    "sha256": "455f7efca90a6d6f67b5845ec134e024c786d960c8951b10670c97d2ce12b1c9"
   },
   {
     "path": "01_Papers/English/修改说明与课程要求核对.md",
@@ -171,28 +171,28 @@
   },
   {
     "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay/FORMAT_CHECKS.json",
-    "bytes": 769,
-    "sha256": "a52e6c36c2e386140e55645dc8c228981ee45518514f0631d6f15841f2ac4da7"
+    "bytes": 1452,
+    "sha256": "95414cca50b8af9914acc15499221a02a3a592d26db100ba2fc7ab94b6f37647"
   },
   {
     "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay/Hangzhou_Passive_Cooling_Course_Essay.docx",
-    "bytes": 42722,
-    "sha256": "1ef2c719a59755b6c90a328d0609c4e9d7c566742850c0cbb8be5075461b47d6"
+    "bytes": 82128,
+    "sha256": "0094e0e12fbebfee90fb39effffebde796b8fa92f819f9d1f9b271198c20ebe2"
   },
   {
     "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay/Hangzhou_Passive_Cooling_Course_Essay.md",
-    "bytes": 10010,
-    "sha256": "312e976ec55fef3d5da64905b519b02762c01489ebb45ef72a84214422e5557d"
+    "bytes": 10332,
+    "sha256": "1c465e6fff07bdaef2544d8f1e20bd32132cf52cc3451790be7155d2274e289b"
   },
   {
     "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay/Hangzhou_Passive_Cooling_Course_Essay.pdf",
-    "bytes": 109119,
-    "sha256": "02f364b04eb56b3d645c130c372e9f73cc17e57466a22b293b86125135c6e52f"
+    "bytes": 177047,
+    "sha256": "47652f1c1357a8b738f1ea075db089a024f7c7f97f6513b740823ca78c9612cd"
   },
   {
     "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay/PROVENANCE.json",
-    "bytes": 959,
-    "sha256": "f29a1ebd2f4091da50f81c20082999b48388c808baf04885d14837d257d2b671"
+    "bytes": 1040,
+    "sha256": "455f7efca90a6d6f67b5845ec134e024c786d960c8951b10670c97d2ce12b1c9"
   },
   {
     "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay/修改说明与课程要求核对.md",
@@ -201,23 +201,23 @@
   },
   {
     "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay_zh/TRANSLATION_CHECKS.json",
-    "bytes": 379,
-    "sha256": "f91ff4074a9fc8049676f0ef9c3673085f0f2cac7c18a4498a0081dcd78be99e"
+    "bytes": 474,
+    "sha256": "53a8c9ab0b189fcf59cc1a9f33febd96188fc256dbd1bc21ec7e781998491826"
   },
   {
     "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay_zh/杭州住宅被动降温_英文短稿对应中文版.docx",
-    "bytes": 42939,
-    "sha256": "3cc2d508a66d7b5271a47b9df5b2ed89771ae92ead41afe28a7e0c09d3fbdca2"
+    "bytes": 82500,
+    "sha256": "769b03ddff66918cfccf99297c0141ff452e920f3efd51f2bebd1d3a8bcc971e"
   },
   {
     "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay_zh/杭州住宅被动降温_英文短稿对应中文版.md",
-    "bytes": 8727,
-    "sha256": "48bc9a0a761f5dc7ead54ac499e168c82eb286afa1434b6ba25f9cf9e58f8c23"
+    "bytes": 8796,
+    "sha256": "b707363a413eb3d66c716243b4f43e8de7943ea44c13a937909e9eaed2ac744a"
   },
   {
     "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay_zh/杭州住宅被动降温_英文短稿对应中文版.pdf",
-    "bytes": 280158,
-    "sha256": "927aa39089861515eeb16edaf49406457f7f28006dbc58f385bfa8b57afe3a52"
+    "bytes": 339377,
+    "sha256": "fde72da4ea558d98fddcf21c72e8f33a4a077173f96a7a6f97447ad1e3859f8b"
   },
   {
     "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/data/00_current/Hangzhou_Master_Data_Inventory.docx",
@@ -501,13 +501,13 @@
   },
   {
     "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/model/write_chinese_course_essay.py",
-    "bytes": 12096,
-    "sha256": "49a5d2165aaf25d396519258a7d2e204370e3be696a315365710dacfb8459692"
+    "bytes": 9184,
+    "sha256": "880bbc13f403041e300a3985681caff4409470958bdac7996239bfd685b653ee"
   },
   {
     "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/model/write_course_essay.py",
-    "bytes": 15542,
-    "sha256": "dbf2812fc4553579325be2876d76feba5b5be3aaa94cb9217bb37f6531fa18f1"
+    "bytes": 10078,
+    "sha256": "f0b78cdc4e470f842aba0886517d9edebcf9ec333179b5cadb829ca650f13854"
   },
   {
     "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/model/write_draft.py",
@@ -993,5 +993,100 @@
     "path": "DELIVERY_CHECKS.json",
     "bytes": 339,
     "sha256": "587ec741d6f3598ee48992fca3fb68863b03600f6d2b39df964c4ce47a76aca3"
+  },
+  {
+    "path": "01_Papers/English/参考文章版式落实说明_v1.2.md",
+    "bytes": 2745,
+    "sha256": "ee6833966950e27930e3d5210b9350804c0d4feaa8a07c82d4a6eb1a240f947d"
+  },
+  {
+    "path": "01_Papers/English/Layout_Preview_Page_2.png",
+    "bytes": 274533,
+    "sha256": "2d0f77e8acd63ab5790fb91b0d713085ebb09c184ab477144d79d0fe99f98c63"
+  },
+  {
+    "path": "01_Papers/English/论证与结论修改说明_v1.1.md",
+    "bytes": 1297,
+    "sha256": "b2b219cf9abe5e8a69bdb713e8902593f9b7a85842e7943680d1e08182d53f99"
+  },
+  {
+    "path": "01_Papers/English/Layout_Preview_Page_1.png",
+    "bytes": 117957,
+    "sha256": "7f67b7f369e70ff892eddca6cc53cea4726afa5579147f53357b9bad7509174a"
+  },
+  {
+    "path": "01_Papers/English/Layout_Preview_Page_3.png",
+    "bytes": 274565,
+    "sha256": "14c41778dac2d1dbb0116963e57bb458afb48b8a33d945e4ff412263fd17aca3"
+  },
+  {
+    "path": "01_Papers/English/Graphical_Abstract.pdf",
+    "bytes": 17876,
+    "sha256": "c210ce74ebe9250aab89504ed86e716b1690790df17be417bc186e566b6cdaaf"
+  },
+  {
+    "path": "01_Papers/English/Graphical_Abstract.png",
+    "bytes": 45605,
+    "sha256": "024f3da6b8ec51462151f6264f66bb65660e6f13e55d5e24c3f703462c82a994"
+  },
+  {
+    "path": "01_Papers/Chinese_Reading/Graphical_Abstract.pdf",
+    "bytes": 17876,
+    "sha256": "1e8099c88b6fa13db52ef0d9fd23b8ef100239367b22c094c293a29af1b1b9fe"
+  },
+  {
+    "path": "01_Papers/Chinese_Reading/Graphical_Abstract.png",
+    "bytes": 45605,
+    "sha256": "024f3da6b8ec51462151f6264f66bb65660e6f13e55d5e24c3f703462c82a994"
+  },
+  {
+    "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay/参考文章版式落实说明_v1.2.md",
+    "bytes": 2745,
+    "sha256": "ee6833966950e27930e3d5210b9350804c0d4feaa8a07c82d4a6eb1a240f947d"
+  },
+  {
+    "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay/Layout_Preview_Page_2.png",
+    "bytes": 274533,
+    "sha256": "2d0f77e8acd63ab5790fb91b0d713085ebb09c184ab477144d79d0fe99f98c63"
+  },
+  {
+    "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay/论证与结论修改说明_v1.1.md",
+    "bytes": 1297,
+    "sha256": "b2b219cf9abe5e8a69bdb713e8902593f9b7a85842e7943680d1e08182d53f99"
+  },
+  {
+    "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay/Layout_Preview_Page_1.png",
+    "bytes": 117957,
+    "sha256": "7f67b7f369e70ff892eddca6cc53cea4726afa5579147f53357b9bad7509174a"
+  },
+  {
+    "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay/Layout_Preview_Page_3.png",
+    "bytes": 274565,
+    "sha256": "14c41778dac2d1dbb0116963e57bb458afb48b8a33d945e4ff412263fd17aca3"
+  },
+  {
+    "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay/Graphical_Abstract.pdf",
+    "bytes": 17876,
+    "sha256": "c210ce74ebe9250aab89504ed86e716b1690790df17be417bc186e566b6cdaaf"
+  },
+  {
+    "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay/Graphical_Abstract.png",
+    "bytes": 45605,
+    "sha256": "024f3da6b8ec51462151f6264f66bb65660e6f13e55d5e24c3f703462c82a994"
+  },
+  {
+    "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay_zh/Graphical_Abstract.pdf",
+    "bytes": 17876,
+    "sha256": "1e8099c88b6fa13db52ef0d9fd23b8ef100239367b22c094c293a29af1b1b9fe"
+  },
+  {
+    "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay_zh/Graphical_Abstract.png",
+    "bytes": 45605,
+    "sha256": "024f3da6b8ec51462151f6264f66bb65660e6f13e55d5e24c3f703462c82a994"
+  },
+  {
+    "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/model/journal_course_layout.py",
+    "bytes": 15241,
+    "sha256": "e18b256883b544a553d5283149419319134afad60b157bb05da05e72ac6805f0"
   }
 ]
