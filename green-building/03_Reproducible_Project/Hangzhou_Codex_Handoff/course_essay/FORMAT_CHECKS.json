@@ -19,5 +19,8 @@
   "figures": 0,
   "all_paper_sections_present": true,
   "core_results_present": true,
-  "notes": "Course-specified requirements checked; A4 and margins are layout choices, not screenshot requirements. No institutional similarity report was obtained."
+  "notes": "Course-specified requirements checked; A4 and margins are layout choices, not screenshot requirements. No institutional similarity report was obtained.",
+  "editorial_revision": "v1.1: outcomes, mechanisms and design implications",
+  "numerical_results_changed": false,
+  "table_and_references_unchanged": true
 }

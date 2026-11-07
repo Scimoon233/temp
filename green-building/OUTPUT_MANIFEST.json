@@ -11,48 +11,48 @@
   },
   {
     "path": "01_Papers/Chinese_Reading/TRANSLATION_CHECKS.json",
-    "bytes": 376,
-    "sha256": "824d9c649a0b2e5fc8d9d4c015db8c1ba4f898ae8d9d642df6c11f9bcebe630b"
+    "bytes": 379,
+    "sha256": "f91ff4074a9fc8049676f0ef9c3673085f0f2cac7c18a4498a0081dcd78be99e"
   },
   {
     "path": "01_Papers/Chinese_Reading/杭州住宅被动降温_英文短稿对应中文版.docx",
-    "bytes": 43153,
-    "sha256": "579d5568fa0ca3eb303ffc4ad8acbe141588893cb1a42bf3d5ec67bbc2c6336e"
+    "bytes": 42939,
+    "sha256": "3cc2d508a66d7b5271a47b9df5b2ed89771ae92ead41afe28a7e0c09d3fbdca2"
   },
   {
     "path": "01_Papers/Chinese_Reading/杭州住宅被动降温_英文短稿对应中文版.md",
-    "bytes": 8846,
-    "sha256": "4c06d4ab736c3f21912277b51ad131fed11e49f79a520c07b298ce3981f0f7aa"
+    "bytes": 8727,
+    "sha256": "48bc9a0a761f5dc7ead54ac499e168c82eb286afa1434b6ba25f9cf9e58f8c23"
   },
   {
     "path": "01_Papers/Chinese_Reading/杭州住宅被动降温_英文短稿对应中文版.pdf",
-    "bytes": 287194,
-    "sha256": "de87de465ade234d6a196c344c56cf1b49cad4cc67bcb91b7df4ceb03bdacde6"
+    "bytes": 280158,
+    "sha256": "927aa39089861515eeb16edaf49406457f7f28006dbc58f385bfa8b57afe3a52"
   },
   {
     "path": "01_Papers/English/FORMAT_CHECKS.json",
-    "bytes": 611,
-    "sha256": "1381798b77c864016ca2e0b55d990f7ee5a2dba727dfe9fbb5fc366e103e6f5c"
+    "bytes": 769,
+    "sha256": "a52e6c36c2e386140e55645dc8c228981ee45518514f0631d6f15841f2ac4da7"
   },
   {
     "path": "01_Papers/English/Hangzhou_Passive_Cooling_Course_Essay.docx",
-    "bytes": 42807,
-    "sha256": "196adf0eb430d7873b3b2c28d7fda2e0a4c0e40ffd4cd734e4adfd88f4ddc5b5"
+    "bytes": 42722,
+    "sha256": "1ef2c719a59755b6c90a328d0609c4e9d7c566742850c0cbb8be5075461b47d6"
   },
   {
     "path": "01_Papers/English/Hangzhou_Passive_Cooling_Course_Essay.md",
-    "bytes": 9788,
-    "sha256": "a2f17aa59e1fa97d45c6dfc608eabd43dcc3895a4574066daf09288e180aeacc"
+    "bytes": 10010,
+    "sha256": "312e976ec55fef3d5da64905b519b02762c01489ebb45ef72a84214422e5557d"
   },
   {
     "path": "01_Papers/English/Hangzhou_Passive_Cooling_Course_Essay.pdf",
-    "bytes": 108884,
-    "sha256": "e959cf627451d40db4469dcb38ad0e14541655699133541a1c261cde75741ac0"
+    "bytes": 109119,
+    "sha256": "02f364b04eb56b3d645c130c372e9f73cc17e57466a22b293b86125135c6e52f"
   },
   {
     "path": "01_Papers/English/PROVENANCE.json",
-    "bytes": 854,
-    "sha256": "72a9b0d5e86623676fd497362fed1da1596ee76b89f283b48ec0aad0eab2d27c"
+    "bytes": 959,
+    "sha256": "f29a1ebd2f4091da50f81c20082999b48388c808baf04885d14837d257d2b671"
   },
   {
     "path": "01_Papers/English/修改说明与课程要求核对.md",
@@ -171,28 +171,28 @@
   },
   {
     "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay/FORMAT_CHECKS.json",
-    "bytes": 611,
-    "sha256": "1381798b77c864016ca2e0b55d990f7ee5a2dba727dfe9fbb5fc366e103e6f5c"
+    "bytes": 769,
+    "sha256": "a52e6c36c2e386140e55645dc8c228981ee45518514f0631d6f15841f2ac4da7"
   },
   {
     "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay/Hangzhou_Passive_Cooling_Course_Essay.docx",
-    "bytes": 42807,
-    "sha256": "196adf0eb430d7873b3b2c28d7fda2e0a4c0e40ffd4cd734e4adfd88f4ddc5b5"
+    "bytes": 42722,
+    "sha256": "1ef2c719a59755b6c90a328d0609c4e9d7c566742850c0cbb8be5075461b47d6"
   },
   {
     "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay/Hangzhou_Passive_Cooling_Course_Essay.md",
-    "bytes": 9788,
-    "sha256": "a2f17aa59e1fa97d45c6dfc608eabd43dcc3895a4574066daf09288e180aeacc"
+    "bytes": 10010,
+    "sha256": "312e976ec55fef3d5da64905b519b02762c01489ebb45ef72a84214422e5557d"
   },
   {
     "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay/Hangzhou_Passive_Cooling_Course_Essay.pdf",
-    "bytes": 108884,
-    "sha256": "e959cf627451d40db4469dcb38ad0e14541655699133541a1c261cde75741ac0"
+    "bytes": 109119,
+    "sha256": "02f364b04eb56b3d645c130c372e9f73cc17e57466a22b293b86125135c6e52f"
   },
   {
     "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay/PROVENANCE.json",
-    "bytes": 854,
-    "sha256": "72a9b0d5e86623676fd497362fed1da1596ee76b89f283b48ec0aad0eab2d27c"
+    "bytes": 959,
+    "sha256": "f29a1ebd2f4091da50f81c20082999b48388c808baf04885d14837d257d2b671"
   },
   {
     "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay/修改说明与课程要求核对.md",
@@ -201,23 +201,23 @@
   },
   {
     "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay_zh/TRANSLATION_CHECKS.json",
-    "bytes": 376,
-    "sha256": "824d9c649a0b2e5fc8d9d4c015db8c1ba4f898ae8d9d642df6c11f9bcebe630b"
+    "bytes": 379,
+    "sha256": "f91ff4074a9fc8049676f0ef9c3673085f0f2cac7c18a4498a0081dcd78be99e"
   },
   {
     "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay_zh/杭州住宅被动降温_英文短稿对应中文版.docx",
-    "bytes": 43153,
-    "sha256": "579d5568fa0ca3eb303ffc4ad8acbe141588893cb1a42bf3d5ec67bbc2c6336e"
+    "bytes": 42939,
+    "sha256": "3cc2d508a66d7b5271a47b9df5b2ed89771ae92ead41afe28a7e0c09d3fbdca2"
   },
   {
     "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay_zh/杭州住宅被动降温_英文短稿对应中文版.md",
-    "bytes": 8846,
-    "sha256": "4c06d4ab736c3f21912277b51ad131fed11e49f79a520c07b298ce3981f0f7aa"
+    "bytes": 8727,
+    "sha256": "48bc9a0a761f5dc7ead54ac499e168c82eb286afa1434b6ba25f9cf9e58f8c23"
   },
   {
     "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay_zh/杭州住宅被动降温_英文短稿对应中文版.pdf",
-    "bytes": 287194,
-    "sha256": "de87de465ade234d6a196c344c56cf1b49cad4cc67bcb91b7df4ceb03bdacde6"
+    "bytes": 280158,
+    "sha256": "927aa39089861515eeb16edaf49406457f7f28006dbc58f385bfa8b57afe3a52"
   },
   {
     "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/data/00_current/Hangzhou_Master_Data_Inventory.docx",
@@ -501,13 +501,13 @@
   },
   {
     "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/model/write_chinese_course_essay.py",
-    "bytes": 12170,
-    "sha256": "1edb83f8e30e378576f691bdb73fe249e956f6bdab98e50a4b093aab4635df01"
+    "bytes": 12096,
+    "sha256": "49a5d2165aaf25d396519258a7d2e204370e3be696a315365710dacfb8459692"
   },
   {
     "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/model/write_course_essay.py",
-    "bytes": 15303,
-    "sha256": "c204954f9458c865be518845ddec8f70a289ca5bdc4dad322b0ebb9013826ab4"
+    "bytes": 15542,
+    "sha256": "dbf2812fc4553579325be2876d76feba5b5be3aaa94cb9217bb37f6531fa18f1"
   },
   {
     "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/model/write_draft.py",

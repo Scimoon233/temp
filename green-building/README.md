@@ -2,6 +2,10 @@
 
 当前英文课程论文及全部支撑资料的Git迁移快照，目标仓库为Scimoon233/temp，存放于green-building/。本目录包含全部研究交付物；远程推送状态应以GitHub实际分支为准。
 
+## 当前版本
+
+v1.1已将论文论证和结论调整为量化措施收益、解释作用机制并提出设计建议。模拟数据保持不变，英文稿仍为含参考文献3页。详见01_Papers/English/论证与结论修改说明_v1.1.md。
+
 ## 先看论文
 
 - [英文论文PDF（含参考文献共3页）](01_Papers/English/Hangzhou_Passive_Cooling_Course_Essay.pdf)
