@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+.cache/
+work/
+.DS_Store
+Thumbs.db
+
+# Original accepted manuscript is losslessly stored in verified parts.
+04_Format_Reference/Jacobs_2019_Accepted_Manuscript.pdf

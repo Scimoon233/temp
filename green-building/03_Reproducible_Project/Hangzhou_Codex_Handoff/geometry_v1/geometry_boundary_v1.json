@@ -1,0 +1,425 @@
+{
+  "version": "geometry_boundary_v1",
+  "source_url": "https://www.hzxqf.com/house/120716888258.html",
+  "source_image": "selected_7105_floorplan.jpg",
+  "status": "conditional_prototype_geometry_not_survey_or_closed_polygon",
+  "source_gross_area_m2": 71.05,
+  "clear_height_assumption_m": 2.7,
+  "zones": [
+    {
+      "id": "Z1",
+      "name": "居住区",
+      "room_ids": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "area_assumption_m2": 41.1,
+      "volume_assumption_m3": 110.97
+    },
+    {
+      "id": "Z2",
+      "name": "封闭阳台缓冲区",
+      "room_ids": [
+        "R6"
+      ],
+      "area_assumption_m2": 6.3,
+      "volume_assumption_m3": 17.01
+    }
+  ],
+  "room_inputs": [
+    {
+      "id": "R1",
+      "name": "卧室 A",
+      "plan_label_area_m2": 11.1,
+      "plan_local_width_m": 3.897,
+      "plan_local_depth_m": 2.846
+    },
+    {
+      "id": "R2",
+      "name": "卧室 B",
+      "plan_label_area_m2": 9.5,
+      "plan_local_width_m": 3.897,
+      "plan_local_depth_m": 2.429
+    },
+    {
+      "id": "R3",
+      "name": "客厅及图示厅区",
+      "plan_label_area_m2": 14.8,
+      "plan_local_width_m": 3.728,
+      "plan_local_depth_m": 3.961
+    },
+    {
+      "id": "R4",
+      "name": "厨房",
+      "plan_label_area_m2": 2.6,
+      "plan_local_width_m": 1.228,
+      "plan_local_depth_m": 2.216
+    },
+    {
+      "id": "R5",
+      "name": "卫生间",
+      "plan_label_area_m2": 3.1,
+      "plan_local_width_m": 2.38,
+      "plan_local_depth_m": null
+    },
+    {
+      "id": "R6",
+      "name": "阳台",
+      "plan_label_area_m2": 6.3,
+      "plan_local_width_m": 3.897,
+      "plan_local_depth_m": 1.625
+    }
+  ],
+  "surfaces": [
+    {
+      "id": "E01",
+      "name": "卧室B北侧",
+      "room_id": "R2",
+      "drawing_direction": "N",
+      "plan_local_length_m": 3.897,
+      "baseline_boundary_assumption": "外气",
+      "gross_area_from_assumed_height_m2": 10.5219,
+      "window_area_assumption_m2": 0,
+      "opaque_area_conditional_m2": 10.5219,
+      "notes": "图示无窗"
+    },
+    {
+      "id": "E02",
+      "name": "卧室B西侧",
+      "room_id": "R2",
+      "drawing_direction": "W",
+      "plan_local_length_m": 2.429,
+      "baseline_boundary_assumption": "外气",
+      "gross_area_from_assumed_height_m2": 6.5583,
+      "window_area_assumption_m2": 1.125,
+      "opaque_area_conditional_m2": 5.4333,
+      "notes": "W01"
+    },
+    {
+      "id": "E03",
+      "name": "卧室A西侧",
+      "room_id": "R1",
+      "drawing_direction": "W",
+      "plan_local_length_m": 2.846,
+      "baseline_boundary_assumption": "外气",
+      "gross_area_from_assumed_height_m2": 7.6842,
+      "window_area_assumption_m2": 0,
+      "opaque_area_conditional_m2": 7.6842,
+      "notes": "图示无窗"
+    },
+    {
+      "id": "E04",
+      "name": "阳台西侧",
+      "room_id": "R6",
+      "drawing_direction": "W",
+      "plan_local_length_m": 1.625,
+      "baseline_boundary_assumption": "外气",
+      "gross_area_from_assumed_height_m2": 4.3875,
+      "window_area_assumption_m2": 3.15,
+      "opaque_area_conditional_m2": 1.2375,
+      "notes": "W04"
+    },
+    {
+      "id": "E05",
+      "name": "阳台南侧",
+      "room_id": "R6",
+      "drawing_direction": "S",
+      "plan_local_length_m": 3.897,
+      "baseline_boundary_assumption": "外气",
+      "gross_area_from_assumed_height_m2": 10.5219,
+      "window_area_assumption_m2": 7.77,
+      "opaque_area_conditional_m2": 2.7519,
+      "notes": "W05"
+    },
+    {
+      "id": "E06",
+      "name": "阳台东侧",
+      "room_id": "R6",
+      "drawing_direction": "E",
+      "plan_local_length_m": 1.625,
+      "baseline_boundary_assumption": "外气",
+      "gross_area_from_assumed_height_m2": 4.3875,
+      "window_area_assumption_m2": 3.15,
+      "opaque_area_conditional_m2": 1.2375,
+      "notes": "W06"
+    },
+    {
+      "id": "E07",
+      "name": "客厅南侧",
+      "room_id": "R3",
+      "drawing_direction": "S",
+      "plan_local_length_m": 3.728,
+      "baseline_boundary_assumption": "外气",
+      "gross_area_from_assumed_height_m2": 10.0656,
+      "window_area_assumption_m2": 1.125,
+      "opaque_area_conditional_m2": 8.9406,
+      "notes": "W03"
+    },
+    {
+      "id": "E08",
+      "name": "客厅东侧含入户门",
+      "room_id": "R3",
+      "drawing_direction": "E",
+      "plan_local_length_m": 3.961,
+      "baseline_boundary_assumption": "绝热简化",
+      "gross_area_from_assumed_height_m2": 10.6947,
+      "window_area_assumption_m2": 0,
+      "opaque_area_conditional_m2": 10.6947,
+      "notes": "D01；相邻走廊仅为假设"
+    },
+    {
+      "id": "E09",
+      "name": "厨房东侧",
+      "room_id": "R4",
+      "drawing_direction": "E",
+      "plan_local_length_m": 2.216,
+      "baseline_boundary_assumption": "绝热简化",
+      "gross_area_from_assumed_height_m2": 5.9832,
+      "window_area_assumption_m2": 0,
+      "opaque_area_conditional_m2": 5.9832,
+      "notes": "相邻户仅为假设"
+    },
+    {
+      "id": "E10",
+      "name": "厨房北侧",
+      "room_id": "R4",
+      "drawing_direction": "N",
+      "plan_local_length_m": 1.228,
+      "baseline_boundary_assumption": "外气",
+      "gross_area_from_assumed_height_m2": 3.3156,
+      "window_area_assumption_m2": 0,
+      "opaque_area_conditional_m2": 3.3156,
+      "notes": "图示无窗"
+    },
+    {
+      "id": "E11",
+      "name": "厨房西侧突出短墙",
+      "room_id": "R4",
+      "drawing_direction": "W",
+      "plan_local_length_m": null,
+      "baseline_boundary_assumption": "外气",
+      "gross_area_from_assumed_height_m2": null,
+      "window_area_assumption_m2": 0,
+      "opaque_area_conditional_m2": null,
+      "notes": "存在短墙；长度不使用不闭合尺寸链推算"
+    },
+    {
+      "id": "E12",
+      "name": "卫生间北侧",
+      "room_id": "R5",
+      "drawing_direction": "N",
+      "plan_local_length_m": 2.38,
+      "baseline_boundary_assumption": "外气",
+      "gross_area_from_assumed_height_m2": 6.426,
+      "window_area_assumption_m2": 1.275,
+      "opaque_area_conditional_m2": 5.151,
+      "notes": "W02"
+    }
+  ],
+  "openings": [
+    {
+      "id": "W01",
+      "surface_id": "E02",
+      "name": "卧室B西窗",
+      "whole_window_width_assumption_m": 0.75,
+      "whole_window_height_assumption_m": 1.5,
+      "whole_window_area_assumption_m2": 1.125,
+      "width_sensitivity_m": [
+        0.6,
+        0.9
+      ],
+      "height_sensitivity_m": [
+        1.2,
+        1.8
+      ],
+      "evidence": "窗线存在可见；宽、高均为建模假设",
+      "geometric_openable_area_m2": null,
+      "effective_ventilation_area_m2": null
+    },
+    {
+      "id": "W02",
+      "surface_id": "E12",
+      "name": "卫生间北窗",
+      "whole_window_width_assumption_m": 0.85,
+      "whole_window_height_assumption_m": 1.5,
+      "whole_window_area_assumption_m2": 1.275,
+      "width_sensitivity_m": [
+        0.7,
+        1.0
+      ],
+      "height_sensitivity_m": [
+        1.2,
+        1.8
+      ],
+      "evidence": "窗线存在可见；宽、高均为建模假设",
+      "geometric_openable_area_m2": null,
+      "effective_ventilation_area_m2": null
+    },
+    {
+      "id": "W03",
+      "surface_id": "E07",
+      "name": "客厅南窗",
+      "whole_window_width_assumption_m": 0.75,
+      "whole_window_height_assumption_m": 1.5,
+      "whole_window_area_assumption_m2": 1.125,
+      "width_sensitivity_m": [
+        0.6,
+        0.9
+      ],
+      "height_sensitivity_m": [
+        1.2,
+        1.8
+      ],
+      "evidence": "窗线存在可见；宽、高均为建模假设",
+      "geometric_openable_area_m2": null,
+      "effective_ventilation_area_m2": null
+    },
+    {
+      "id": "W04",
+      "surface_id": "E04",
+      "name": "阳台西侧围护",
+      "whole_window_width_assumption_m": 1.5,
+      "whole_window_height_assumption_m": 2.1,
+      "whole_window_area_assumption_m2": 3.15,
+      "width_sensitivity_m": [
+        1.4,
+        1.6
+      ],
+      "height_sensitivity_m": [
+        1.8,
+        2.4
+      ],
+      "evidence": "图示玻璃线；整窗宽、高为假设",
+      "geometric_openable_area_m2": null,
+      "effective_ventilation_area_m2": null
+    },
+    {
+      "id": "W05",
+      "surface_id": "E05",
+      "name": "阳台南侧围护",
+      "whole_window_width_assumption_m": 3.7,
+      "whole_window_height_assumption_m": 2.1,
+      "whole_window_area_assumption_m2": 7.77,
+      "width_sensitivity_m": [
+        3.6,
+        3.8
+      ],
+      "height_sensitivity_m": [
+        1.8,
+        2.4
+      ],
+      "evidence": "图示玻璃线；整窗宽、高为假设",
+      "geometric_openable_area_m2": null,
+      "effective_ventilation_area_m2": null
+    },
+    {
+      "id": "W06",
+      "surface_id": "E06",
+      "name": "阳台东侧围护",
+      "whole_window_width_assumption_m": 1.5,
+      "whole_window_height_assumption_m": 2.1,
+      "whole_window_area_assumption_m2": 3.15,
+      "width_sensitivity_m": [
+        1.4,
+        1.6
+      ],
+      "height_sensitivity_m": [
+        1.8,
+        2.4
+      ],
+      "evidence": "图示玻璃线；整窗宽、高为假设",
+      "geometric_openable_area_m2": null,
+      "effective_ventilation_area_m2": null
+    }
+  ],
+  "internal_interfaces": [
+    {
+      "id": "I01",
+      "rooms": [
+        "R1",
+        "R2"
+      ],
+      "plan_local_length_m": 3.897,
+      "treatment": "same_air_node_no_interzone_flux"
+    },
+    {
+      "id": "I02",
+      "rooms": [
+        "R1",
+        "R3"
+      ],
+      "plan_local_length_m": 2.846,
+      "treatment": "same_air_node_no_interzone_flux"
+    },
+    {
+      "id": "I03",
+      "rooms": [
+        "R2",
+        "R3"
+      ],
+      "length_m": null,
+      "treatment": "same_air_node_no_interzone_flux"
+    },
+    {
+      "id": "I04",
+      "rooms": [
+        "R5",
+        "R3"
+      ],
+      "plan_local_length_m": 2.38,
+      "treatment": "same_air_node_no_interzone_flux"
+    },
+    {
+      "id": "I05",
+      "rooms": [
+        "R5",
+        "R4"
+      ],
+      "length_m": null,
+      "treatment": "same_air_node_no_interzone_flux"
+    },
+    {
+      "id": "I06",
+      "rooms": [
+        "R4",
+        "R3"
+      ],
+      "plan_local_length_m": 1.228,
+      "treatment": "open_passage_same_air_node"
+    },
+    {
+      "id": "I07",
+      "rooms": [
+        "R1",
+        "R6"
+      ],
+      "plan_local_length_m": 3.897,
+      "treatment": "interzone_heat_transfer",
+      "aperture_width_assumption_m": 2.4,
+      "aperture_height_assumption_m": 2.1,
+      "aperture_area_assumption_m2": 5.04
+    }
+  ],
+  "orientation": {
+    "convention": "clockwise_from_north",
+    "rotation_assumption_deg": 0,
+    "N": 0,
+    "E": 90,
+    "S": 180,
+    "W": 270,
+    "not_surveyed": true
+  },
+  "horizontal_boundaries": "mid_floor_adiabatic_assumption",
+  "unknowns": [
+    "E11 length",
+    "globally reconciled closed polygon",
+    "actual adjacent spaces",
+    "measured window dimensions",
+    "actual floor level",
+    "true facade azimuth"
+  ],
+  "model_ready": false
+}

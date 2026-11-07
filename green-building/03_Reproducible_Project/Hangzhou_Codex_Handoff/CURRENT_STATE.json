@@ -1,0 +1,59 @@
+{
+  "as_of": "2026-11-07",
+  "project": "Green Building course paper, Hangzhou passive cooling",
+  "priority": [
+    "explicit user decisions in this state and CODEX_PROMPT.md",
+    "PAPER_OUTLINE.md",
+    "geometry_v1 as source and provisional assumptions",
+    "data/00_current inventory",
+    "historical documents"
+  ],
+  "newest_user_decision": "Ignore small geometric discrepancies; use reasonable self-consistent data, preserve assumptions transparently.",
+  "scope": "historical summer prototype simulation; not flat306 replication or field calibrated prediction",
+  "already_done": [
+    "data collection and consolidation",
+    "literature starting set",
+    "geometry boundary v1 registration",
+    "detailed paper outline"
+  ],
+  "not_done": [
+    "simplified closed geometry numerical implementation",
+    "RC network parameterization",
+    "building simulation code",
+    "model checks",
+    "scenario and sensitivity runs",
+    "result figures and paper conclusions"
+  ],
+  "model_run": false,
+  "geometry_policy": {
+    "listing_gross_area_m2": 71.05,
+    "Z1_area_assumption_m2": 41.1,
+    "Z2_area_assumption_m2": 6.3,
+    "height_assumption_m": 2.7,
+    "Z1_volume_assumption_m3": 110.97,
+    "Z2_volume_assumption_m3": 17.01,
+    "small_dimension_discrepancies": "authorized to simplify; not yet changed in v1 files"
+  },
+  "weather_policy": {
+    "primary": [
+      "data/03_weather_recent/era5_2025_summer.csv",
+      "data/03_weather_recent/era5_2026_summer.csv"
+    ],
+    "months": "June-August",
+    "expected_hours_each": 2208,
+    "source": "ERA5 via Open-Meteo",
+    "time_zone": "Asia/Shanghai (UTC+8)"
+  },
+  "do_not_reuse": [
+    "flat306 area and volume",
+    "flat306 thermal capacity or orientation as selected prototype inputs",
+    "superseded future-climate scope as current analysis",
+    "raw monitoring as mandatory requirement"
+  ],
+  "missing_assignment_details": [
+    "course rubric",
+    "required paper word count",
+    "required citation style"
+  ],
+  "missing_details_policy": "Proceed with technical work; do not invent assignment requirements."
+}

@@ -1,0 +1,40 @@
+{
+  "source_url": "https://www.hzxqf.com/house/120716888258.html",
+  "listing_gross_area_m2": 71.05,
+  "rooms": [
+    {
+      "name": "卧室 A",
+      "reported_area_m2": 11.1
+    },
+    {
+      "name": "卧室 B",
+      "reported_area_m2": 9.5
+    },
+    {
+      "name": "客厅及图示厅区",
+      "reported_area_m2": 14.8
+    },
+    {
+      "name": "厨房",
+      "reported_area_m2": 2.6
+    },
+    {
+      "name": "卫生间",
+      "reported_area_m2": 3.1
+    },
+    {
+      "name": "阳台",
+      "reported_area_m2": 6.3
+    }
+  ],
+  "sum_including_balcony_m2": 47.4,
+  "sum_excluding_balcony_m2": 41.1,
+  "area_sums_status": "derived_not_final_model_net_area",
+  "model_floor_area_m2": null,
+  "volume_m3": null,
+  "balcony_zone_treatment": null,
+  "precise_facade_azimuths": null,
+  "exterior_wall_areas": null,
+  "window_areas": null,
+  "window_heights": null
+}

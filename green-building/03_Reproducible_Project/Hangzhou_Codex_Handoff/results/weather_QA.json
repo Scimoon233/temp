@@ -1,0 +1,16 @@
+[
+  {
+    "year": 2025,
+    "hours": 2208,
+    "missing": 0,
+    "radiation_midpoint_horizontal_closure_RMSE_W_m2": 1.1889107443587417,
+    "note": "Midpoint geometry is approximate, not measured radiation validation."
+  },
+  {
+    "year": 2026,
+    "hours": 2208,
+    "missing": 0,
+    "radiation_midpoint_horizontal_closure_RMSE_W_m2": 0.9620620637487901,
+    "note": "Midpoint geometry is approximate, not measured radiation validation."
+  }
+]

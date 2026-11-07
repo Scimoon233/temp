@@ -1,0 +1,132 @@
+[
+  {
+    "name": "whole_window_U",
+    "value": 6.7,
+    "units": "W/m2K",
+    "source": "NSW BASIX Default Window Data item 5",
+    "evidence_class": "external_reference_not_Liubo",
+    "limitations": "Assumed clear single glass in aluminium fixed/sliding frame. Actual Liubo frame/product unknown."
+  },
+  {
+    "name": "whole_window_SHGC",
+    "value": 0.7,
+    "units": "dimensionless",
+    "source": "NSW BASIX Default Window Data item 5",
+    "evidence_class": "external_reference_not_Liubo",
+    "limitations": "Use corresponding whole-window area; do not multiply glass fraction a second time."
+  },
+  {
+    "name": "center_glass_U_6mm_clear",
+    "value": 5.7,
+    "units": "W/m2K",
+    "source": "Pilkington Perf-01-06 PDF page 2, European column",
+    "evidence_class": "manufacturer_glass_reference_not_whole_window",
+    "limitations": "Actual Liubo glass thickness and product unknown."
+  },
+  {
+    "name": "center_glass_SHGC_6mm_clear",
+    "value": 0.82,
+    "units": "dimensionless",
+    "source": "Pilkington Perf-01-06 PDF page 2",
+    "evidence_class": "manufacturer_glass_reference_not_whole_window",
+    "limitations": "Do not combine this glass SHGC with frame area without a whole-window calculation."
+  },
+  {
+    "name": "closed_window_total_ACH_HSCW_summer_night",
+    "value": 0.44,
+    "units": "1/h",
+    "source": "Hou et al. 2019 Table 6, HSCW summer",
+    "evidence_class": "external_measured_population_reference_not_Liubo",
+    "limitations": "Bedroom data; HSCW subset 14 residences; not Liubo whole-flat validation."
+  },
+  {
+    "name": "open_window_total_ACH_HSCW_summer_night",
+    "value": 1.51,
+    "units": "1/h",
+    "source": "Hou et al. 2019 Table 6, HSCW summer",
+    "evidence_class": "external_measured_population_reference_not_Liubo",
+    "limitations": "Total ACH, not incremental ACH; do not add baseline infiltration again."
+  },
+  {
+    "name": "summer_infiltration_population_quartiles",
+    "value": [
+      0.24,
+      0.38,
+      0.6
+    ],
+    "units": "1/h",
+    "source": "Hou et al. 2019 Table 4",
+    "evidence_class": "external_measured_population_reference_not_Liubo",
+    "limitations": "P25/median/P75 across climate zones, not HSCW-specific percentiles."
+  },
+  {
+    "name": "capacity_archetype_exploratory_values",
+    "value": [
+      8550300.0,
+      13473200.0,
+      19173400.0
+    ],
+    "units": "J/K",
+    "source": "LVS3 Background Document Table 3.16, historical ISO 13790 classes",
+    "evidence_class": "method_reference_requires_RC_mapping",
+    "limitations": "Reported class values apply to monthly/seasonal method; not validated two-node hourly RC capacitance."
+  },
+  {
+    "name": "proposed_night_window",
+    "value": [
+      21,
+      7
+    ],
+    "units": "hour local Beijing",
+    "source": "Research design proposal",
+    "evidence_class": "analyst_assumption",
+    "limitations": "Not a measured occupant schedule."
+  },
+  {
+    "name": "proposed_delta_T_options",
+    "value": [
+      0,
+      1,
+      2
+    ],
+    "units": "degC",
+    "source": "Research design proposal; EnergyPlus Delta Temperature supports this type of control",
+    "evidence_class": "analyst_assumption",
+    "limitations": "2C in documentation is an example, not an empirical optimum."
+  },
+  {
+    "name": "original_paper_internal_gains",
+    "value": 16.7,
+    "units": "W/m2",
+    "source": "Short et al. 2018 p.909",
+    "evidence_class": "original_paper_model_assumption_not_measurement",
+    "limitations": "Keep distinct from zero-gain unoccupied validation condition. Avoid double counting people/appliances."
+  },
+  {
+    "name": "original_paper_direct_solar_reduction_options",
+    "value": [
+      0.5,
+      1.0
+    ],
+    "units": "fraction of DIRECT component removed",
+    "source": "Short et al. 2018 pp.909-910 Fig.10",
+    "evidence_class": "original_paper_scenario_not_measured_shade",
+    "limitations": "Keep diffuse/reflected radiation distinct; direct 100% reduction does not mean zero total solar gain."
+  },
+  {
+    "name": "original_2017_indoor_raw_data",
+    "value": null,
+    "units": "degC",
+    "source": "Not acquired after listed public-source searches",
+    "evidence_class": "still_missing",
+    "limitations": "Digitized curves would be approximate extracted data, not original observations."
+  },
+  {
+    "name": "facade_glazed_areas",
+    "value": null,
+    "units": "m2",
+    "source": "No reliable dimension schedule acquired",
+    "evidence_class": "still_missing",
+    "limitations": "Plan trace does not determine window heights or frame areas."
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "original_path": "04_Format_Reference/Jacobs_2019_Accepted_Manuscript.pdf",
+  "original_bytes": 24884228,
+  "original_sha256": "b8848ea5d2025af1ec70ca70525b9cbc3d58462c43b103bc57cd6e2d4959dcd6",
+  "parts": [
+    {
+      "path": "04_Format_Reference/Jacobs_2019_Accepted_Manuscript_parts/part_01.bin",
+      "sha256": "e69505339e412521671fb6f7f8724ff6167b3b6fba253e571c8a86c9f5dac9e6",
+      "bytes": 8388608
+    },
+    {
+      "path": "04_Format_Reference/Jacobs_2019_Accepted_Manuscript_parts/part_02.bin",
+      "sha256": "305c242d7ebb1dd90957ff0de15062dc21e94131ad08b9daf0787f6feb8173a6",
+      "bytes": 8388608
+    },
+    {
+      "path": "04_Format_Reference/Jacobs_2019_Accepted_Manuscript_parts/part_03.bin",
+      "sha256": "fbd685c332db8a0da429c9ee65dfc9c991a11a31fb07af053e79ab994a754726",
+      "bytes": 8107012
+    }
+  ],
+  "reason": "The connected upload transport limits individual JSON requests to 16 MiB; this is not a GitHub file-size limit."
+}

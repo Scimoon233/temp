@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "pages": 3,
+  "paper": "A4",
+  "margin_cm": 2.54,
+  "font": "Times New Roman",
+  "pdf_embedded_fonts": [
+    "TimesNewRomanPS-BoldMT",
+    "TimesNewRomanPSMT"
+  ],
+  "text_size_pt": 12,
+  "pdf_text_sizes_pt": [
+    12.0
+  ],
+  "line_spacing": "single",
+  "word_line_spacing": "240, auto",
+  "references_included": true,
+  "tables": 1,
+  "figures": 0,
+  "all_paper_sections_present": true,
+  "core_results_present": true,
+  "notes": "Course-specified requirements checked; A4 and margins are layout choices, not screenshot requirements. No institutional similarity report was obtained."
+}

@@ -1,0 +1,79 @@
+{
+  "polygon_areas_m2": [
+    41.1,
+    6.3
+  ],
+  "isothermal_no_gain_max_error_K": 6.750155989720952e-14,
+  "hot_outdoor_vent_heat_W_at_4K": 224.7601176,
+  "solar_split_conservation_W": 0.0,
+  "diffuse_only_shade_temperature_difference_K": 0.0,
+  "steady_ideal_expected_W": 1087.1239253059132,
+  "steady_ideal_error_W": 5.820766091346741e-11,
+  "refinement_and_warmup": [
+    {
+      "mode": "free",
+      "scenario": "S0",
+      "metric": "DH28_Kh",
+      "step_relative_change": 4.994160515964249e-07,
+      "peak_change_K": 0.002547001289663342,
+      "warmup_relative_change": 1.3680166130529047e-16
+    },
+    {
+      "mode": "free",
+      "scenario": "S1",
+      "metric": "DH28_Kh",
+      "step_relative_change": 7.545861404102019e-07,
+      "peak_change_K": 0.0011816283420458262,
+      "warmup_relative_change": 1.4787723149959668e-16
+    },
+    {
+      "mode": "free",
+      "scenario": "S2",
+      "metric": "DH28_Kh",
+      "step_relative_change": 5.689731622042226e-05,
+      "peak_change_K": 0.0022035165934468637,
+      "warmup_relative_change": 0.0
+    },
+    {
+      "mode": "free",
+      "scenario": "S3",
+      "metric": "DH28_Kh",
+      "step_relative_change": 5.404129645423148e-05,
+      "peak_change_K": 0.0008114693311966903,
+      "warmup_relative_change": 0.0
+    },
+    {
+      "mode": "ideal",
+      "scenario": "S0",
+      "metric": "cool_kWh_th",
+      "step_relative_change": 4.478132742936431e-07,
+      "peak_change_K": 0.0,
+      "warmup_relative_change": 0.0
+    },
+    {
+      "mode": "ideal",
+      "scenario": "S1",
+      "metric": "cool_kWh_th",
+      "step_relative_change": 2.262114254618864e-07,
+      "peak_change_K": 0.0,
+      "warmup_relative_change": 0.0
+    },
+    {
+      "mode": "ideal",
+      "scenario": "S2",
+      "metric": "cool_kWh_th",
+      "step_relative_change": 1.2063295112326344e-06,
+      "peak_change_K": 0.0,
+      "warmup_relative_change": 0.0
+    },
+    {
+      "mode": "ideal",
+      "scenario": "S3",
+      "metric": "cool_kWh_th",
+      "step_relative_change": 1.068380155636874e-06,
+      "peak_change_K": 0.0,
+      "warmup_relative_change": 0.0
+    }
+  ],
+  "status": "PASS"
+}

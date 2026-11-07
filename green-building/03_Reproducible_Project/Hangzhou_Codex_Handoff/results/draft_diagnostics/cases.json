@@ -1,0 +1,20 @@
+{
+  "base": {},
+  "canopy_0.5m": {
+    "canopy_projection_m": 0.5
+  },
+  "canopy_1.0m": {
+    "canopy_projection_m": 1.0
+  },
+  "partition_H_half": {
+    "partition_H_scale": 0.5
+  },
+  "partition_H_double": {
+    "partition_H_scale": 2.0
+  },
+  "combined_lower_gain": {
+    "canopy_projection_m": 1.0,
+    "gain_scale": 0.5,
+    "balcony_secondary_fraction": 0.0
+  }
+}

@@ -1,0 +1,194 @@
+[
+  {
+    "parameter": "Construction year",
+    "value": 1995,
+    "unit": "year",
+    "source": "Main paper p.901",
+    "status": "reported",
+    "note": ""
+  },
+  {
+    "parameter": "Occupied floors",
+    "value": 23,
+    "unit": "floors",
+    "source": "Main paper p.901",
+    "status": "reported",
+    "note": ""
+  },
+  {
+    "parameter": "Typical floorplate",
+    "value": 508.5,
+    "unit": "m2 gross internal",
+    "source": "Main paper p.901",
+    "status": "reported",
+    "note": ""
+  },
+  {
+    "parameter": "Reported total floor area",
+    "value": 12204,
+    "unit": "m2",
+    "source": "Main paper p.901",
+    "status": "reported",
+    "note": "Retain as reported; 508.5 times 23 is 11695.5, so do not reconcile silently."
+  },
+  {
+    "parameter": "Floor-to-ceiling height",
+    "value": 2.7,
+    "unit": "m",
+    "source": "Main paper p.901",
+    "status": "reported",
+    "note": "Clear height, not floor-to-floor height."
+  },
+  {
+    "parameter": "Flat 306 area",
+    "value": 51.82,
+    "unit": "m2",
+    "source": "Main paper p.901; flats 1-8 area list",
+    "status": "reported",
+    "note": "Flat 6 on level 3; area convention needs checking for volume/geometry."
+  },
+  {
+    "parameter": "Approximate flat 306 volume",
+    "value": 139.91400000000002,
+    "unit": "m3",
+    "source": "Area multiplied by clear height",
+    "status": "derived",
+    "note": "Whole-flat approximation; excludes adjustments for internal partitions etc."
+  },
+  {
+    "parameter": "Floor orientation",
+    "value": 22.5,
+    "unit": "degrees west of south",
+    "source": "Main paper Fig.5, p.907",
+    "status": "reported",
+    "note": "Resolve façade-specific azimuths from the plan."
+  },
+  {
+    "parameter": "Liubo latitude",
+    "value": 30.2662,
+    "unit": "degrees north",
+    "source": "Main paper p.902",
+    "status": "reported",
+    "note": ""
+  },
+  {
+    "parameter": "Liubo longitude",
+    "value": 120.126,
+    "unit": "degrees east",
+    "source": "Main paper p.902",
+    "status": "reported",
+    "note": ""
+  },
+  {
+    "parameter": "Original rooftop weather station latitude",
+    "value": 30.263,
+    "unit": "degrees north",
+    "source": "Main paper p.902",
+    "status": "reported",
+    "note": ""
+  },
+  {
+    "parameter": "Original rooftop weather station longitude",
+    "value": 120.1175,
+    "unit": "degrees east",
+    "source": "Main paper p.902",
+    "status": "reported",
+    "note": ""
+  },
+  {
+    "parameter": "Glazing description",
+    "value": "Single glazed aluminium sliding windows",
+    "unit": "description",
+    "source": "Main paper p.901",
+    "status": "reported",
+    "note": "Not a numerical U-value or solar heat gain coefficient."
+  },
+  {
+    "parameter": "Occupied internal sensible gains",
+    "value": 16.7,
+    "unit": "W/m2",
+    "source": "Main paper p.909",
+    "status": "reported model assumption",
+    "note": "Do not apply to unoccupied calibration scenario; occupancy/appliance schedule needs definition."
+  },
+  {
+    "parameter": "Occupant density",
+    "value": 17,
+    "unit": "m2/person",
+    "source": "Main paper p.909",
+    "status": "reported model assumption",
+    "note": ""
+  },
+  {
+    "parameter": "Window discharge coefficient",
+    "value": 0.65,
+    "unit": "dimensionless",
+    "source": "Main paper Eq.1, p.913",
+    "status": "reported model assumption",
+    "note": ""
+  },
+  {
+    "parameter": "Effective opening area",
+    "value": 1.35,
+    "unit": "m2",
+    "source": "Main paper Eq.1, p.913",
+    "status": "reported model assumption",
+    "note": "CFD/window-flow calculation assumption, not whole-window glazed area."
+  },
+  {
+    "parameter": "Glazing U-value",
+    "value": null,
+    "unit": "W/m2K",
+    "source": "Not found in obtained main paper/S1",
+    "status": "missing",
+    "note": ""
+  },
+  {
+    "parameter": "Glazing g-value / SHGC",
+    "value": null,
+    "unit": "dimensionless",
+    "source": "Not found in obtained main paper/S1",
+    "status": "missing",
+    "note": ""
+  },
+  {
+    "parameter": "Façade-specific glazed areas",
+    "value": null,
+    "unit": "m2",
+    "source": "Figure 2 plan; no machine-readable dimension schedule acquired",
+    "status": "missing",
+    "note": "Requires careful scale extraction or explicit approximation."
+  },
+  {
+    "parameter": "Closed-window infiltration ACH",
+    "value": null,
+    "unit": "1/h",
+    "source": "Not quantified in obtained sources",
+    "status": "missing",
+    "note": ""
+  },
+  {
+    "parameter": "Effective lumped thermal capacitance",
+    "value": null,
+    "unit": "J/K",
+    "source": "Requires model definition and validation",
+    "status": "missing",
+    "note": "Full-layer heat capacity is not automatically effective RC capacitance."
+  },
+  {
+    "parameter": "Original 2017 indoor temperature time series",
+    "value": null,
+    "unit": "degC",
+    "source": "Main paper Fig.7 only",
+    "status": "missing raw data",
+    "note": ""
+  },
+  {
+    "parameter": "Original 2017 rooftop weather time series",
+    "value": null,
+    "unit": "multiple",
+    "source": "Supplemental Figs.S1-S2 only",
+    "status": "missing raw data",
+    "note": ""
+  }
+]

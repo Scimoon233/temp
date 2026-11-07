@@ -1,0 +1,42 @@
+﻿parameter,value,units,evidence_class,source_or_explanation
+dt_seconds,300,s,研究假设,docs/METHODS_模型与假设.md
+warmup_days,28,day,研究假设,docs/METHODS_模型与假设.md
+initial_C,26.0,degC,研究假设,docs/METHODS_模型与假设.md
+mass_kJ_m2K,165.0,kJ/(m2 K),研究假设,有效容量，不从原材料总质量直接推定
+mass_coupling_W_m2K,9.1,W/(m2 K),研究假设,docs/METHODS_模型与假设.md
+window_scale,1.0,dimensionless,研究假设,docs/METHODS_模型与假设.md
+shade_direct_removed,0.5,dimensionless,研究假设,docs/METHODS_模型与假设.md
+shade_diffuse_removed,0.0,dimensionless,研究假设,docs/METHODS_模型与假设.md
+ach_closed,0.44,h^-1,交接文献代理,Hou等2019 Table6，尚未独立取得全文核对
+ach_open,1.51,h^-1,交接文献代理,Hou等2019 Table6，总ACH
+deltaT_K,1.0,K,研究假设,docs/METHODS_模型与假设.md
+cooling_setpoint_C,26.0,degC,研究假设,docs/METHODS_模型与假设.md
+gain_peak_W_m2,16.7,W/m2,文献峰值代理+假设时序,Short等2018正文得热段
+gain_scale,1.0,dimensionless,研究假设,docs/METHODS_模型与假设.md
+solar_air_fraction,0.4,dimensionless,研究假设,docs/METHODS_模型与假设.md
+balcony_secondary_fraction,0.25,dimensionless,研究假设,docs/METHODS_模型与假设.md
+interzone_mixing_ACH_small_zone,0.1,h^-1,研究假设,docs/METHODS_模型与假设.md
+rotation_deg,0.0,degree,研究假设,docs/METHODS_模型与假设.md
+east_exposed,False,dimensionless,研究假设,docs/METHODS_模型与假设.md
+opaque_absorptance,0.6,dimensionless,研究假设,docs/METHODS_模型与假设.md
+outside_h_W_m2K,25.0,W/(m2 K),研究假设,docs/METHODS_模型与假设.md
+ground_albedo,0.2,dimensionless,研究假设,docs/METHODS_模型与假设.md
+Uwall,1.120758974486838,W/(m2 K),推导,补充材料Table S1导热率/厚度+假设表面热阻
+Upartition_opaque,2.392611912492681,W/(m2 K),推导,补充材料Table S1内墙+两侧热阻
+Uwindow,6.7,W/(m2 K),交接文献代理,BASIX item5，本轮未独立核对原表
+SHGC,0.7,dimensionless,交接文献代理,BASIX item5，整窗
+H12,47.45446124309363,W/K,推导,隔断UA及背景区间混合
+air_density,1.2,kg/m3,研究假设,固定空气密度
+air_cp,1006,J/(kg K),研究假设,固定空气比热
+Z1_floor_area,41.1,m2,图示面积假设或推导,geometry_v2及热网络公式
+Z1_volume,110.97,m3,图示面积假设或推导,geometry_v2及热网络公式
+C_air1,133962.984,J/K,图示面积假设或推导,geometry_v2及热网络公式
+C_mass1,6781500.0,J/K,图示面积假设或推导,geometry_v2及热网络公式
+Hmass1,374.01,W/K,图示面积假设或推导,geometry_v2及热网络公式
+H_envelope1,71.97260351275294,W/K,图示面积假设或推导,geometry_v2及热网络公式
+Z2_floor_area,6.3,m2,图示面积假设或推导,geometry_v2及热网络公式
+Z2_volume,17.01,m3,图示面积假设或推导,geometry_v2及热网络公式
+C_air2,20534.472,J/K,图示面积假设或推导,geometry_v2及热网络公式
+C_mass2,1039500.0,J/K,图示面积假设或推导,geometry_v2及热网络公式
+Hmass2,57.33,W/K,图示面积假设或推导,geometry_v2及热网络公式
+H_envelope2,100.07642797768156,W/K,图示面积假设或推导,geometry_v2及热网络公式

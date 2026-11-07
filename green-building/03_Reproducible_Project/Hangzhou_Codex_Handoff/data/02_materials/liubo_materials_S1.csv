@@ -1,0 +1,16 @@
+﻿element,layer_order_as_listed,material,thickness_mm,conductivity_W_mK,density_kg_m3,specific_heat_J_kgK,evidence,source,verification_note
+Exterior wall,1,Bloated perlite board (Outer layer),35,0.072,300,837,reported,"Supplemental data, Table S1, PDF page 1; DOI: 10.6084/m9.figshare.6803489.v1",
+Exterior wall,2,Fire-proof Alkali Resistant Glass Fibre Mesh,6,0.3,2.5,800,reported,"Supplemental data, Table S1, PDF page 1; DOI: 10.6084/m9.figshare.6803489.v1","Source prints density=2.5 kg/m3; preserve verbatim, verify units/value before use."
+Exterior wall,3,Cement mortar,20,0.93,1800,1050,reported,"Supplemental data, Table S1, PDF page 1; DOI: 10.6084/m9.figshare.6803489.v1",
+Exterior wall,4,Reinforced Concrete,300,1.74,2500,2500,reported,"Supplemental data, Table S1, PDF page 1; DOI: 10.6084/m9.figshare.6803489.v1","Source prints cp=2500 J/(kg K); preserve verbatim, verify before assigning effective thermal mass."
+Exterior wall,5,Mixed mortar,20,0.9,1500,1000,reported,"Supplemental data, Table S1, PDF page 1; DOI: 10.6084/m9.figshare.6803489.v1",
+Interior Wall,1,Cement mortar,20,0.93,1800,1050,reported,"Supplemental data, Table S1, PDF page 1; DOI: 10.6084/m9.figshare.6803489.v1",
+Interior Wall,2,Reinforced Concrete,200,1.74,2500,2500,reported,"Supplemental data, Table S1, PDF page 1; DOI: 10.6084/m9.figshare.6803489.v1","Source prints cp=2500 J/(kg K); preserve verbatim, verify before assigning effective thermal mass."
+Interior Wall,3,Cement mortar,20,0.93,1800,1050,reported,"Supplemental data, Table S1, PDF page 1; DOI: 10.6084/m9.figshare.6803489.v1",
+Ceiling,1,Cement mortar,20,0.93,1800,1050,reported,"Supplemental data, Table S1, PDF page 1; DOI: 10.6084/m9.figshare.6803489.v1",
+Ceiling,2,Reinforced Concrete,120,1.74,2500,2500,reported,"Supplemental data, Table S1, PDF page 1; DOI: 10.6084/m9.figshare.6803489.v1","Source prints cp=2500 J/(kg K); preserve verbatim, verify before assigning effective thermal mass."
+Ceiling,3,Cement mortar,20,0.93,1800,1050,reported,"Supplemental data, Table S1, PDF page 1; DOI: 10.6084/m9.figshare.6803489.v1",
+Floor,1,Wood floor (Upper Layer),20,0.115,800,1380,reported,"Supplemental data, Table S1, PDF page 1; DOI: 10.6084/m9.figshare.6803489.v1",
+Floor,2,Cement mortar,20,0.93,1800,1050,reported,"Supplemental data, Table S1, PDF page 1; DOI: 10.6084/m9.figshare.6803489.v1",
+Floor,3,Reinforced Concrete,120,1.74,2500,2500,reported,"Supplemental data, Table S1, PDF page 1; DOI: 10.6084/m9.figshare.6803489.v1","Source prints cp=2500 J/(kg K); preserve verbatim, verify before assigning effective thermal mass."
+Floor,4,Cement mortar,20,0.93,1800,1050,reported,"Supplemental data, Table S1, PDF page 1; DOI: 10.6084/m9.figshare.6803489.v1",

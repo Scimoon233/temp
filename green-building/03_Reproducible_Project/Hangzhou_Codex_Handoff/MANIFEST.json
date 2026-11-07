@@ -1,0 +1,262 @@
+[
+  {
+    "path": "CODEX_PROMPT.md",
+    "bytes": 6018,
+    "sha256": "b4b4118ab94f2fa7b7f3dacf2954f2cb2a9f85bb496b943176c6d38e62cd21b9"
+  },
+  {
+    "path": "CURRENT_STATE.json",
+    "bytes": 2097,
+    "sha256": "1005b427ad42fc6f14739b339bfb564d04b2180ae1c05f25073ece209abedd56"
+  },
+  {
+    "path": "PACKAGE_CHECKS.json",
+    "bytes": 774,
+    "sha256": "dfc2a9d6787e9d62f2a0a6016bc54cbd5a364db8ca2512addfd8db83e751f3c9"
+  },
+  {
+    "path": "PAPER_OUTLINE.md",
+    "bytes": 19174,
+    "sha256": "1a11d7f28eef8be256df91e125e4806d188c31caea52a083efc4d84bca6367e8"
+  },
+  {
+    "path": "START_HERE.md",
+    "bytes": 2726,
+    "sha256": "7c11d706d1953b0da889a27d9813f68475a80d7573e7995e9240904a8a4db8e5"
+  },
+  {
+    "path": "data/00_current/Hangzhou_Master_Data_Inventory.docx",
+    "bytes": 44869,
+    "sha256": "e8c67cf378f9ef135f59669753a3468d0d2d32e1cae88eb983f0956676e48a72"
+  },
+  {
+    "path": "data/00_current/current_parameter_register.json",
+    "bytes": 4442,
+    "sha256": "ef92f34cff880744e5990f8e2eb3e7ef031fd46899765b2b2f9decce0ce97159"
+  },
+  {
+    "path": "data/00_current/file_manifest.json",
+    "bytes": 6880,
+    "sha256": "176d4a6af770ccb8e1658a611d25a7fad2cda1461442e57b015e22f6a36b1a60"
+  },
+  {
+    "path": "data/00_current/package_checks.json",
+    "bytes": 319,
+    "sha256": "f3012b097506d4cfdfc11ed71be2f18abacfad9258d3438fe7e6d5611c6116bf"
+  },
+  {
+    "path": "data/01_geometry/backup_6577_floorplan.jpg",
+    "bytes": 121426,
+    "sha256": "d75a60fe1cde1e0538e34edca10da9ea00febb37f71475f81da97c46b6078494"
+  },
+  {
+    "path": "data/01_geometry/selected_7105_floorplan.jpg",
+    "bytes": 74236,
+    "sha256": "ec094ba4948f39f298325f2eb5f6a720d74d314805f4a5fd0585d211e86906f3"
+  },
+  {
+    "path": "data/01_geometry/source_and_room_areas.json",
+    "bytes": 876,
+    "sha256": "204c62a12cad150e14067ee5d90eaa9c35572aac93e51ceb88c25a1eb0d95db9"
+  },
+  {
+    "path": "data/02_materials/external_and_historical_parameter_candidates.json",
+    "bytes": 4565,
+    "sha256": "94d51b884011016483ae4fa218841e396f298cba6bc528055d229f61f7b6cf22"
+  },
+  {
+    "path": "data/02_materials/liubo_materials_S1.csv",
+    "bytes": 2731,
+    "sha256": "010facb1b4e410dc37d6d4c8232d2e0e668e1267e963703994bba853be89dc68"
+  },
+  {
+    "path": "data/02_materials/liubo_materials_S1.json",
+    "bytes": 6076,
+    "sha256": "a8d9beca3888eb80d95eb44b1ea7acfcce249a2017276db3df239c4bcbd2f73a"
+  },
+  {
+    "path": "data/03_weather_recent/era5_2025_summer.csv",
+    "bytes": 101117,
+    "sha256": "29241f0ea0dd355809785d57ee81a528b751e72d5559ed52cf6291ecd5fa5613"
+  },
+  {
+    "path": "data/03_weather_recent/era5_2026_summer.csv",
+    "bytes": 100859,
+    "sha256": "39cd737c6e220376b42ff25829f91032c995948803419688a6668314d4dcd938"
+  },
+  {
+    "path": "data/03_weather_recent/era5_openmeteo_2025_summer.json",
+    "bytes": 103999,
+    "sha256": "aaeca021f08895f41269cb2a6584bc9ca0bfd4ca0c2be115ac0af6567983b178"
+  },
+  {
+    "path": "data/03_weather_recent/era5_openmeteo_2025_url.txt",
+    "bytes": 309,
+    "sha256": "8541774b99eedf7a7067795f1b5c83a349815ae6666b6cdc394a68c355f7ecfb"
+  },
+  {
+    "path": "data/03_weather_recent/era5_openmeteo_2026_summer.json",
+    "bytes": 103746,
+    "sha256": "20ade0f6496d927a4aa26e4047e5f55833e0be1d8e8af5dba531312d2eccc125"
+  },
+  {
+    "path": "data/03_weather_recent/era5_openmeteo_2026_url.txt",
+    "bytes": 309,
+    "sha256": "9855d7c6d67cea750003b02133ed5830f7e4e35dcb15adfe0d1c704eaa67f53b"
+  },
+  {
+    "path": "data/04_weather_archive/2022_derived_candidate_weather_QA.json",
+    "bytes": 1125,
+    "sha256": "237a92374ba1aeddd872b6ae4325a1d1921722475d983c43002968e3b4c54244"
+  },
+  {
+    "path": "data/04_weather_archive/2022_derived_heatwave_week.csv",
+    "bytes": 35242,
+    "sha256": "b4de3d78197ac1a8e7371f464c119d90db9bd4921152bf69fa06e3e60b7e529e"
+  },
+  {
+    "path": "data/04_weather_archive/2022_derived_hourly_candidates.csv",
+    "bytes": 305852,
+    "sha256": "bb4b56f2d5efc2987e17b128981350c97e28590d490137cc5d0a8029fe5f693b"
+  },
+  {
+    "path": "data/04_weather_archive/NOAA_2022_airport_summer_observations.csv",
+    "bytes": 416479,
+    "sha256": "3d94bcc4d6294883fb174869d848db5c4ce3ec45b5a1663470134484b8dc8d69"
+  },
+  {
+    "path": "data/04_weather_archive/NOAA_2022_all_location_groups.csv",
+    "bytes": 2822943,
+    "sha256": "65f838a465302ef8a0b724dca9554c454e747a0edb8e5c04379dc142c21243a8"
+  },
+  {
+    "path": "data/04_weather_archive/NOAA_2022_city_sampled_daily_extrema.csv",
+    "bytes": 1702,
+    "sha256": "34713e8df00f205ac432df2b6d7179e5d961dbe4373797a7a3d6f32141ee59c9"
+  },
+  {
+    "path": "data/04_weather_archive/NOAA_2022_city_summer_observations.csv",
+    "bytes": 68300,
+    "sha256": "8dd6467208cb4616d68b27a52068d8ff6ff122a45438b18cd63e461d8d332d34"
+  },
+  {
+    "path": "data/04_weather_archive/NOAA_2022_quality_report.json",
+    "bytes": 1264,
+    "sha256": "31c400f262041115696b7dd29780a210ecdac066cbd7f9bacf1ada1c98cc6cef"
+  },
+  {
+    "path": "data/04_weather_archive/NOAA_584570_2022_original.gz",
+    "bytes": 555932,
+    "sha256": "36936b0c5f6730b1a9020678b7d7cd6d5248ca0303e77185d8a718a234f6e49b"
+  },
+  {
+    "path": "data/04_weather_archive/NOAA_584570_2024_original.gz",
+    "bytes": 539528,
+    "sha256": "aab81db6adf208f3d253d86cdf2e886771e49c0940535c141aad33a8b570bcd0"
+  },
+  {
+    "path": "data/04_weather_archive/NOAA_584570_2025_partial_original.gz",
+    "bytes": 338239,
+    "sha256": "44fc60c600370deab6c690146b8234e1235801d71a6c0d69ae93cef90592500f"
+  },
+  {
+    "path": "data/04_weather_archive/NOAA_station_history_excerpt.txt",
+    "bytes": 183,
+    "sha256": "5d811032a525c91df486a031e3e207a1db820e1c758e33aff255bf9c1d71c4f3"
+  },
+  {
+    "path": "data/04_weather_archive/POWER_2022_JulAug_UTC.json",
+    "bytes": 194355,
+    "sha256": "42319353220c0685384645aa2c606da6d6927dac3020013269efe748e2352e58"
+  },
+  {
+    "path": "data/04_weather_archive/POWER_2022_source_url.txt",
+    "bytes": 245,
+    "sha256": "572ac173daf495c484fd4323137eadadc4390091b381993319ec26b0975d80c2"
+  },
+  {
+    "path": "data/05_literature/Short_2018_main_paper.pdf",
+    "bytes": 10725431,
+    "sha256": "b47e5418d2e3d5092171fc078a2e57e384645e2a1fccd51ae8eea2a6a6965207"
+  },
+  {
+    "path": "data/05_literature/Short_2018_supplement.pdf",
+    "bytes": 10243641,
+    "sha256": "335df90e1b950063746cd1948cfe045b001b468d9b2c0be1230e733c39794136"
+  },
+  {
+    "path": "data/05_literature/earlier_literature_and_outline.md",
+    "bytes": 18618,
+    "sha256": "34286851b9821259d86000add50b2c60a8300b5506ec90280c80cedd0a8a3718"
+  },
+  {
+    "path": "data/05_literature/earlier_outline_superseded_scope.docx",
+    "bytes": 46675,
+    "sha256": "5861849ae9b0e977e93ef71c7706e6243b38ea4c7624b7586c22c0636c56622e"
+  },
+  {
+    "path": "data/05_literature/figshare_supplement_metadata.json",
+    "bytes": 9599,
+    "sha256": "1b383faceb09918338332021f5edf5da3994f7c630a27ff436a3b7046ae0c37a"
+  },
+  {
+    "path": "data/06_methods_history/earlier_goals_superseded_G5.md",
+    "bytes": 13568,
+    "sha256": "a08e24cb19beb8f0749be8790265c41f72817c39aa7bc6efd7676ccdcafab58c"
+  },
+  {
+    "path": "data/06_methods_history/original_306_CFD_flow_reference.json",
+    "bytes": 1440,
+    "sha256": "753250641e5f8e7b928203b2da48c78ca6da7465ebab982eb34c7148ffe582c4"
+  },
+  {
+    "path": "data/06_methods_history/original_306_parameter_inventory.json",
+    "bytes": 5141,
+    "sha256": "4b662d52b16e1bcf2842f6d5748581903e605d764ba13c7ed05467bcac41e7e7"
+  },
+  {
+    "path": "data/06_methods_history/prepare_2022_weather.py",
+    "bytes": 5339,
+    "sha256": "758a20b52d7d156b086d4c6b95a0d3bf176436283d8067ba49511744fa8c450c"
+  },
+  {
+    "path": "data/06_methods_history/process_NOAA_2022.py",
+    "bytes": 4543,
+    "sha256": "95f2a2adf2dbf56ea0d679b7b2c97391f0cd6eb2a58aacf405923a68d3acdb68"
+  },
+  {
+    "path": "data/06_methods_history/source_urls_earlier_goals.json",
+    "bytes": 966,
+    "sha256": "8072a09fbe6edb39bac312516b8e7abef34dc3cae559bd6875de48c566d6842b"
+  },
+  {
+    "path": "data/README.md",
+    "bytes": 904,
+    "sha256": "cfaea039c01f6d060a619a0caa0006db10e4e23623cd40d3a30a3e3f62db59b7"
+  },
+  {
+    "path": "geometry_v1/Geometry_Boundary_Table.md",
+    "bytes": 9181,
+    "sha256": "6a597293eaea730becf0ba9fb5143677239d7c12acdf18268d518d16d855ebe2"
+  },
+  {
+    "path": "geometry_v1/build_geometry.py",
+    "bytes": 13601,
+    "sha256": "e97adc28c28dcb56c37d3234e23805fc12ede3e2e5d2bc64f18eb92c0c8de8d7"
+  },
+  {
+    "path": "geometry_v1/geometry_boundary_v1.json",
+    "bytes": 11098,
+    "sha256": "3e7e89122f52335c278e51ef9db0f0b1d327bd2141bd1eb2ac14b91dab375a26"
+  },
+  {
+    "path": "geometry_v1/selected_7105_floorplan.jpg",
+    "bytes": 74236,
+    "sha256": "ec094ba4948f39f298325f2eb5f6a720d74d314805f4a5fd0585d211e86906f3"
+  },
+  {
+    "path": "verify_handoff.py",
+    "bytes": 392,
+    "sha256": "14a5b012e19301f93d47198ae29382fe1a7d69ffb078c00f334df6d77efe1031"
+  }
+]

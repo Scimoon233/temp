@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "english_pdf_pages": 3,
+  "chinese_reading_pdf_pages": 4,
+  "english_fonts": [
+    "TimesNewRomanPS-BoldMT",
+    "TimesNewRomanPSMT"
+  ],
+  "english_pdf_text_sizes": [
+    12.0
+  ],
+  "model_checks": "PASS",
+  "supplemental_checks": "PASS",
+  "online_document_created": false,
+  "chat_attachment_published": false
+}

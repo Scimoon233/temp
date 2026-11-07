@@ -1,0 +1,1 @@
+https://archive-api.open-meteo.com/v1/archive?latitude=30.2662&longitude=120.126&start_date=2025-06-01&end_date=2025-08-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms

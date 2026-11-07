@@ -1,0 +1,17 @@
+{
+  "status": "first_version_simulated_and_numerically_checked",
+  "base_season_runs": 16,
+  "total_season_runs": 320,
+  "years": [
+    2025,
+    2026
+  ],
+  "calibrated": false,
+  "parameter_variants": 20,
+  "checks": "results/checks.json",
+  "remaining": [
+    "外部参数文献全文核对",
+    "复杂几何遮挡/多参数不确定性可扩展",
+    "论文定稿未生成"
+  ]
+}

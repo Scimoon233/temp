@@ -1,0 +1,60 @@
+{
+  "base": {},
+  "ach_open=0.8": {
+    "ach_open": 0.8
+  },
+  "ach_open=3.0": {
+    "ach_open": 3.0
+  },
+  "mass_kJ_m2K=80.0": {
+    "mass_kJ_m2K": 80.0
+  },
+  "mass_kJ_m2K=260.0": {
+    "mass_kJ_m2K": 260.0
+  },
+  "window_scale=0.8": {
+    "window_scale": 0.8
+  },
+  "window_scale=1.1": {
+    "window_scale": 1.1
+  },
+  "shade_direct_removed=0.25": {
+    "shade_direct_removed": 0.25
+  },
+  "shade_direct_removed=1.0": {
+    "shade_direct_removed": 1.0
+  },
+  "deltaT_K=0.0": {
+    "deltaT_K": 0.0
+  },
+  "deltaT_K=2.0": {
+    "deltaT_K": 2.0
+  },
+  "balcony_secondary_fraction=0.0": {
+    "balcony_secondary_fraction": 0.0
+  },
+  "balcony_secondary_fraction=0.5": {
+    "balcony_secondary_fraction": 0.5
+  },
+  "gain_scale=0.5": {
+    "gain_scale": 0.5
+  },
+  "gain_scale=1.5": {
+    "gain_scale": 1.5
+  },
+  "rotation_deg=-30.0": {
+    "rotation_deg": -30.0
+  },
+  "rotation_deg=30.0": {
+    "rotation_deg": 30.0
+  },
+  "mass_coupling_W_m2K=4.55": {
+    "mass_coupling_W_m2K": 4.55
+  },
+  "mass_coupling_W_m2K=18.2": {
+    "mass_coupling_W_m2K": 18.2
+  },
+  "east_exposed=True": {
+    "east_exposed": true
+  }
+}

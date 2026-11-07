@@ -1,0 +1,71 @@
+{
+  "version": "paper_draft_v0.1",
+  "date": "2026-11-07",
+  "calibrated": false,
+  "primary_runs": 320,
+  "supplementary_runs": 112,
+  "pdf_pages": 14,
+  "tables": 8,
+  "figures": 9,
+  "reference_baseline": "config/base.json",
+  "source_audit": "paper_draft/SOURCE_AUDIT.md",
+  "reproducibility": "paper_draft/README_草稿说明.md",
+  "checks": {
+    "status": "PASS",
+    "base_temperature_reproduction_max_K": 4.999672142957934e-07,
+    "node_residual_max_W": 8.628830983070657e-10,
+    "zone_balance_max_W": 4.1529801819706336e-10,
+    "season_runs": 112,
+    "new_case_refinement": [
+      {
+        "variant": "canopy_1.0m",
+        "year": 2025,
+        "mode": "free",
+        "relative_change": 5.238813287847664e-05
+      },
+      {
+        "variant": "canopy_1.0m",
+        "year": 2025,
+        "mode": "ideal",
+        "relative_change": 2.5201721369649532e-06
+      },
+      {
+        "variant": "canopy_1.0m",
+        "year": 2026,
+        "mode": "free",
+        "relative_change": 5.662216198976579e-05
+      },
+      {
+        "variant": "canopy_1.0m",
+        "year": 2026,
+        "mode": "ideal",
+        "relative_change": 8.467398477811804e-07
+      },
+      {
+        "variant": "combined_lower_gain",
+        "year": 2025,
+        "mode": "free",
+        "relative_change": 6.596989997552102e-05
+      },
+      {
+        "variant": "combined_lower_gain",
+        "year": 2025,
+        "mode": "ideal",
+        "relative_change": 4.395856167327082e-06
+      },
+      {
+        "variant": "combined_lower_gain",
+        "year": 2026,
+        "mode": "free",
+        "relative_change": 7.540515844284013e-05
+      },
+      {
+        "variant": "combined_lower_gain",
+        "year": 2026,
+        "mode": "ideal",
+        "relative_change": 5.94234197994621e-06
+      }
+    ],
+    "interzone_cancellation_max_kWh": 0.0
+  }
+}

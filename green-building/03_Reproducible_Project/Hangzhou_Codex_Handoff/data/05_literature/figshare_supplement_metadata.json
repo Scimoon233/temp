@@ -1,0 +1,202 @@
+{
+  "files": [
+    {
+      "id": 12373976,
+      "name": "rbri_a_1489465_sm1121.pdf",
+      "size": 10243641,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/12373976",
+      "supplied_md5": "eb6b52f1562a27cf13a6bbe773ae7a34",
+      "computed_md5": "eb6b52f1562a27cf13a6bbe773ae7a34",
+      "mimetype": "application/pdf"
+    }
+  ],
+  "folder_structure": {},
+  "authors": [
+    {
+      "id": 5501693,
+      "full_name": "C. Alan Short",
+      "first_name": "C. Alan",
+      "last_name": "Short",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 1542946,
+      "full_name": "Jiyun Song",
+      "first_name": "Jiyun",
+      "last_name": "Song",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 5501696,
+      "full_name": "Laetitia Mottet",
+      "first_name": "Laetitia",
+      "last_name": "Mottet",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 5233046,
+      "full_name": "Shuqin Chen",
+      "first_name": "Shuqin",
+      "last_name": "Chen",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 5501699,
+      "full_name": "Jindong Wu",
+      "first_name": "Jindong",
+      "last_name": "Wu",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 49951,
+      "full_name": "Jian Ge",
+      "first_name": "Jian",
+      "last_name": "Ge",
+      "is_active": false,
+      "url_name": "Jian_Ge",
+      "orcid_id": ""
+    }
+  ],
+  "custom_fields": [],
+  "figshare_url": "https://tandf.figshare.com/articles/journal_contribution/Challenges_in_the_low-carbon_adaptation_of_China_s_apartment_towers/6803489",
+  "download_disabled": false,
+  "description": "<p>Low-carbon building retrofit will contribute to delivering China’s policy to reduce carbon emissions. This paper proposes viable low-carbon adaptation strategies for a recurrent building type within the Hot Summer and Cold Winter (HSCW) zone. An existing 23-storey tower in Hangzhou is investigated within the context of a representative city environment. Indoor air temperatures and energy consumption were monitored across a typical floor and simulated in EnergyPlus. Outdoor and indoor airflow patterns were modelled in an advanced computational fluid dynamics (CFD) tool, FLUIDITY. Across a typical floor, observations and modelling show marked variations. South-facing flats overheat significantly in summer largely due to solar radiation. External sun-shading structures are proposed and evaluated to counter summer overheating. An innovative wind catcher and exhaust-stack natural ventilation system is proposed to enhance indoor thermal comfort using natural ventilation. Modelling of this integrated ventilation system indicates that the proposed retrofit system will improve indoor thermal comfort even in the lower floors. The proposed building retrofit strategy is costed using locally established construction cost estimates. Predicted energy savings suggest that the adaptation strategy proposed is potentially viable with significant implications for policy-makers, developers, constructors and designers in this challenging climate zone in China.</p>",
+  "funding": "The authors are most grateful to the UK Engineering and Physical Sciences Research Council (EPSRC) and the National Natural Science Foundation of China (NSFC) for funding the collaborative multidisciplinary project Low Carbon Climate-Responsive Heating and Cooling of Cities (LoHCool) [NSFC grant number 51561135002; and EPSRC grant number EP/N009797/1]. The full research team comprised the University of Cambridge’s departments of Architecture and Engineering; Chongqing University; Zhejiang University; the University of Reading; the University of Cambridge’s Institute of Atmospheric Physics; and Loughborough University’s Department of Civil and Building Engineering. LoHCool also benefitted from a close collaboration with the EPSRC Grand Challenges project ‘Managing Air for Green Inner Cities’ (MAGIC) [EPSRC reference number EP/N010221/1], in which the projects shared two research associates equally so that LoHCool China Case Studies were available to MAGIC and benefitted from modelling capability at Imperial College London. MAGIC is led by the Department of Applied Mathematics and Theoretical Physics, University of Cambridge, with Imperial College’s Department of Earth Science and Engineering, the departments of Engineering, Architecture, Geography, Chemistry and Land Economy at the University of Cambridge, and the universities of Surrey and Reading.",
+  "funding_list": [
+    {
+      "id": 362636,
+      "title": "The authors are most grateful to the UK Engineering and Physical Sciences Research Council (EPSRC) and the National Natural Science Foundation of China (NSFC) for funding the collaborative multidisciplinary project Low Carbon Climate-Responsive Heating and Cooling of Cities (LoHCool) [NSFC grant number 51561135002; and EPSRC grant number EP/N009797/1]. The full research team comprised the University of Cambridge’s departments of Architecture and Engineering; Chongqing University; Zhejiang University; the University of Reading; the University of Cambridge’s Institute of Atmospheric Physics; and Loughborough University’s Department of Civil and Building Engineering. LoHCool also benefitted from a close collaboration with the EPSRC Grand Challenges project ‘Managing Air for Green Inner Cities’ (MAGIC) [EPSRC reference number EP/N010221/1], in which the projects shared two research associates equally so that LoHCool China Case Studies were available to MAGIC and benefitted from modelling capability at Imperial College London. MAGIC is led by the Department of Applied Mathematics and Theoretical Physics, University of Cambridge, with Imperial College’s Department of Earth Science and Engineering, the departments of Engineering, Architecture, Geography, Chemistry and Land Economy at the University of Cambridge, and the universities of Surrey and Reading.",
+      "grant_code": "",
+      "funder_name": null,
+      "is_user_defined": 1
+    }
+  ],
+  "version": 1,
+  "status": "public",
+  "size": 10243641,
+  "created_date": "2018-07-11T08:40:05Z",
+  "modified_date": "2023-06-01T08:30:49Z",
+  "is_public": true,
+  "is_confidential": false,
+  "is_metadata_record": false,
+  "confidential_reason": "",
+  "metadata_reason": "",
+  "license": {
+    "value": 1,
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "tags": [
+    "adaptation",
+    "buildings",
+    "low carbon",
+    "natural ventilation",
+    "retrofit",
+    "tall buildings",
+    "China"
+  ],
+  "keywords": [
+    "adaptation",
+    "buildings",
+    "low carbon",
+    "natural ventilation",
+    "retrofit",
+    "tall buildings",
+    "China"
+  ],
+  "categories": [
+    {
+      "id": 146,
+      "title": "Space Science",
+      "parent_id": 43,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 272,
+      "title": "Environmental Sciences not elsewhere classified",
+      "parent_id": 33,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 39,
+      "title": "Ecology",
+      "parent_id": 33,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 734,
+      "title": "Biological Sciences not elsewhere classified",
+      "parent_id": 48,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 106,
+      "title": "Science Policy",
+      "parent_id": 40,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    }
+  ],
+  "references": [
+    "https://doi.org/10.1080/09613218.2018.1489465"
+  ],
+  "has_linked_file": false,
+  "citation": "Challenges in the low-carbon adaptation of China’s apartment towers. Taylor & Francis. Short, C. Alan; Song, Jiyun; Mottet, Laetitia; Chen, Shuqin; Wu, Jindong; Ge, Jian.",
+  "related_materials": [
+    {
+      "id": 16741958,
+      "identifier": "10.1080/09613218.2018.1489465",
+      "title": "Challenges in the low-carbon adaptation of China’s apartment towers",
+      "relation": "IsSupplementTo",
+      "identifier_type": "DOI",
+      "is_linkout": true,
+      "link": "https://doi.org/10.1080/09613218.2018.1489465"
+    }
+  ],
+  "is_embargoed": false,
+  "embargo_date": null,
+  "embargo_type": null,
+  "embargo_title": "",
+  "embargo_reason": "",
+  "embargo_options": [],
+  "id": 6803489,
+  "title": "Challenges in the low-carbon adaptation of China’s apartment towers",
+  "doi": "10.6084/m9.figshare.6803489.v1",
+  "handle": "",
+  "url": "https://api.figshare.com/v2/articles/6803489",
+  "published_date": "2018-07-11T08:40:05Z",
+  "thumb": "https://ndownloader.figshare.com/files/12373976/preview/12373976/thumb.png",
+  "defined_type": 6,
+  "defined_type_name": "journal contribution",
+  "group_id": 2991,
+  "url_private_api": "https://api.figshare.com/v2/account/articles/6803489",
+  "url_public_api": "https://api.figshare.com/v2/articles/6803489",
+  "url_private_html": "https://figshare.com/account/articles/6803489",
+  "url_public_html": "https://tandf.figshare.com/articles/journal_contribution/Challenges_in_the_low-carbon_adaptation_of_China_s_apartment_towers/6803489",
+  "timeline": {
+    "posted": "2018-07-11T08:40:05",
+    "firstOnline": "2018-08-30"
+  },
+  "resource_title": "Challenges in the low-carbon adaptation of China’s apartment towers",
+  "resource_doi": "10.1080/09613218.2018.1489465"
+}

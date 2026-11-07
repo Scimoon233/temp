@@ -1,0 +1,8 @@
+# Preserve source bytes and manifest hashes across Git checkouts.
+* -text
+*.pdf binary
+*.docx binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gz binary

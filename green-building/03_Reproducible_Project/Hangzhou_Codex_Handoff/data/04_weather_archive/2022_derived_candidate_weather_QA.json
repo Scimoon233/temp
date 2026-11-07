@@ -1,0 +1,21 @@
+{
+  "hours": 1488,
+  "observed_temperature_hours": 486,
+  "interpolated_temperature_hours": 954,
+  "missing_temperature_hours": 48,
+  "missing_radiation_hours": 8,
+  "heatwave_week_hours": 168,
+  "heatwave_week_missing_temperature_hours": 0,
+  "heatwave_week_observed_temperature_hours": 56,
+  "heatwave_week_interpolated_temperature_hours": 112,
+  "heatwave_week_missing_radiation_hours": 0,
+  "heatwave_week_missing_derived_hour_mean_temperature_hours": 0,
+  "notes": [
+    "Interpolation is processing, not a new observation.",
+    "POWER official FAQ: timestamps identify the START of the hour; radiation values are hourly means.",
+    "city_temperature_C is the value at the hour start; the separate hour-mean field is derived from linear interpolation, not an observed mean.",
+    "No airport observations, long-gap interpolation, radiation bias adjustment, or fa\u00e7ade transposition.",
+    "The full July-August series has missing leading temperature/radiation and must not be treated as simulation-ready.",
+    "The selected week is a candidate boundary condition, not the original 2017 calibration weather."
+  ]
+}

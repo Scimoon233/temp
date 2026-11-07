@@ -1,0 +1,10 @@
+{
+  "source_files_and_reports": 40,
+  "docx_rendered_pages": 5,
+  "room_area_sum_including_balcony_m2": 47.4,
+  "room_area_sum_excluding_balcony_m2": 41.1,
+  "primary_weather_hours": 4416,
+  "primary_weather_missing_values": 0,
+  "old_306_values_excluded_from_current_inputs": true,
+  "building_simulation_run": false
+}

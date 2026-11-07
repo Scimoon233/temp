@@ -1,0 +1,13 @@
+{
+  "S1": "https://doi.org/10.1080/09613218.2018.1489465",
+  "S2": "https://www.planningportal.nsw.gov.au/basix-thermal-comfort/diy-method/windows/frame-glass-types/default-window-data",
+  "S3": "https://assetmanager-ws.pilkington.com/fileserver.aspx?cd=cd&cmd=get_file&ref=Perf-01-06",
+  "S4": "https://engineering.purdue.edu/~yanchen/paper/2019-10.pdf",
+  "S5": "https://bauforumstahl.de/wp-content/uploads/2025/05/Background_document.pdf",
+  "S6": "https://energyplus.readthedocs.io/en/latest/guides/input-output-reference/1.17-group-airflow.html",
+  "S7": "https://power.larc.nasa.gov/docs/services/api/temporal/hourly/",
+  "S8": "https://power.larc.nasa.gov/docs/faqs/other/",
+  "Cambridge_files": "https://api.repository.cam.ac.uk/server/api/core/bundles/4ac0b2a8-09c3-440d-919b-08392443a18c/bitstreams?size=100",
+  "Figshare_files": "https://api.figshare.com/v2/articles/6803489",
+  "Crossref": "https://api.crossref.org/works/10.1080/09613218.2018.1489465"
+}

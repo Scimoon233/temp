@@ -1,0 +1,182 @@
+{
+  "zone_polygons_m": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        7.625,
+        0
+      ],
+      [
+        7.625,
+        5.9321711598080515
+      ],
+      [
+        6.397,
+        5.9321711598080515
+      ],
+      [
+        6.397,
+        5.286117526302284
+      ],
+      [
+        0,
+        5.286117526302284
+      ]
+    ],
+    [
+      [
+        0,
+        -1.6166281755196306
+      ],
+      [
+        3.897,
+        -1.6166281755196306
+      ],
+      [
+        3.897,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  ],
+  "zone_areas_m2": [
+    41.1,
+    6.3
+  ],
+  "zone_volumes_m3": [
+    110.97,
+    17.01
+  ],
+  "height_m": 2.7,
+  "partition_gross_m2": 10.5219,
+  "partition_glazed_m2": 5.04,
+  "segments": [
+    {
+      "id": "E01",
+      "zone": 1,
+      "orientation": "N",
+      "length_m": 3.897,
+      "gross_m2": 10.5219,
+      "window_m2": 0,
+      "opaque_m2": 10.5219,
+      "exterior": true
+    },
+    {
+      "id": "E02",
+      "zone": 1,
+      "orientation": "W",
+      "length_m": 2.4377726456248396,
+      "gross_m2": 6.581986143187067,
+      "window_m2": 1.125,
+      "opaque_m2": 5.456986143187067,
+      "exterior": true
+    },
+    {
+      "id": "E03",
+      "zone": 1,
+      "orientation": "W",
+      "length_m": 2.8483448806774443,
+      "gross_m2": 7.6905311778291,
+      "window_m2": 0,
+      "opaque_m2": 7.6905311778291,
+      "exterior": true
+    },
+    {
+      "id": "E04",
+      "zone": 2,
+      "orientation": "W",
+      "length_m": 1.6166281755196306,
+      "gross_m2": 4.364896073903003,
+      "window_m2": 3.15,
+      "opaque_m2": 1.2148960739030028,
+      "exterior": true
+    },
+    {
+      "id": "E05",
+      "zone": 2,
+      "orientation": "S",
+      "length_m": 3.897,
+      "gross_m2": 10.5219,
+      "window_m2": 7.77,
+      "opaque_m2": 2.751900000000001,
+      "exterior": true
+    },
+    {
+      "id": "E06",
+      "zone": 2,
+      "orientation": "E",
+      "length_m": 1.6166281755196306,
+      "gross_m2": 4.364896073903003,
+      "window_m2": 3.15,
+      "opaque_m2": 1.2148960739030028,
+      "exterior": true
+    },
+    {
+      "id": "E07",
+      "zone": 1,
+      "orientation": "S",
+      "length_m": 3.728,
+      "gross_m2": 10.065600000000002,
+      "window_m2": 1.125,
+      "opaque_m2": 8.940600000000002,
+      "exterior": true
+    },
+    {
+      "id": "E08",
+      "zone": 1,
+      "orientation": "E",
+      "length_m": 3.814907316159843,
+      "gross_m2": 10.300249753631578,
+      "window_m2": 0,
+      "opaque_m2": 10.300249753631578,
+      "exterior": false
+    },
+    {
+      "id": "E09",
+      "zone": 1,
+      "orientation": "E",
+      "length_m": 2.1172638436482085,
+      "gross_m2": 5.716612377850163,
+      "window_m2": 0,
+      "opaque_m2": 5.716612377850163,
+      "exterior": false
+    },
+    {
+      "id": "E10",
+      "zone": 1,
+      "orientation": "N",
+      "length_m": 1.228,
+      "gross_m2": 3.3156000000000003,
+      "window_m2": 0,
+      "opaque_m2": 3.3156000000000003,
+      "exterior": true
+    },
+    {
+      "id": "E11",
+      "zone": 1,
+      "orientation": "W",
+      "length_m": 0.6460536335057673,
+      "gross_m2": 1.7443448104655717,
+      "window_m2": 0,
+      "opaque_m2": 1.7443448104655717,
+      "exterior": true
+    },
+    {
+      "id": "E12",
+      "zone": 1,
+      "orientation": "N",
+      "length_m": 2.5,
+      "gross_m2": 6.75,
+      "window_m2": 1.275,
+      "opaque_m2": 5.475,
+      "exterior": true
+    }
+  ],
+  "kitchen_projection_m": 0.6460536335057673
+}

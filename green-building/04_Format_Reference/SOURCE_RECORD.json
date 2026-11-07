@@ -1,0 +1,20 @@
+[
+  {
+    "file": "Jacobs_2019_Published.pdf",
+    "url": "https://lib.icimod.org/records/ygbmw-tnt42/files/HimalDoc_Patterns_Of_outdoor%20_exposure_to_heat_in_three_South_Asian_cities.pdf?download=1",
+    "version": "Published journal version",
+    "pages": 15,
+    "bytes": 4574767,
+    "sha256": "f770c5398be52c68e074acdaebf03a96aafc5dcf59bdb7daa6d7d0b1d8416992",
+    "accessed": "2026-11-07"
+  },
+  {
+    "file": "Jacobs_2019_Accepted_Manuscript.pdf",
+    "url": "https://eprints.lse.ac.uk/100448/1/Patterns_of_Outdoor_Exposure.pdf",
+    "version": "Accepted manuscript",
+    "pages": 50,
+    "bytes": 24884228,
+    "sha256": "b8848ea5d2025af1ec70ca70525b9cbc3d58462c43b103bc57cd6e2d4959dcd6",
+    "accessed": "2026-11-07"
+  }
+]

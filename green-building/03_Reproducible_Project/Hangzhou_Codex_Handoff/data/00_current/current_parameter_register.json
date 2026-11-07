@@ -1,0 +1,149 @@
+{
+  "case": "public_listing_7105_prototype_not_paper_flat306",
+  "research_scope": "summer_scenario_simulation_not_field_calibrated_prediction",
+  "data_classes": {
+    "listing": "reported_on_listing_or_plan_not_field_verified",
+    "literature_reference": "from_other_building_or_population",
+    "derived": "computed_from_source_values",
+    "assumption": "research_design_choice",
+    "unresolved": "must_derive_or_define_before_results"
+  },
+  "selected_geometry": {
+    "source_url": "https://www.hzxqf.com/house/120716888258.html",
+    "listing_gross_area_m2": 71.05,
+    "rooms": [
+      {
+        "name": "卧室 A",
+        "reported_area_m2": 11.1
+      },
+      {
+        "name": "卧室 B",
+        "reported_area_m2": 9.5
+      },
+      {
+        "name": "客厅及图示厅区",
+        "reported_area_m2": 14.8
+      },
+      {
+        "name": "厨房",
+        "reported_area_m2": 2.6
+      },
+      {
+        "name": "卫生间",
+        "reported_area_m2": 3.1
+      },
+      {
+        "name": "阳台",
+        "reported_area_m2": 6.3
+      }
+    ],
+    "sum_including_balcony_m2": 47.4,
+    "sum_excluding_balcony_m2": 41.1,
+    "area_sums_status": "derived_not_final_model_net_area",
+    "model_floor_area_m2": null,
+    "volume_m3": null,
+    "balcony_zone_treatment": null,
+    "precise_facade_azimuths": null,
+    "exterior_wall_areas": null,
+    "window_areas": null,
+    "window_heights": null
+  },
+  "provisional_references": {
+    "clear_height_m": 2.7,
+    "whole_window_U_W_m2K": 6.7,
+    "whole_window_SHGC": 0.7,
+    "closed_window_total_ACH": 0.44,
+    "open_window_total_ACH": 1.51,
+    "internal_gain_density_W_m2": 16.7
+  },
+  "reference_limitations": [
+    "All provisional references are unverified for the selected listing.",
+    "Open-window ACH is total; do not add baseline infiltration again.",
+    "S1 contains flagged values; original material values preserved.",
+    "Whole-window SHGC requires consistent whole-window area."
+  ],
+  "unresolved_model_inputs": [
+    "final room/exterior boundary geometry",
+    "window height/opening areas",
+    "balcony thermal zoning",
+    "facade azimuth and external shading",
+    "net volume",
+    "C_air C_mass and air-mass coupling",
+    "adjacent zone boundaries",
+    "solar absorptance/emissivity when used",
+    "occupancy/gain schedules",
+    "ventilation control",
+    "radiation transposition",
+    "warmup timestep initial conditions"
+  ],
+  "retired_requirements": [
+    "original_2017_monitoring_data",
+    "exact_matching_to_paper_flat306"
+  ],
+  "do_not_reuse": [
+    "flat306 area 51.82m2 as selected flat area",
+    "flat306 volume 139.914m3",
+    "capacity values calculated using old 51.82m2",
+    "original whole-building orientation as new facade azimuth",
+    "listing gross area as model air volume area"
+  ],
+  "primary_weather": [
+    {
+      "year": 2025,
+      "hours": 2208,
+      "first": "2025-06-01T00:00",
+      "last": "2025-08-31T23:00",
+      "temperature_min_C": 19.8,
+      "temperature_max_C": 40.3,
+      "missing": {
+        "temperature_2m": 0,
+        "relative_humidity_2m": 0,
+        "wind_speed_10m": 0,
+        "shortwave_radiation": 0,
+        "direct_normal_irradiance": 0,
+        "diffuse_radiation": 0
+      },
+      "units": {
+        "time": "iso8601",
+        "temperature_2m": "°C",
+        "relative_humidity_2m": "%",
+        "wind_speed_10m": "m/s",
+        "shortwave_radiation": "W/m²",
+        "direct_normal_irradiance": "W/m²",
+        "diffuse_radiation": "W/m²"
+      },
+      "grid_latitude": 30.25,
+      "grid_longitude": 120.25,
+      "elevation": 11.0
+    },
+    {
+      "year": 2026,
+      "hours": 2208,
+      "first": "2026-06-01T00:00",
+      "last": "2026-08-31T23:00",
+      "temperature_min_C": 17.1,
+      "temperature_max_C": 38.4,
+      "missing": {
+        "temperature_2m": 0,
+        "relative_humidity_2m": 0,
+        "wind_speed_10m": 0,
+        "shortwave_radiation": 0,
+        "direct_normal_irradiance": 0,
+        "diffuse_radiation": 0
+      },
+      "units": {
+        "time": "iso8601",
+        "temperature_2m": "°C",
+        "relative_humidity_2m": "%",
+        "wind_speed_10m": "m/s",
+        "shortwave_radiation": "W/m²",
+        "direct_normal_irradiance": "W/m²",
+        "diffuse_radiation": "W/m²"
+      },
+      "grid_latitude": 30.25,
+      "grid_longitude": 120.25,
+      "elevation": 11.0
+    }
+  ],
+  "model_results_status": "not_yet_run"
+}

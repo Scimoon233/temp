@@ -1,0 +1,38 @@
+[
+  {
+    "direction": "North",
+    "local_CFD_wind_speed_m_s": 0.5,
+    "flat6_Qmax_m3_s": 0.0468,
+    "approximate_ACH": 1.2041682747973754,
+    "source": "Main paper Table 1, p.916",
+    "status": "Q and wind reported CFD estimates; ACH derived",
+    "note": "Fully open windows under stated wind and pressure assumptions; not measured night ventilation."
+  },
+  {
+    "direction": "East",
+    "local_CFD_wind_speed_m_s": 0.5,
+    "flat6_Qmax_m3_s": 0.043,
+    "approximate_ACH": 1.1063939276984431,
+    "source": "Main paper Table 1, p.916",
+    "status": "Q and wind reported CFD estimates; ACH derived",
+    "note": "Fully open windows under stated wind and pressure assumptions; not measured night ventilation."
+  },
+  {
+    "direction": "South",
+    "local_CFD_wind_speed_m_s": 1.0,
+    "flat6_Qmax_m3_s": 0.1,
+    "approximate_ACH": 2.573009134182426,
+    "source": "Main paper Table 1, p.916",
+    "status": "Q and wind reported CFD estimates; ACH derived",
+    "note": "Fully open windows under stated wind and pressure assumptions; not measured night ventilation."
+  },
+  {
+    "direction": "West",
+    "local_CFD_wind_speed_m_s": 1.0,
+    "flat6_Qmax_m3_s": 0.17,
+    "approximate_ACH": 4.374115528110124,
+    "source": "Main paper Table 1, p.916",
+    "status": "Q and wind reported CFD estimates; ACH derived",
+    "note": "Fully open windows under stated wind and pressure assumptions; not measured night ventilation."
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-07",
+  "weather": [
+    {
+      "year": 2025,
+      "rows": 2208,
+      "columns": [
+        "time",
+        "temperature_2m",
+        "relative_humidity_2m",
+        "wind_speed_10m",
+        "shortwave_radiation",
+        "direct_normal_irradiance",
+        "diffuse_radiation"
+      ],
+      "blank_values": 0
+    },
+    {
+      "year": 2026,
+      "rows": 2208,
+      "columns": [
+        "time",
+        "temperature_2m",
+        "relative_humidity_2m",
+        "wind_speed_10m",
+        "shortwave_radiation",
+        "direct_normal_irradiance",
+        "diffuse_radiation"
+      ],
+      "blank_values": 0
+    }
+  ],
+  "source_files_preserved": true,
+  "building_model_run": false,
+  "scope": "packaging_integrity_not_building_model_validation"
+}
