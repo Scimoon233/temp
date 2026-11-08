@@ -1,0 +1,19 @@
+{
+  "reviewed_at": "2026-11-08T09:37+08:00",
+  "reviewer": "Assistant visual inspection",
+  "pdf_sha256": "8c3b68f112dae634cdf7461433df67705d00c9e8bc98da1138a2c6cbe7d42ca6",
+  "pages_reviewed": [
+    1,
+    2,
+    3
+  ],
+  "items": [
+    "First-page title, empty author block, highlights and their hanging indents, graphic, caption and abstract inspected.",
+    "Page 2 table and unit subscripts checked; first result paragraph starts on page 3.",
+    "Page 3 body and all reference entries inspected; reference word spacing corrected."
+  ],
+  "pending": [
+    "Real author name and affiliation."
+  ],
+  "Chinese_reading_reference_page_reviewed": true
+}

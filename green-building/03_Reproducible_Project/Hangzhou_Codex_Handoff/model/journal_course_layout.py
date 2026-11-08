@@ -1,7 +1,8 @@
 """Journal-style course layout, adapted from Jacobs et al. (2019).
 
 Run write_course_essay.py, then write_chinese_course_essay.py. Course rules
-override the sample's small fonts: all document text remains 12 pt, single spaced.
+override the sample's small fonts: normal text remains 12 pt and single spaced;
+thermal-unit qualifiers use the word processor's normal subscript rendering.
 """
 from pathlib import Path
 import json,re
@@ -31,10 +32,10 @@ def font(run,zh=False):
 
 def paragraph(container,text='',bold=False,italic=False,indent=False,heading=False,zh=False):
     p=container.add_paragraph();p.alignment=WD_ALIGN_PARAGRAPH.JUSTIFY
-    f=p.paragraph_format;f.line_spacing=1.;f.space_before=Pt(0);f.space_after=Pt(3)
+    f=p.paragraph_format;f.line_spacing=1.;f.space_before=Pt(0);f.space_after=Pt(1)
     f.widow_control=True
     if indent:f.first_line_indent=Cm(.35)
-    if heading:f.space_before=Pt(6);f.space_after=Pt(5);f.keep_with_next=True
+    if heading:f.space_before=Pt(4);f.space_after=Pt(3);f.keep_with_next=True
     r=p.add_run(text);font(r,zh);r.bold=bold;r.italic=italic
     return p
 
@@ -53,7 +54,7 @@ def configure(doc,zh=False):
             s.font.name='Times New Roman';s.font.size=Pt(12);s.font.color.rgb=RGBColor(0,0,0)
             s.element.get_or_add_rPr().rFonts.set(qn('w:eastAsia'),'Noto Serif CJK SC' if zh else 'Times New Roman')
             if s.type==1:
-                s.paragraph_format.line_spacing=1.;s.paragraph_format.space_after=Pt(3)
+                s.paragraph_format.line_spacing=1.;s.paragraph_format.space_after=Pt(1)
     h=sec.header.paragraphs[0];h.alignment=WD_ALIGN_PARAGRAPH.CENTER
     r=h.add_run('Green Building | Course essay');font(r,zh);r.italic=True
     line(h)
@@ -165,6 +166,7 @@ def front(doc,title,abstract,root,out,zh=False):
         'Ideal sensible cooling demand decreases by 6.44–7.01%.'])
     for t in points:
         p=paragraph(cells[0],'• '+t,zh=zh);p.alignment=WD_ALIGN_PARAGRAPH.LEFT;p.paragraph_format.space_after=Pt(8)
+        p.paragraph_format.left_indent=Cm(.25);p.paragraph_format.first_line_indent=Cm(-.25)
     p=paragraph(cells[1]);p.add_run().add_picture(str(graphical_abstract(root,out,zh)),width=Cm(12))
     p=paragraph(cells[1],'Ranges span 2025–2026; S3 relative to S0. Single measures compare S1 with S2 for the baseline parameters.' if not zh else '范围对应2025、2026年，降幅均为S3相对S0；单项措施排序对应基准参数下S1与S2的比较。',zh=zh)
     p.alignment=WD_ALIGN_PARAGRAPH.LEFT
@@ -260,7 +262,10 @@ def build_english(root,out,title,sections,results,refs,data):
                     md.append(f'|{y}|{s}|{a.DH28_Kh:,.1f}|{b.cool_kWh_th:,.1f}|{b.cool_kWh_th_reduction_pct:.2f}|')
             ps=results
         else:ps=parts[name]
-        for text in ps:paragraph(doc,text,indent=True);md += ['',text,'']
+        for index,text in enumerate(ps):
+            p=paragraph(doc,text,indent=True)
+            if name=='3. Results' and index==0:p.paragraph_format.keep_together=True
+            md += ['',text,'']
     heading(doc,'4. Discussion and conclusions');md+=['## 4. Discussion and conclusions','']
     for sub,ps in [('4.1. Design implications',parts['4. Discussion'][:2]),('4.2. Scope and further work',parts['4. Discussion'][2:]),('4.3. Conclusions',parts['5. Conclusion'])]:
         heading(doc,sub,sub=True);md+=['### '+sub,'']
@@ -268,6 +273,7 @@ def build_english(root,out,title,sections,results,refs,data):
     heading(doc,'References');md+=['## References','']
     for prefix,label,url in refs:
         p=paragraph(doc,prefix);link(p,label,url);r=p.add_run(' (accessed 7 November 2026).' if 'n.d.' in prefix else '.');font(r)
+        p.alignment=WD_ALIGN_PARAGRAPH.LEFT
         p.paragraph_format.left_indent=Cm(.35);p.paragraph_format.first_line_indent=Cm(-.35)
         md.append(prefix+'['+label+']('+url+')'+(' (accessed 7 November 2026).' if 'n.d.' in prefix else '.')+'\n')
     save(doc,out,'Hangzhou_Passive_Cooling_Course_Essay',title)
@@ -279,7 +285,7 @@ def build_chinese(root,out,text,rows):
     front(doc,title,abstract,root,out,True)
     # English section organization is mirrored in the Chinese reading copy.
     text=text.replace('## 4 讨论','## 4 讨论与结论\n### 4.1 设计启示').replace('本研究属于未经实测校准的原型比较。','### 4.2 研究范围与后续工作\n本研究属于未经实测校准的原型比较。').replace('## 5 结论','### 4.3 结论')
-    body=text.split('## 1 引言',1)[1];lines=('## 1 引言'+body).splitlines();in_table=False
+    body=text.split('## 1 引言',1)[1];lines=('## 1 引言'+body).splitlines();in_table=False;in_references=False
     for line_ in lines:
         line_=line_.strip()
         if not line_:continue
@@ -288,11 +294,17 @@ def build_chinese(root,out,text,rows):
             continue
         if line_.startswith('表1 ') or line_.startswith('DH28对应自由运行'):continue
         if line_.startswith('### '):heading(doc,line_[4:],True,True)
-        elif line_.startswith('## '):heading(doc,line_[3:],True)
+        elif line_.startswith('## '):
+            heading(doc,line_[3:],True)
+            if line_=='## 参考文献':in_references=True
         else:
             p=paragraph(doc,'',indent=True,zh=True);pos=0
             for m in re.finditer(r'\[([^\]]+)\]\(([^)]+)\)',line_):
                 font(p.add_run(line_[pos:m.start()]),True);link(p,m[1],m[2],True);pos=m.end()
             font(p.add_run(line_[pos:]),True)
+            if line_.startswith('三种措施均改善'):p.paragraph_format.keep_together=True
+            if in_references:
+                p.alignment=WD_ALIGN_PARAGRAPH.LEFT
+                p.paragraph_format.left_indent=Cm(.35);p.paragraph_format.first_line_indent=Cm(-.35)
     save(doc,out,'杭州住宅被动降温_英文短稿对应中文版',title,True)
     (out/'杭州住宅被动降温_英文短稿对应中文版.md').write_text(text.replace('kWh_th','kWh<sub>th</sub>'))

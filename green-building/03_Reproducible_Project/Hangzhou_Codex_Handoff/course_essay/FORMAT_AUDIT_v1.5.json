@@ -1,0 +1,160 @@
+{
+  "audit_version": "v1.5",
+  "checked_at": "2026-11-08 09:37 CST",
+  "target": "English course-submission paper",
+  "course_format_status": "PASS",
+  "failures": [],
+  "author_information": "PENDING: real author name and affiliation have not been supplied; reserved block remains blank.",
+  "manual_review": {
+    "status": "PASS",
+    "evidence": "VISUAL_REVIEW_v1.5.json",
+    "matches_current_PDF": true
+  },
+  "scope": "Checks course formatting and reference-inspired organization. Similarity screening, novelty grading and course marks are outside this audit.",
+  "files": {
+    "Hangzhou_Passive_Cooling_Course_Essay.pdf": "8c3b68f112dae634cdf7461433df67705d00c9e8bc98da1138a2c6cbe7d42ca6",
+    "Hangzhou_Passive_Cooling_Course_Essay.docx": "ac2e468817a4ffbac959ec2e3dbc7d1507f75512f5751c6e1ce9b55f0969d976"
+  },
+  "checks": {
+    "page_count": {
+      "status": "PASS",
+      "evidence": {
+        "pages": 3,
+        "includes_references": true
+      }
+    },
+    "font_family": {
+      "status": "PASS",
+      "evidence": [
+        "TimesNewRomanPS-BoldMT",
+        "TimesNewRomanPS-ItalicMT",
+        "TimesNewRomanPSMT"
+      ]
+    },
+    "fonts_embedded": {
+      "status": "PASS",
+      "evidence": {
+        "embedded_font_objects": 5
+      }
+    },
+    "normal_font_size": {
+      "status": "PASS",
+      "evidence": {
+        "normal_pt": 12,
+        "PDF_sizes": {
+          "12.0": 287,
+          "7.0": 10
+        },
+        "only_smaller_text": "automatic thermal-unit subscript th"
+      }
+    },
+    "Word_base_font_size": {
+      "status": "PASS",
+      "evidence": "All explicit Word font sizes are 24 half-points = 12 pt."
+    },
+    "single_spacing": {
+      "status": "PASS",
+      "evidence": {
+        "Word_line": 240,
+        "Word_line_rule": "auto",
+        "paragraph_gaps": "1 pt; headings 4 pt before and 3 pt after"
+      }
+    },
+    "PDF_submission": {
+      "status": "PASS",
+      "evidence": {
+        "format": "PDF",
+        "password_protected": false
+      }
+    },
+    "paper_sections": {
+      "status": "PASS",
+      "evidence": [
+        "Abstract",
+        "1. Introduction",
+        "2. Methods",
+        "3. Results",
+        "4. Discussion and conclusions",
+        "4.3. Conclusions",
+        "References"
+      ]
+    },
+    "front_matter": {
+      "status": "PASS",
+      "evidence": [
+        "Highlights",
+        "Graphical abstract",
+        "Keywords",
+        "Abstract"
+      ]
+    },
+    "two_column_body": {
+      "status": "PASS",
+      "evidence": {
+        "body_columns": "2",
+        "column_gap_cm": 0.501
+      }
+    },
+    "thermal_unit_notation": {
+      "status": "PASS",
+      "evidence": {
+        "real_subscripts": 10,
+        "literal_underscore_units": false
+      }
+    },
+    "text_not_lost_on_export": {
+      "status": "PASS",
+      "evidence": {
+        "Word_nonspace_characters": 8740,
+        "PDF_nonspace_characters": 8740,
+        "method": "NFKC-normalized character counts, excluding running header/footer; complemented by page rendering"
+      }
+    },
+    "no_missing_glyph_markers": {
+      "status": "PASS",
+      "evidence": true
+    },
+    "page_boundaries": {
+      "status": "PASS",
+      "evidence": "All English text stays inside page and selected margins; trailing-space tolerance included."
+    },
+    "graph_font_size": {
+      "status": "PASS",
+      "evidence": {
+        "source_graph_font_pt": 12,
+        "display_width_cm": 12
+      }
+    },
+    "graph_not_cropped": {
+      "status": "PASS",
+      "evidence": "Embedded PNG matches inspected source; no crop rectangle in Word."
+    },
+    "references_and_links": {
+      "status": "PASS",
+      "evidence": {
+        "reference_entries": 6,
+        "clickable_PDF_links": 6
+      }
+    },
+    "table_values": {
+      "status": "PASS",
+      "evidence": {
+        "scenario_rows": 8,
+        "numeric_values_checked": 24
+      }
+    },
+    "model_data_preserved": {
+      "status": "PASS",
+      "evidence": [
+        "results/base_metrics.csv",
+        "results/all_metrics.csv",
+        "results/draft_diagnostics/metrics.csv",
+        "config/base.json"
+      ]
+    },
+    "result_paragraph_pagination": {
+      "status": "PASS",
+      "evidence": "The first result paragraph now starts intact on page 3; page 2 ends with the table note."
+    }
+  }
+}

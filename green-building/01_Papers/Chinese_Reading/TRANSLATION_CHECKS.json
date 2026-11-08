@@ -2,12 +2,12 @@
   "status": "PASS",
   "source": "course_essay/Hangzhou_Passive_Cooling_Course_Essay.md",
   "source_sha256": "c8c43c7a1ea2c929e323f6f276265e07ce731b1132228ec83ab75e3a944fda9f",
-  "version": "Chinese reading version v1.4",
+  "version": "Chinese reading version v1.5",
   "new_model_runs": 0,
   "table_rows_identical": true,
   "references_unchanged": true,
   "pdf_pages": 4,
+  "layout": "Updated hanging indents, left-aligned reference entries and paragraph spacing; course submission is the three-page English PDF.",
   "course_submission": false,
-  "thermal_qualifier_subscripts": 10,
   "model_results_changed": false
 }

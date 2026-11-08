@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "version": "v1.4",
+  "version": "v1.5",
   "pages": 3,
   "references_included": true,
   "font": "Times New Roman",
@@ -42,7 +42,7 @@
   "table_values_unchanged": true,
   "references_unchanged": true,
   "model_results_changed": false,
-  "visual_review": "Thermal unit subscripts inspected in rendered table; English remains three pages. Body font 12 pt Times New Roman, thermal qualifier uses normal automatic subscript sizing.",
+  "visual_review": "All final English pages and Chinese reference page inspected; first result paragraph starts on page 3, references left aligned with hanging indents, Highlights continuation indentation aligned.",
   "author_information": "Awaiting real author name and affiliation; block reserved.",
   "course_overrides": [
     "12 pt Times New Roman",
@@ -61,5 +61,12 @@
     "automatic_PDF_subscript_pt": 7,
     "subscript_occurrences": 10,
     "literal_kWh_underscore_th_remaining": false
+  },
+  "format_audit": "FORMAT_AUDIT_v1.5.json",
+  "format_report": "课程格式逐项复核_v1.5.md",
+  "paragraph_spacing_pt": {
+    "default_after": 1,
+    "heading_before": 4,
+    "heading_after": 3
   }
 }
