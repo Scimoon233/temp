@@ -29,7 +29,7 @@ Wall resistance uses layer thicknesses and conductivities from Short et al. (201
 ERA5 data obtained through Open-Meteo provide 2,208 hourly records per summer, with no missing values. Radiation represents the preceding hour; solar position uses its midpoint and outdoor temperature uses adjacent endpoint means (Open-Meteo, n.d.). Preserving the source records yields intervals from 31 May 23:00 to 31 August 23:00, UTC+8; the first temperature is held constant for the missing initial endpoint. Direct, isotropic diffuse and ground-reflected radiation are calculated for each facade. An assumed 25% of admitted balcony solar gain is allocated to the living zone, with the remainder retained in the balcony, avoiding double counting.
 
 
-S0 has background ventilation only; S1 removes 50% of window direct radiation; S2 enables night ventilation; S3 combines both. Each zone independently switches to the open-window total rate during 21:00–07:00 when indoor air is at least 1 K warmer than outdoors. Free-running simulations evaluate DH28 = Σmax(Tin − 28, 0)Δt, in K h, using 28°C as a research threshold. Separate ideal-cooling simulations impose a continuously available 26°C upper limit in the living zone only and sum sensible heat removal in kWh_th. They include neither latent loads nor equipment electricity.
+S0 has background ventilation only; S1 removes 50% of window direct radiation; S2 enables night ventilation; S3 combines both. Each zone independently switches to the open-window total rate during 21:00–07:00 when indoor air is at least 1 K warmer than outdoors. Free-running simulations evaluate DH28 = Σmax(Tin − 28, 0)Δt, in K h, using 28°C as a research threshold. Separate ideal-cooling simulations impose a continuously available 26°C upper limit in the living zone only and sum sensible heat removal in kWh<sub>th</sub>. They include neither latent loads nor equipment electricity.
 
 
 Backward Euler integration uses 300 s steps after 28 days of repeated-first-week warm-up. In the 2025 baseline checks, halving the step changed key cumulative metrics by less than 0.006%; energy-balance and initialization checks also passed. These checks support numerically stable scenario comparisons. Twenty input sets, including the baseline, test airflow, thermal mass, windows, shading and other assumptions; each variant is compared with its own S0.
@@ -37,7 +37,7 @@ Backward Euler integration uses 300 s steps after 28 days of repeated-first-week
 ## 3. Results
 
 Table 1. Baseline scenario comparison; cooling is ideal sensible heat removal.
-|Year|Case|DH28 (K h)|Cooling (kWh_th)|Cooling cut (%)|
+|Year|Case|DH28 (K h)|Cooling (kWh<sub>th</sub>)|Cooling cut (%)|
 |---|---|---|---|---|
 |2025|S0|26,593.1|3,757.0|0.00|
 |2025|S1|24,601.3|3,514.7|6.45|
@@ -51,7 +51,7 @@ Table 1. Baseline scenario comparison; cooling is ideal sensible heat removal.
 All three measures improved baseline performance (Table 1). S3 reduced mean free-running air temperature by 2.12°C in 2025 and 1.85°C in 2026, and DH28 by 17.5% and 17.7%. Night ventilation alone reduced DH28 more than the tested 50% direct shading; shading produced the greater reduction in ideal cooling demand. Residual S3 overheating lasted 2,172.0 and 2,179.8 of 2,208 hours, so the principal free-running benefit was lower overheating intensity.
 
 
-S3 reduced ideal demand by 263.2 kWh_th in 2025, from 3,757.0 to 3,493.8 kWh_th, and by 213.2 kWh_th in 2026, from 3,308.6 to 3,095.4 kWh_th. Across all twenty input sets, S3 had the lowest DH28 and cooling demand; individual-measure rankings varied. For demand D, interaction I = (D0 − D3) − (D0 − D1) − (D0 − D2) was −203.1 and −159.7 K h for DH28, and −0.88 and −0.74 kWh_th for cooling. Combined cooling benefits were approximately additive with slight diminishing returns.
+S3 reduced ideal demand by 263.2 kWh<sub>th</sub> in 2025, from 3,757.0 to 3,493.8 kWh<sub>th</sub>, and by 213.2 kWh<sub>th</sub> in 2026, from 3,308.6 to 3,095.4 kWh<sub>th</sub>. Across all twenty input sets, S3 had the lowest DH28 and cooling demand; individual-measure rankings varied. For demand D, interaction I = (D0 − D3) − (D0 − D1) − (D0 − D2) was −203.1 and −159.7 K h for DH28, and −0.88 and −0.74 kWh<sub>th</sub> for cooling. Combined cooling benefits were approximately additive with slight diminishing returns.
 
 ## 4. Discussion and conclusions
 
@@ -59,7 +59,7 @@ S3 reduced ideal demand by 263.2 kWh_th in 2025, from 3,757.0 to 3,493.8 kWh_th,
 
 The results support two complementary design actions: reduce daytime solar input and discharge heat during cooler night hours. Living-zone ventilation operated throughout the 920-hour night window in free-running S2 and S3. With ideal cooling, 164 hours in 2025 and 206 hours in 2026 met the opening rule: indoor air near 26°C generally needs outdoor air near or below 25°C to provide the specified 1 K difference. Temperature-controlled opening therefore targets the available sensible cooling opportunity. Under the tested 26°C schedule, external shading is the principal demand-reduction measure, complemented by night ventilation when this opportunity occurs.
 
-Heat balances clarify which paths solar control can address. In 2025, the living zone received 457.7 kWh_th through its own external windows and 507.9 kWh_th as allocated secondary balcony solar gain, while transferring a net 243.7 kWh_th to the balcony through the partition. Distinguishing these paths supports including balcony glazing in solar-control assessment while retaining its buffer-zone heat exchange. Together with the stable combination ranking, this provides a physical basis for evaluating solar exclusion and night-time discharge as a coordinated strategy.
+Heat balances clarify which paths solar control can address. In 2025, the living zone received 457.7 kWh<sub>th</sub> through its own external windows and 507.9 kWh<sub>th</sub> as allocated secondary balcony solar gain, while transferring a net 243.7 kWh<sub>th</sub> to the balcony through the partition. Distinguishing these paths supports including balcony glazing in solar-control assessment while retaining its buffer-zone heat exchange. Together with the stable combination ranking, this provides a physical basis for evaluating solar exclusion and night-time discharge as a coordinated strategy.
 
 ### 4.2. Scope and further work
 

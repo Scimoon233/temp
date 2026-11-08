@@ -17,6 +17,8 @@ from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.opc.constants import RELATIONSHIP_TYPE as RT
+from docx.text.run import Run
+from copy import deepcopy
 
 def font(run,zh=False):
     run.font.name='Times New Roman';run.font.size=Pt(12)
@@ -221,10 +223,26 @@ def link(p,label,url,zh=False):
     pr.append(rf);size=OxmlElement('w:sz');size.set(qn('w:val'),'24');pr.append(size);r.append(pr)
     text=OxmlElement('w:t');text.text=label;r.append(text);h.append(r);p._p.append(h)
 
+def thermal_unit_subscripts(doc):
+    """Typeset the thermal qualifier, preserving each run's font and emphasis."""
+    for element in list(doc.element.body.iter(qn('w:r'))):
+        original=Run(element,None).text
+        if 'kWh_th' not in original:continue
+        parent=element.getparent();index=parent.index(element)
+        for part in re.split('(kWh_th)',original):
+            pieces=[('kWh',False),('th',True)] if part=='kWh_th' else [(part,False)]
+            for value,subscript in pieces:
+                if not value:continue
+                clone=deepcopy(element);run=Run(clone,None);run.text=value
+                if subscript:run.font.subscript=True
+                parent.insert(index,clone);index+=1
+        parent.remove(element)
+
 def save(doc,out,name,title,zh=False):
     doc.core_properties.title=title;doc.core_properties.subject='Green Building course essay';doc.core_properties.author=''
     for spacing in doc.styles.element.findall('.//'+qn('w:spacing')):
         if spacing.get(qn('w:line')) is not None:spacing.set(qn('w:line'),'240');spacing.set(qn('w:lineRule'),'auto')
+    thermal_unit_subscripts(doc)
     path=out/(name+'.docx');doc.save(path);print('Saved',path)
 
 def build_english(root,out,title,sections,results,refs,data):
@@ -253,7 +271,7 @@ def build_english(root,out,title,sections,results,refs,data):
         p.paragraph_format.left_indent=Cm(.35);p.paragraph_format.first_line_indent=Cm(-.35)
         md.append(prefix+'['+label+']('+url+')'+(' (accessed 7 November 2026).' if 'n.d.' in prefix else '.')+'\n')
     save(doc,out,'Hangzhou_Passive_Cooling_Course_Essay',title)
-    (out/'Hangzhou_Passive_Cooling_Course_Essay.md').write_text('\n'.join(md))
+    (out/'Hangzhou_Passive_Cooling_Course_Essay.md').write_text('\n'.join(md).replace('kWh_th','kWh<sub>th</sub>'))
 
 def build_chinese(root,out,text,rows):
     doc=Document();configure(doc,True);title=text.splitlines()[0][2:]
@@ -277,4 +295,4 @@ def build_chinese(root,out,text,rows):
                 font(p.add_run(line_[pos:m.start()]),True);link(p,m[1],m[2],True);pos=m.end()
             font(p.add_run(line_[pos:]),True)
     save(doc,out,'杭州住宅被动降温_英文短稿对应中文版',title,True)
-    (out/'杭州住宅被动降温_英文短稿对应中文版.md').write_text(text)
+    (out/'杭州住宅被动降温_英文短稿对应中文版.md').write_text(text.replace('kWh_th','kWh<sub>th</sub>'))
