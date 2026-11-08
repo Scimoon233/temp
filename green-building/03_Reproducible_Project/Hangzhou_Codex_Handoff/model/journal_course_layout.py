@@ -74,26 +74,68 @@ def clear_cell(cell):
     # Remove the unused initial paragraph; each cell receives content below.
     cell._tc.remove(p._p)
 
-def graphical_abstract(root,out):
-    # At the 12 cm display width, figure labels are also 12 pt.
+def graphical_abstract(root,out,zh=False):
+    """Show the intervention, separate operating modes, and resulting design choice."""
     for p in [Path('/usr/share/fonts/truetype/msttcorefonts'),Path('/workspace/work/course_essay/fonts')]:
         if p.exists():
             for f in p.glob('*.TTF'):font_manager.fontManager.addfont(str(f))
             for f in p.glob('*.ttf'):font_manager.fontManager.addfont(str(f))
-    plt.rcParams.update({'font.family':'Times New Roman','font.size':12,'axes.labelsize':12,'xtick.labelsize':12,'ytick.labelsize':12})
+    plt.rcParams.update({'font.family':'Times New Roman','font.size':12})
     data=pd.read_csv(root/'results/base_metrics.csv');values=[]
     for y in [2025,2026]:
         a=data[(data.year==y)&(data['mode']=='free')].set_index('scenario')
         b=data[(data.year==y)&(data['mode']=='ideal')].set_index('scenario')
-        values.append([100*(1-a.loc['S3','DH28_Kh']/a.loc['S0','DH28_Kh']),100*(1-b.loc['S3','cool_kWh_th']/b.loc['S0','cool_kWh_th'])])
-    fig,ax=plt.subplots(figsize=(4.72,2.65));fig.subplots_adjust(left=.16,right=.98,bottom=.29,top=.81)
-    x=[0,1];w=.31
-    for i,(y,c) in enumerate(zip([2025,2026],['#355a70','#92a6b1'])):
-        bars=ax.bar([v+(i-.5)*w for v in x],values[i],w,label=str(y),color=c)
-        for bar,value in zip(bars,values[i]):ax.text(bar.get_x()+w/2,bar.get_height()+.6,f'{value:.2f}',ha='center',va='bottom')
-    ax.set_ylim(0,23);ax.set_yticks([0,10,20]);ax.set_ylabel('Reduction (%)')
-    ax.set_xticks(x,['Overheating\n(DH28)','Sensible cooling\n(26°C)'])
-    ax.spines[['top','right']].set_visible(False);ax.legend(loc='upper center',bbox_to_anchor=(.5,1.48),ncol=2,frameon=False)
+        assert a.loc['S2','DH28_Kh']<a.loc['S1','DH28_Kh']
+        assert b.loc['S1','cool_kWh_th']<b.loc['S2','cool_kWh_th']
+        values.append([a.loc['S0','mean_C']-a.loc['S3','mean_C'],100*(1-a.loc['S3','DH28_Kh']/a.loc['S0','DH28_Kh']),100*(1-b.loc['S3','cool_kWh_th']/b.loc['S0','cool_kWh_th'])])
+    ranges=[f'{min(v[i] for v in values):.{1 if i==1 else 2}f}–{max(v[i] for v in values):.{1 if i==1 else 2}f}' for i in range(3)]
+    from matplotlib.patches import FancyBboxPatch
+    fig,ax=plt.subplots(figsize=(4.72,3.65));fig.subplots_adjust(left=0,right=1,bottom=0,top=1)
+    ax.set_xlim(0,1);ax.set_ylim(0,1);ax.axis('off')
+    fp=font_manager.FontProperties(family='Times New Roman',size=12)
+    cjk={}
+    if zh:
+        # Matplotlib sees only the first face of some CJK collections. Extract the
+        # fontconfig-selected SC face into a local cache, outside deliverables.
+        import subprocess,tempfile
+        from fontTools.ttLib import TTFont
+        cache=Path(tempfile.gettempdir())/'green_building_font_cache';cache.mkdir(exist_ok=True)
+        for bold,style in [(False,'Regular'),(True,'Bold')]:
+            match=subprocess.check_output(['fc-match','-f','%{file}\n%{index}','Noto Serif CJK SC:style='+style],text=True).strip().splitlines()
+            fontfile=Path(match[0]);face=int(match[1]) if len(match)>1 else 0
+            if fontfile.suffix.lower()=='.ttc':
+                extracted=cache/('NotoSerifCJK-SC-'+style+'.ttf')
+                if not extracted.exists():
+                    tt=TTFont(str(fontfile),fontNumber=face);tt.save(extracted);tt.close()
+                fontfile=extracted
+            cjk[bold]=font_manager.FontProperties(fname=str(fontfile),size=12)
+    def text(x,y,s,bold=False,color='#172d3b'):
+        prop=cjk[bold].copy() if zh else fp.copy();prop.set_weight('bold' if bold else 'normal')
+        return ax.text(x,y,s,ha='center',va='center',fontproperties=prop,color=color,linespacing=1.12)
+    def box(x,y,w,h,fill):
+        ax.add_patch(FancyBboxPatch((x,y),w,h,boxstyle='round,pad=0.005,rounding_size=0.012',facecolor=fill,edgecolor='#527084',linewidth=.8))
+    def arrow(start,end):
+        ax.annotate('',xy=end,xytext=start,arrowprops={'arrowstyle':'->','lw':1,'color':'#527084'})
+    text(.5,.968,'杭州住宅 · 2025—2026年夏季' if zh else 'Hangzhou dwelling · summers 2025–2026')
+    box(.015,.755,.46,.145,'#edf3f6');box(.525,.755,.46,.145,'#edf3f6')
+    text(.245,.827,'外遮阳\n减少白天太阳得热' if zh else 'External shading\nReduce daytime heat')
+    text(.755,.827,'夜间通风\n排出室内蓄热' if zh else 'Night ventilation\nDischarge heat at night')
+    arrow((.245,.75),(.39,.708));arrow((.755,.75),(.61,.708))
+    box(.04,.63,.92,.075,'#dce9ee')
+    text(.5,.668,'组合措施（S3）相对基准（S0）' if zh else 'Combined (S3) versus baseline (S0)',True)
+    arrow((.39,.63),(.245,.59));arrow((.61,.63),(.755,.59))
+    box(.015,.135,.46,.45,'#f6f8f9');box(.525,.135,.46,.45,'#f6f8f9')
+    text(.245,.551,'无空调自由运行' if zh else 'No air conditioning',True)
+    text(.245,.487,'平均室内空气温度' if zh else 'Mean indoor temperature')
+    text(.245,.435,'降低 '+ranges[0]+'°C' if zh else 'Lower by '+ranges[0]+'°C',True)
+    text(.245,.367,'超过28°C的过热度时' if zh else 'Overheating degree-hours')
+    text(.245,.315,'降低 '+ranges[1]+'%' if zh else '(above 28°C): −'+ranges[1]+'%')
+    text(.245,.205,'更有效的单项措施：\n夜间通风' if zh else 'Best single measure:\nnight ventilation')
+    text(.755,.551,'维持26°C理想制冷' if zh else 'Cooling held at 26°C',True)
+    text(.755,.453,'理想显热制冷需求' if zh else 'Ideal sensible demand')
+    text(.755,.383,'降低 '+ranges[2]+'%' if zh else 'Lower by '+ranges[2]+'%',True)
+    text(.755,.205,'更有效的单项措施：\n外遮阳' if zh else 'Best single measure:\nexternal shading')
+    text(.5,.072,'白天遮阳；夜间室外至少比室内低1°C时通风。' if zh else 'Shade by day; open on cooler nights\n(outdoors at least 1°C below indoors).')
     out.mkdir(exist_ok=True);path=out/'Graphical_Abstract.png';fig.savefig(path,dpi=250);fig.savefig(out/'Graphical_Abstract.pdf');plt.close(fig)
     return path
 
@@ -121,8 +163,8 @@ def front(doc,title,abstract,root,out,zh=False):
         'Ideal sensible cooling demand decreases by 6.44–7.01%.'])
     for t in points:
         p=paragraph(cells[0],'• '+t,zh=zh);p.alignment=WD_ALIGN_PARAGRAPH.LEFT;p.paragraph_format.space_after=Pt(8)
-    p=paragraph(cells[1]);p.add_run().add_picture(str(graphical_abstract(root,out)),width=Cm(12))
-    p=paragraph(cells[1],'S3 relative to S0; free-running DH28 and ideal sensible cooling.' if not zh else 'S3相对S0：自由运行过热度时与理想显热制冷需求。',zh=zh)
+    p=paragraph(cells[1]);p.add_run().add_picture(str(graphical_abstract(root,out,zh)),width=Cm(12))
+    p=paragraph(cells[1],'Ranges span 2025–2026; S3 relative to S0. Single measures compare S1 with S2 for the baseline parameters.' if not zh else '范围对应2025、2026年，降幅均为S3相对S0；单项措施排序对应基准参数下S1与S2的比较。',zh=zh)
     p.alignment=WD_ALIGN_PARAGRAPH.LEFT
     cell_label(cells[2],'ARTICLE INFO',zh);cell_label(cells[3],'ABSTRACT',zh)
     paragraph(cells[2],'Keywords:' if not zh else '关键词：',italic=True,zh=zh)

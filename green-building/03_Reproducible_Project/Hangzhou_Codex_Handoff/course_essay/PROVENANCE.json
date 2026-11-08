@@ -1,6 +1,6 @@
 {
-  "version": "English course essay v1.2",
-  "date": "2026-11-07",
+  "version": "English course essay v1.3",
+  "date": "2026-11-08",
   "model_changed": false,
   "source_files": [
     {
@@ -23,5 +23,5 @@
   "font_package_source": "https://downloads.sourceforge.net/corefonts/times32.exe",
   "font_package_md5": "ed39c8ef91b9fb80f76f702568291bd5",
   "format_check": "FORMAT_CHECKS.json",
-  "editorial_change": "Jacobs-style first-page front matter and two-column body; original graphical abstract; discussion and conclusions merged. Existing numerical results retained."
+  "editorial_change": "Title specifies overheating and sensible cooling demand. Abstract separates operating modes and individual-measure rankings. New bilingual graphical abstracts explain intervention, comparison, outcomes and design rule. Numerical model outputs and conclusion retained."
 }

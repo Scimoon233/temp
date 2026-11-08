@@ -1,4 +1,4 @@
-# External Shading and Night Ventilation for Summer Cooling in a Hangzhou Residential Prototype
+# External Shading and Night Ventilation in a Hangzhou Residential Prototype: Effects on Summer Overheating and Sensible Cooling Demand
 
 ## Highlights
 
@@ -8,7 +8,7 @@
 
 ## Abstract
 
-This study quantifies the summer cooling benefits of external shading and night ventilation in a Hangzhou residential prototype. A two-zone thermal-network model compared four scenarios using 2025 and 2026 weather. Combining 50% window direct-solar reduction with temperature-controlled night ventilation lowered summer mean free-running air temperature by 2.12°C and 1.85°C, overheating degree-hours above 28°C by 17.5% and 17.7%, and ideal sensible cooling demand at 26°C by 7.01% and 6.44%. The combination ranked first across twenty tested input sets. Shading supplied most cooling-demand reduction, while night ventilation contributed additional heat removal when outdoor temperatures permitted. The results support coordinated solar control and night-time heat discharge for the modelled dwelling.
+This study evaluates how external shading and temperature-controlled night ventilation reduce summer overheating and sensible cooling demand in a Hangzhou residential prototype. A two-zone resistance–capacitance model used hourly weather for 2025 and 2026 to compare baseline, shading, ventilation and combined scenarios under free-running and 26°C ideal-cooling operation. Relative to baseline, combined measures lowered mean free-running air temperature by 1.85–2.12°C and overheating degree-hours above 28°C by 17.5–17.7%, while reducing ideal sensible cooling demand by 6.44–7.01%. Night ventilation achieved the larger overheating reduction among the individual measures; shading achieved the larger cooling-demand reduction. The combination had the lowest overheating degree-hours and cooling demand across twenty tested input sets. These results support combining daytime solar control with night ventilation when outdoor air is at least 1°C cooler than indoors, prioritizing shading for demand reduction under ideal-cooling operation.
 
 Keywords: External shading; Night ventilation; Thermal network; Overheating; Sensible cooling; Hangzhou.
 
