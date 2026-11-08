@@ -145,8 +145,11 @@ def graphical_abstract(root,out,zh=False):
 def front(doc,title,abstract,root,out,zh=False):
     p=paragraph(doc,title,bold=True,zh=zh);p.alignment=WD_ALIGN_PARAGRAPH.LEFT
     p.paragraph_format.space_before=Pt(18);p.paragraph_format.space_after=Pt(12)
-    # An empty author/affiliation block is reserved for the student's real details.
-    p=paragraph(doc,'',zh=zh);p.paragraph_format.space_after=Pt(15);line(p)
+    author=json.loads((root/'config/paper_author.json').read_text())
+    p=paragraph(doc,author['name'],zh=zh);p.alignment=WD_ALIGN_PARAGRAPH.LEFT
+    p=paragraph(doc,author['affiliation_zh' if zh else 'affiliation_en'],zh=zh);p.alignment=WD_ALIGN_PARAGRAPH.LEFT
+    p=paragraph(doc,('学号：' if zh else 'Student ID: ')+author['student_id'],zh=zh)
+    p.alignment=WD_ALIGN_PARAGRAPH.LEFT;p.paragraph_format.space_after=Pt(15);line(p)
     table=doc.add_table(rows=2,cols=2);table.autofit=False
     widths=[5.05,12.95]
     for row in table.rows:
@@ -241,7 +244,8 @@ def thermal_unit_subscripts(doc):
         parent.remove(element)
 
 def save(doc,out,name,title,zh=False):
-    doc.core_properties.title=title;doc.core_properties.subject='Green Building course essay';doc.core_properties.author=''
+    doc.core_properties.title=title;doc.core_properties.subject='Green Building course essay'
+    doc.core_properties.author=json.loads((out.parent/'config/paper_author.json').read_text())['name']
     for spacing in doc.styles.element.findall('.//'+qn('w:spacing')):
         if spacing.get(qn('w:line')) is not None:spacing.set(qn('w:line'),'240');spacing.set(qn('w:lineRule'),'auto')
     thermal_unit_subscripts(doc)
@@ -281,6 +285,8 @@ def build_english(root,out,title,sections,results,refs,data):
         p.paragraph_format.left_indent=Cm(.35);p.paragraph_format.first_line_indent=Cm(-.35)
         md.append(prefix+'['+label+']('+url+')'+(' (accessed 7 November 2026).' if 'n.d.' in prefix else '.')+'\n')
     save(doc,out,'Hangzhou_Passive_Cooling_Course_Essay',title)
+    author=json.loads((root/'config/paper_author.json').read_text())
+    md[2:2]=[author['name'],author['affiliation_en'],'Student ID: '+author['student_id'],'']
     (out/'Hangzhou_Passive_Cooling_Course_Essay.md').write_text('\n'.join(md).replace('kWh_th','kWh<sub>th</sub>'))
 
 def build_chinese(root,out,text,rows):
@@ -315,4 +321,7 @@ def build_chinese(root,out,text,rows):
                 p.paragraph_format.keep_together=True
                 p.paragraph_format.left_indent=Cm(.35);p.paragraph_format.first_line_indent=Cm(-.35)
     save(doc,out,'杭州住宅被动降温_英文短稿对应中文版',title,True)
+    author=json.loads((root/'config/paper_author.json').read_text())
+    first,remaining=text.split('\n',1)
+    text=first+'\n\n'+author['name']+'\n'+author['affiliation_zh']+'\n学号：'+author['student_id']+'\n\n'+remaining
     (out/'杭州住宅被动降温_英文短稿对应中文版.md').write_text(text.replace('kWh_th','kWh<sub>th</sub>'))

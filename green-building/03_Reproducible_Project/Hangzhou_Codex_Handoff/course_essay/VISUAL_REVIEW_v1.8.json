@@ -1,0 +1,15 @@
+{
+  "reviewed_at": "2026-11-08T10:33+08:00",
+  "reviewer": "Assistant visual inspection",
+  "pdf_sha256": "cc2b5404b3a3735452095062d2b5ad32f1ea6b60a8133f8966104659906a46f5",
+  "pages_reviewed": [
+    1,
+    2,
+    3
+  ],
+  "items": [
+    "Author name, School of Mathematical Sciences and student ID added to first page.",
+    "Scientific body unchanged from reviewed v1.7; three-page layout retained."
+  ],
+  "pending": []
+}

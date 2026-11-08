@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "version": "v1.7",
+  "version": "v1.8",
   "pages": 3,
   "references_included": true,
   "font": "Times New Roman",
@@ -30,7 +30,7 @@
   "reference_layout": "Jacobs et al. (2019), published version, DOI 10.1016/j.scitotenv.2019.04.087",
   "front_matter": [
     "Title",
-    "Reserved author/affiliation block",
+    "Author, affiliation and student ID",
     "Highlights",
     "Original graphical abstract",
     "Keywords",
@@ -42,8 +42,14 @@
   "table_values_unchanged": true,
   "references_unchanged": true,
   "model_results_changed": false,
-  "visual_review": "All final English pages reviewed after eight language edits. Methods, formula, units, table values, conditions and references retained.",
-  "author_information": "Awaiting real author name and affiliation; block reserved.",
+  "visual_review": "Author block inspected on first page; body and technical content retained. English three pages.",
+  "author_information": {
+    "status": "COMPLETE",
+    "name": "Shicheng Xu",
+    "affiliation_en": "School of Mathematical Sciences",
+    "affiliation_zh": "数学科学学院",
+    "student_id": "3230103117"
+  },
   "course_overrides": [
     "12 pt Times New Roman",
     "Single spacing",
@@ -62,14 +68,14 @@
     "subscript_occurrences": 6,
     "literal_kWh_underscore_th_remaining": false
   },
-  "format_audit": "FORMAT_AUDIT_v1.7.json",
-  "format_report": "课程格式逐项复核_v1.7.md",
+  "format_audit": "FORMAT_AUDIT_v1.8.json",
+  "format_report": "课程格式逐项复核_v1.8.md",
   "paragraph_spacing_pt": {
     "default_after": 1,
     "heading_before": 4,
     "heading_after": 3
   },
-  "added_evidence_checks": "25 format, numerical-evidence and scientific-wording checks PASS",
+  "added_evidence_checks": "26 formatting, scientific-language, evidence and author checks PASS",
   "conclusion_scientific_meaning_unchanged": true,
   "language_integrity": "LANGUAGE_INTEGRITY_v1.7.json"
 }
