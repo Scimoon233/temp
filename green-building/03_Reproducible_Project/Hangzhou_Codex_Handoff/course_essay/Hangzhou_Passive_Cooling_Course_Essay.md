@@ -8,14 +8,14 @@
 
 ## Abstract
 
-This study evaluates how external shading and temperature-controlled night ventilation reduce summer overheating and sensible cooling demand in a Hangzhou residential prototype. A two-zone resistance–capacitance model used hourly weather for 2025 and 2026 to compare baseline, shading, ventilation and combined scenarios under free-running and 26°C ideal-cooling operation. Relative to baseline, combined measures lowered mean free-running air temperature by 1.85–2.12°C and overheating degree-hours above 28°C by 17.5–17.7%, while reducing ideal sensible cooling demand by 6.44–7.01%. Under baseline assumptions, night ventilation achieved the larger overheating reduction among the individual measures; shading achieved the larger cooling-demand reduction. The combination had the lowest overheating degree-hours and cooling demand across twenty tested input sets. These results support combining daytime solar control with night ventilation when outdoor air is at least 1°C cooler than indoors, prioritizing shading for demand reduction under ideal-cooling operation.
+This study examines how external shading and temperature-controlled night ventilation can reduce summer overheating and sensible cooling demand in a Hangzhou residential prototype. A two-zone resistance–capacitance model used hourly weather for 2025 and 2026 to compare baseline, shading, ventilation and combined scenarios under free-running and 26°C ideal-cooling operation. Relative to baseline, combined measures lowered mean free-running air temperature by 1.85–2.12°C and overheating degree-hours above 28°C by 17.5–17.7%, while reducing ideal sensible cooling demand by 6.44–7.01%. Under baseline assumptions, night ventilation achieved the larger overheating reduction among the individual measures; shading achieved the larger cooling-demand reduction. The combination had the lowest overheating degree-hours and cooling demand across twenty tested input sets. These results support combining daytime solar control with night ventilation when outdoor air is at least 1°C cooler than indoors, prioritizing shading for demand reduction under ideal-cooling operation.
 
 Keywords: External shading; Night ventilation; Thermal network; Overheating; Sensible cooling; Hangzhou.
 
 ## 1. Introduction
 
 
-Passive cooling reduces heat entry and uses cooler outdoor air to discharge stored heat. Short et al. (2018) examined solar exposure, enclosed balconies and ventilation in Hangzhou apartments; Artmann et al. (2008) identified weather, airflow and thermal storage as determinants of night cooling. This study compares shading and night ventilation under free-running and 26°C ideal-cooling operation. Its contribution is to quantify their different effects on overheating and sensible demand within one dwelling and weather framework, and to test whether combined benefits persist as inputs change. This supports coordinating the measures according to operating conditions.
+Passive cooling methods reduce heat entering a building and use cooler outdoor air to release stored heat. Short et al. (2018) examined solar exposure, enclosed balconies and ventilation in Hangzhou apartments; Artmann et al. (2008) identified weather, airflow and thermal storage as determinants of night cooling. This study compares shading and night ventilation under free-running and 26°C ideal-cooling operation. The study’s contribution is to compare their effects on overheating and sensible demand within a consistent dwelling and weather framework, and to examine whether the combined benefits persist as inputs change. The findings help show how the two measures can be coordinated under different operating conditions.
 
 ## 2. Methods
 
@@ -57,19 +57,19 @@ S3 reduced ideal demand by 263.2 kWh<sub>th</sub> in 2025 and 213.2 kWh<sub>th</
 
 ### 4.1. Design implications
 
-The results support reducing daytime solar input and discharging heat during cooler nights. Living-zone ventilation covered the 920-hour night window in free-running S2 and S3; with ideal cooling, only 164 hours in 2025 and 206 hours in 2026 met the opening rule. Indoor air near 26°C generally requires outdoor air near or below 25°C for the specified 1 K difference. Under the baseline 26°C schedule, shading is therefore the principal demand-reduction measure, complemented by ventilation when cooler outdoor air is available.
+The results point to two complementary actions: reducing solar input during the day and releasing heat during cooler nights. Living-zone ventilation covered the 920-hour night window in free-running S2 and S3; with ideal cooling, only 164 hours in 2025 and 206 hours in 2026 met the opening rule. Indoor air near 26°C generally requires outdoor air near or below 25°C for the specified 1 K difference. Under the baseline 26°C schedule, shading is therefore the principal demand-reduction measure, complemented by ventilation when cooler outdoor air is available.
 
 In 2025, living-zone solar gains through its own windows and allocated from the balcony were 457.7 and 507.9 kWh<sub>th</sub>, respectively; net partition exchange exported 243.7 kWh<sub>th</sub> to the balcony. These paths support including balcony glazing in solar control while retaining its buffer-zone heat exchange.
 
 ### 4.2. Scope and further work
 
-High baseline temperatures and peaks (50.11°C and 47.84°C) reflect specified solar exposure, gains and boundaries. A 2025 boundary check with a 1 m overhang, half internal gains and zero secondary balcony solar allocation gave an S0 mean of 36.18°C. This identifies heat-input assumptions as important for absolute predictions. The uncalibrated lumped model uses fixed airflow and omits sky longwave exchange and latent loads; humidity, rain, security and noise also shape implementation.
+High baseline temperatures and peaks (50.11°C and 47.84°C) reflect specified solar exposure, gains and boundaries. A 2025 boundary check with a 1 m overhang, half internal gains and zero secondary balcony solar allocation gave an S0 mean of 36.18°C. These results show why heat-input assumptions matter for absolute temperature predictions. The uncalibrated lumped model uses fixed airflow and omits sky longwave exchange and latent loads; humidity, rain, security and noise also shape implementation.
 
 ### 4.3. Conclusions
 
 For the modelled Hangzhou dwelling, combining external shading and night ventilation achieved a 1.85–2.12°C reduction in summer mean free-running air temperature, a 17.5–17.7% reduction in overheating degree-hours above 28°C, and a 6.44–7.01% reduction in ideal sensible cooling demand at 26°C. Its first-place ranking across twenty tested input sets supports using the measures together under the studied conditions.
 
-The resulting design priority is to reduce daytime solar gains through external shading and use night ventilation to provide additional heat removal whenever the outdoor temperature is at least 1 K below indoor temperature. This coordinated strategy can moderate summer overheating and reduce the sensible cooling duty of active systems.
+The design priority is therefore to reduce daytime solar gains through external shading and use night ventilation to provide additional heat removal whenever the outdoor temperature is at least 1 K below indoor temperature. This approach can help mitigate summer overheating and reduce the sensible cooling requirement of active systems.
 
 ## References
 

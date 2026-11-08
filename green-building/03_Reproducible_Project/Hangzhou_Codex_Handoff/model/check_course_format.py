@@ -101,20 +101,32 @@ def main():
     boundary=f"{evidence['boundary_check']['2025']['mean_C']:.2f}°C"
     check('boundary_diagnostic_mean',boundary in compact(fulltext),{'scenario':'S0 in combined_lower_gain boundary check','mean':boundary})
     check('baseline_condition_stated','Under baseline assumptions' in normalized_text,'Individual-measure ranking qualified in abstract and results.')
+    # Compare technical content with the pinned, reviewed pre-edit wording.
+    import ast
+    source={}
+    for node in ast.parse((ROOT/'model/write_course_essay.py').read_text()).body:
+        if isinstance(node,ast.Assign) and isinstance(node.targets[0],ast.Name) and node.targets[0].id in ['title','sections','results','refs']:
+            source[node.targets[0].id]=ast.literal_eval(node.value)
+    lock=json.loads((OUT/'LANGUAGE_INTEGRITY_v1.7.json').read_text())
+    def fingerprint(value):return hashlib.sha256(json.dumps(value,ensure_ascii=False,separators=(',',':')).encode()).hexdigest()
+    numeric=re.findall(r'\d+(?:[.,]\d+)*',json.dumps(source,ensure_ascii=False))
+    observed={'methods_sha256':fingerprint(dict(source['sections'])['2. Methods']),'results_sha256':fingerprint(source['results']),'references_sha256':fingerprint(source['refs']),'title_sha256':fingerprint(source['title']),'numeric_sequence_sha256':fingerprint(numeric)}
+    all_body='\n'.join(text for _,paragraphs in source['sections'] for text in paragraphs)+'\n'+'\n'.join(source['results'])
+    check('language_revision_scientific_integrity',observed==lock['expected'] and all(p in all_body for p in lock['protected_passages']),{'baseline':'v1.6','language_edits':len(lock['language_edits']),'protected_passages':len(lock['protected_passages']),'methods_results_references_and_numbers':'unchanged'})
     failures=[k for k,v in checks.items() if v['status']=='FAIL']
     date=datetime.now(ZoneInfo('Asia/Shanghai')).strftime('%Y-%m-%d %H:%M %Z')
-    visual_path=OUT/'VISUAL_REVIEW_v1.6.json'
+    visual_path=OUT/'VISUAL_REVIEW_v1.7.json'
     visual=json.loads(visual_path.read_text()) if visual_path.exists() else {}
     visual_current=visual.get('pdf_sha256')==sha(OUT/(NAME+'.pdf')) and visual.get('pages_reviewed')==[1,2,3]
-    audit={'audit_version':'v1.6','checked_at':date,'target':'English course-submission paper',
+    audit={'audit_version':'v1.7','checked_at':date,'target':'English course-submission paper',
            'course_format_status':'PASS' if not failures else 'FAIL','failures':failures,
            'author_information':'PENDING: real author name and affiliation have not been supplied; reserved block remains blank.',
-           'manual_review':{'status':'PASS' if visual_current else 'NEEDS_REVIEW','evidence':'VISUAL_REVIEW_v1.6.json','matches_current_PDF':visual_current},
+           'manual_review':{'status':'PASS' if visual_current else 'NEEDS_REVIEW','evidence':'VISUAL_REVIEW_v1.7.json','matches_current_PDF':visual_current},
            'scope':'Checks course formatting and reference-inspired organization. Similarity screening, novelty grading and course marks are outside this audit.',
            'files':{NAME+'.pdf':sha(OUT/(NAME+'.pdf')),NAME+'.docx':sha(OUT/(NAME+'.docx'))},'checks':checks}
-    (OUT/'FORMAT_AUDIT_v1.6.json').write_text(json.dumps(audit,ensure_ascii=False,indent=2))
+    (OUT/'FORMAT_AUDIT_v1.7.json').write_text(json.dumps(audit,ensure_ascii=False,indent=2))
     verdict='课程明确的排版要求已通过核查' if not failures else '当前自动检查尚未全部通过：'+', '.join(failures)
-    report=f'''# 英文课程论文格式复核 v1.6
+    report=f'''# 英文课程论文格式复核 v1.7
 
 核查时间：{date}。对象为当前英文课程提交稿，依据为本对话中的两张课程要求截图，以及Jacobs等（2019）的15页正式发表版。
 
@@ -138,26 +150,26 @@ def main():
 
 课程明确的12号、单倍行距和2—3页要求优先于期刊样例的较小字号与15页篇幅。截图未规定A4、页边距、页眉页码、Highlights或图文摘要；这些是参照文章作出的版式选择。当前A4，左右1.5 cm，上下1.65 cm，中缝约0.5 cm。
 
-## 已沿用的排版修正与本轮补充
+## 当前版式与本轮语言润色
 
 1. 原第2页末尾把“free-running”拆到两页；已设置结果段落完整排版，消除跨页拆词；当前两个结果段分别完整位于第2和第3页。
 2. 参考文献两端对齐导致较大的词间空隙；现改为左对齐，保留悬挂缩进。中英文对应版均已同步。
 3. Highlights续行原先与圆点同列；已加入悬挂缩进，使续行与文字对齐。
-4. 保留段落与标题间距设置，正文仍为12号、单倍行距，最终保持3页。本轮补充绝对室温、敏感性范围、基准条件和研究贡献；较细的数据对齐与交互计算转入配套方法文件。
+4. 保留段落与标题间距设置，正文仍为12号、单倍行距，最终保持3页。本轮保留v1.6的科学信息，仅润色目标、衔接和结论中的普通表达。
 
 ## 导出与内容完整性
 
 Word与PDF正文的NFKC标准化非空白字符计数完全一致，未发现导出丢字；核查了全部8行情景结果、24个表格数值、6个PDF外链、{len(subs)}处热量单位下标，以及图文摘要的内嵌图片与源图一致性。逐页渲染检查后，未发现乱码、表格越界或图文裁切。上、下标遵循正常数学排版，未以缩小正文字号压缩页数。
 
-本轮补充的绝对室温、敏感性范围及边界诊断均读取既有CSV结果，并另作24项格式与证据核验；模拟数据及基准参数哈希保持不变。完整依据见`EVIDENCE_ADDITIONS_v1.6.json`与`方法补充与证据来源_v1.6.md`，本轮未新增热模型运行。
+本轮采用更自然的普通表述，并作25项格式、证据和科学内容一致性核验。方法、结果段、公式、单位、参考文献、全部数字及关键技术语句与v1.6一致；模型数据及基准参数哈希保持不变。完整依据见`EVIDENCE_ADDITIONS_v1.6.json`与`方法补充与证据来源_v1.6.md`，本轮未新增热模型运行。
 
 ## 尚待补充
 
 真实作者姓名与单位尚未提供，因此首页作者栏继续留空。这是补齐参考文章首页信息所需的材料；它不影响当前页数、字号和行距检查结果。
 
-复核命令：在项目根目录运行`python model/check_course_format.py`。机器可读证据见`FORMAT_AUDIT_v1.6.json`，最终三页预览见`Layout_Preview_Page_1.png`至`Layout_Preview_Page_3.png`。Word经不同软件重新导出时应重新核对分页。
+复核命令：在项目根目录运行`python model/check_course_format.py`。机器可读证据见`FORMAT_AUDIT_v1.7.json`，最终三页预览见`Layout_Preview_Page_1.png`至`Layout_Preview_Page_3.png`。Word经不同软件重新导出时应重新核对分页。
 '''
-    (OUT/'课程格式逐项复核_v1.6.md').write_text(report)
+    (OUT/'课程格式逐项复核_v1.7.md').write_text(report)
     print(json.dumps({'course_format_status':audit['course_format_status'],'checks':len(checks),'failures':failures,'pages':len(pdf),'manual_review_current':visual_current,'author_information':'pending'},ensure_ascii=False))
     if failures:raise SystemExit(1)
 

@@ -1,5 +1,5 @@
 {
-  "version": "English course essay v1.6",
+  "version": "English course essay v1.7",
   "date": "2026-11-08",
   "model_changed": false,
   "source_files": [
@@ -31,8 +31,9 @@
   "font_package_source": "https://downloads.sourceforge.net/corefonts/times32.exe",
   "font_package_md5": "ed39c8ef91b9fb80f76f702568291bd5",
   "format_check": "FORMAT_CHECKS.json",
-  "editorial_change": "Added absolute seasonal means, discrete sensitivity ranges, baseline-ranking conditions and a quantified boundary diagnostic; clarified contribution. Detailed alignment and interaction calculations retained in supporting methods. No new thermal-model runs.",
+  "editorial_change": "Selective natural phrasing in eight sentences. Methods, results, numerical token sequence, title, references and protected technical passages retained from v1.6; scientific integrity verified. No new thermal-model runs.",
   "evidence": "EVIDENCE_ADDITIONS_v1.6.json",
   "supporting_methods": "方法补充与证据来源_v1.6.md",
-  "format_audit": "FORMAT_AUDIT_v1.6.json"
+  "format_audit": "FORMAT_AUDIT_v1.7.json",
+  "language_integrity": "LANGUAGE_INTEGRITY_v1.7.json"
 }

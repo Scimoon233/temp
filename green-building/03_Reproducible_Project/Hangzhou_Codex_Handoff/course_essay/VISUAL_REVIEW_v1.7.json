@@ -1,0 +1,18 @@
+{
+  "reviewed_at": "2026-11-08T10:25+08:00",
+  "reviewer": "Assistant visual inspection",
+  "pdf_sha256": "318f02a8a1c1492b4cabddf81bde94c1929afdb70df9a83ba092b6bbfe5e68a0",
+  "pages_reviewed": [
+    1,
+    2,
+    3
+  ],
+  "items": [
+    "Updated prose in abstract and introduction checked; graphical abstract and technical wording retained.",
+    "Methods, formula, unit subscripts and all table rows inspected.",
+    "Results, scope and complete conclusion paragraphs checked; all six references present."
+  ],
+  "pending": [
+    "Real author name and affiliation."
+  ]
+}

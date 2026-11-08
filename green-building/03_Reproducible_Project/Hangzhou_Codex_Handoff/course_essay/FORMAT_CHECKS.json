@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "version": "v1.6",
+  "version": "v1.7",
   "pages": 3,
   "references_included": true,
   "font": "Times New Roman",
@@ -42,7 +42,7 @@
   "table_values_unchanged": true,
   "references_unchanged": true,
   "model_results_changed": false,
-  "visual_review": "All final English pages inspected, including baseline qualifier, absolute means, sensitivity ranges, diagnostic case and complete conclusion paragraphs.",
+  "visual_review": "All final English pages reviewed after eight language edits. Methods, formula, units, table values, conditions and references retained.",
   "author_information": "Awaiting real author name and affiliation; block reserved.",
   "course_overrides": [
     "12 pt Times New Roman",
@@ -53,7 +53,7 @@
   "date": "2026-11-08",
   "abstract_revision": "Operating conditions, individual-measure rankings and combined benefits explicitly linked.",
   "graphical_abstract": "Mechanism-to-outcomes diagram; separate free-running and 26°C ideal-cooling paths; English and Chinese versions.",
-  "conclusion_unchanged": true,
+  "conclusion_unchanged": false,
   "unit_notation": {
     "Word_PDF": "kWh with th as a real subscript",
     "Markdown": "kWh<sub>th</sub>",
@@ -62,12 +62,14 @@
     "subscript_occurrences": 6,
     "literal_kWh_underscore_th_remaining": false
   },
-  "format_audit": "FORMAT_AUDIT_v1.6.json",
-  "format_report": "课程格式逐项复核_v1.6.md",
+  "format_audit": "FORMAT_AUDIT_v1.7.json",
+  "format_report": "课程格式逐项复核_v1.7.md",
   "paragraph_spacing_pt": {
     "default_after": 1,
     "heading_before": 4,
     "heading_after": 3
   },
-  "added_evidence_checks": "4 checks against existing CSV outputs; 24 total checks PASS"
+  "added_evidence_checks": "25 format, numerical-evidence and scientific-wording checks PASS",
+  "conclusion_scientific_meaning_unchanged": true,
+  "language_integrity": "LANGUAGE_INTEGRITY_v1.7.json"
 }
