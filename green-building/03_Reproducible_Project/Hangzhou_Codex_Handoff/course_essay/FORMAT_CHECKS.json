@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "version": "v1.8",
+  "version": "v1.9",
   "pages": 3,
   "references_included": true,
   "font": "Times New Roman",
@@ -42,7 +42,7 @@
   "table_values_unchanged": true,
   "references_unchanged": true,
   "model_results_changed": false,
-  "visual_review": "Author block inspected on first page; body and technical content retained. English three pages.",
+  "visual_review": "Text header and header rule removed. Body and footer regions pixel-identical to previous delivered English and Chinese PDFs.",
   "author_information": {
     "status": "COMPLETE",
     "name": "Shicheng Xu",
@@ -68,14 +68,16 @@
     "subscript_occurrences": 6,
     "literal_kWh_underscore_th_remaining": false
   },
-  "format_audit": "FORMAT_AUDIT_v1.8.json",
-  "format_report": "课程格式逐项复核_v1.8.md",
+  "format_audit": "FORMAT_AUDIT_v1.9.json",
+  "format_report": "课程格式逐项复核_v1.9.md",
   "paragraph_spacing_pt": {
     "default_after": 1,
     "heading_before": 4,
     "heading_after": 3
   },
-  "added_evidence_checks": "26 formatting, scientific-language, evidence and author checks PASS",
+  "added_evidence_checks": "27 checks PASS",
   "conclusion_scientific_meaning_unchanged": true,
-  "language_integrity": "LANGUAGE_INTEGRITY_v1.7.json"
+  "language_integrity": "LANGUAGE_INTEGRITY_v1.7.json",
+  "header": "none",
+  "footer": "page numbers"
 }

@@ -115,20 +115,21 @@ def main():
     check('language_revision_scientific_integrity',observed==lock['expected'] and all(p in all_body for p in lock['protected_passages']),{'baseline':'v1.6','language_edits':len(lock['language_edits']),'protected_passages':len(lock['protected_passages']),'methods_results_references_and_numbers':'unchanged'})
     author=json.loads((ROOT/'config/paper_author.json').read_text())
     check('author_information',all(author[key] in pdf[0].get_text() for key in ['name','affiliation_en','student_id']) and pdf.metadata.get('author')==author['name'],{'name':author['name'],'affiliation':author['affiliation_en'],'student_id':author['student_id']})
+    check('header_removed_footer_retained',all(not page.get_textbox(fitz.Rect(0,0,page.rect.width,44)).strip() for page in pdf) and all(page.get_textbox(fitz.Rect(0,800,page.rect.width,page.rect.height)).strip()==str(i+1) for i,page in enumerate(pdf)),{'header':'none','footer':'page numbers 1–3'})
     failures=[k for k,v in checks.items() if v['status']=='FAIL']
     date=datetime.now(ZoneInfo('Asia/Shanghai')).strftime('%Y-%m-%d %H:%M %Z')
-    visual_path=OUT/'VISUAL_REVIEW_v1.8.json'
+    visual_path=OUT/'VISUAL_REVIEW_v1.9.json'
     visual=json.loads(visual_path.read_text()) if visual_path.exists() else {}
     visual_current=visual.get('pdf_sha256')==sha(OUT/(NAME+'.pdf')) and visual.get('pages_reviewed')==[1,2,3]
-    audit={'audit_version':'v1.8','checked_at':date,'target':'English course-submission paper',
+    audit={'audit_version':'v1.9','checked_at':date,'target':'English course-submission paper',
            'course_format_status':'PASS' if not failures else 'FAIL','failures':failures,
            'author_information':{'status':'COMPLETE','name':author['name'],'affiliation':author['affiliation_en'],'student_id':author['student_id']},
-           'manual_review':{'status':'PASS' if visual_current else 'NEEDS_REVIEW','evidence':'VISUAL_REVIEW_v1.8.json','matches_current_PDF':visual_current},
+           'manual_review':{'status':'PASS' if visual_current else 'NEEDS_REVIEW','evidence':'VISUAL_REVIEW_v1.9.json','matches_current_PDF':visual_current},
            'scope':'Checks course formatting and reference-inspired organization. Similarity screening, novelty grading and course marks are outside this audit.',
            'files':{NAME+'.pdf':sha(OUT/(NAME+'.pdf')),NAME+'.docx':sha(OUT/(NAME+'.docx'))},'checks':checks}
-    (OUT/'FORMAT_AUDIT_v1.8.json').write_text(json.dumps(audit,ensure_ascii=False,indent=2))
+    (OUT/'FORMAT_AUDIT_v1.9.json').write_text(json.dumps(audit,ensure_ascii=False,indent=2))
     verdict='课程明确的排版要求已通过核查' if not failures else '当前自动检查尚未全部通过：'+', '.join(failures)
-    report=f'''# 英文课程论文格式复核 v1.8
+    report=f'''# 英文课程论文格式复核 v1.9
 
 核查时间：{date}。对象为当前英文课程提交稿，依据为本对话中的两张课程要求截图，以及Jacobs等（2019）的15页正式发表版。
 
@@ -148,7 +149,7 @@ def main():
 
 ## 与参考文章版式对应
 
-首页：通栏题目，填写作者、署名单位与学号；左侧Highlights和Keywords，右侧Graphical Abstract与Abstract。正文从第2页开始，等宽双栏，末章为Discussion and conclusions。表题位于表上方，表格采用横线、不设竖线；参考文献为作者—年份制、悬挂缩进。课程稿使用自己的页眉和页码。
+首页：通栏题目，填写作者、署名单位与学号；左侧Highlights和Keywords，右侧Graphical Abstract与Abstract。正文从第2页开始，等宽双栏，末章为Discussion and conclusions。表题位于表上方，表格采用横线、不设竖线；参考文献为作者—年份制、悬挂缩进。课程稿已按用户要求删除文字页眉及其横线，仅保留页码。
 
 课程明确的12号、单倍行距和2—3页要求优先于期刊样例的较小字号与15页篇幅。截图未规定A4、页边距、页眉页码、Highlights或图文摘要；这些是参照文章作出的版式选择。当前A4，左右1.5 cm，上下1.65 cm，中缝约0.5 cm。
 
@@ -163,15 +164,15 @@ def main():
 
 Word与PDF正文的NFKC标准化非空白字符计数完全一致，未发现导出丢字；核查了全部8行情景结果、24个表格数值、6个PDF外链、{len(subs)}处热量单位下标，以及图文摘要的内嵌图片与源图一致性。逐页渲染检查后，未发现乱码、表格越界或图文裁切。上、下标遵循正常数学排版，未以缩小正文字号压缩页数。
 
-本轮补齐署名信息，沿用v1.7的语言与科学内容，并作26项格式、证据、科学内容和署名核验。方法、结果段、公式、单位、参考文献、全部科学数值及关键技术语句与v1.6一致；模型数据及基准参数哈希保持不变。完整依据见`EVIDENCE_ADDITIONS_v1.6.json`与`方法补充与证据来源_v1.6.md`，本轮未新增热模型运行。
+本轮移除文字页眉及页眉横线，保留页码，沿用已有署名、语言与科学内容，并作27项格式、证据、科学内容及署名核验。方法、结果段、公式、单位、参考文献、全部科学数值及关键技术语句与v1.6一致；模型数据及基准参数哈希保持不变。完整依据见`EVIDENCE_ADDITIONS_v1.6.json`与`方法补充与证据来源_v1.6.md`，本轮未新增热模型运行。
 
 ## 署名信息
 
 Shicheng Xu；School of Mathematical Sciences；Student ID: 3230103117。中文署名单位为数学科学学院，全部依据用户提供的信息填写。
 
-复核命令：在项目根目录运行`python model/check_course_format.py`。机器可读证据见`FORMAT_AUDIT_v1.8.json`，最终三页预览见`Layout_Preview_Page_1.png`至`Layout_Preview_Page_3.png`。Word经不同软件重新导出时应重新核对分页。
+复核命令：在项目根目录运行`python model/check_course_format.py`。机器可读证据见`FORMAT_AUDIT_v1.9.json`，最终三页预览见`Layout_Preview_Page_1.png`至`Layout_Preview_Page_3.png`。Word经不同软件重新导出时应重新核对分页。
 '''
-    (OUT/'课程格式逐项复核_v1.8.md').write_text(report)
+    (OUT/'课程格式逐项复核_v1.9.md').write_text(report)
     print(json.dumps({'course_format_status':audit['course_format_status'],'checks':len(checks),'failures':failures,'pages':len(pdf),'manual_review_current':visual_current,'author_information':'complete'},ensure_ascii=False))
     if failures:raise SystemExit(1)
 

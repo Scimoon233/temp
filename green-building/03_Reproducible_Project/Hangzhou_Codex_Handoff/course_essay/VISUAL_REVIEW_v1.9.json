@@ -1,0 +1,15 @@
+{
+  "reviewed_at": "2026-11-08T11:56+08:00",
+  "reviewer": "Assistant page-region comparison",
+  "pdf_sha256": "dc98701e2f24849256e5acc20df76bc475267cd83bbd033dd8d0efeef4a0fa6d",
+  "pages_reviewed": [
+    1,
+    2,
+    3
+  ],
+  "items": [
+    "Header text and rule removed; page numbers retained.",
+    "Body regions checked against previous delivered version."
+  ],
+  "pending": []
+}

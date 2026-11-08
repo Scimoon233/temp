@@ -55,9 +55,6 @@ def configure(doc,zh=False):
             s.element.get_or_add_rPr().rFonts.set(qn('w:eastAsia'),'Noto Serif CJK SC' if zh else 'Times New Roman')
             if s.type==1:
                 s.paragraph_format.line_spacing=1.;s.paragraph_format.space_after=Pt(1)
-    h=sec.header.paragraphs[0];h.alignment=WD_ALIGN_PARAGRAPH.CENTER
-    r=h.add_run('Green Building | Course essay');font(r,zh);r.italic=True
-    line(h)
     foot=sec.footer.paragraphs[0];foot.alignment=WD_ALIGN_PARAGRAPH.RIGHT
     field=OxmlElement('w:fldSimple');field.set(qn('w:instr'),'PAGE');foot._p.append(field)
     # Explicit defaults cover page-number fields and the table's empty cells.

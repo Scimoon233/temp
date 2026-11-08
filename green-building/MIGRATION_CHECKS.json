@@ -18,13 +18,13 @@
     },
     {
       "path": "01_Papers/Chinese_Reading/TRANSLATION_CHECKS.json",
-      "bytes": 574,
-      "sha256": "29ad14fe60956bd6fba680b76853ed002c9f080d362fcdca48f0f7ba16da6de3"
+      "bytes": 358,
+      "sha256": "72c7246bb8ad5df0c92c6e09971973cf42011e90b29867c5d6efb8f7aa3f3fc7"
     },
     {
       "path": "01_Papers/Chinese_Reading/杭州住宅被动降温_英文短稿对应中文版.docx",
-      "bytes": 247108,
-      "sha256": "53de1d21553a1d0c67a9fa1cbb12221876d37beeb0b24353439e171ad8adc538"
+      "bytes": 246443,
+      "sha256": "c3c3f227272a8affe6329068f22b076498435be0802d99d2cf7be0ed4dd7aee6"
     },
     {
       "path": "01_Papers/Chinese_Reading/杭州住宅被动降温_英文短稿对应中文版.md",
@@ -33,18 +33,18 @@
     },
     {
       "path": "01_Papers/Chinese_Reading/杭州住宅被动降温_英文短稿对应中文版.pdf",
-      "bytes": 450685,
-      "sha256": "32ac0d74b01d347455792fd7f49cbe3925a6561fec013bf674ecef546d389fbf"
+      "bytes": 444788,
+      "sha256": "09208dae83a83cefeb7b3840067052d9933fbad55072cfcad02871d8d9d4e7e7"
     },
     {
       "path": "01_Papers/English/FORMAT_CHECKS.json",
-      "bytes": 2572,
-      "sha256": "99cdec6fa7a247948f70e40fbf2a764f18c0d0a31c77ca82e0f3b601b661e280"
+      "bytes": 2596,
+      "sha256": "4aba555737bc952faad75b13cc8e06d72df68061d136a9d990782cec41898687"
     },
     {
       "path": "01_Papers/English/Hangzhou_Passive_Cooling_Course_Essay.docx",
-      "bytes": 247288,
-      "sha256": "04daee949a0bffe7838c25457e7f9e4bac89147a1a820b63c25adc347b079722"
+      "bytes": 246637,
+      "sha256": "52a7861a81d44c0089522912125522a93aaf09a0b64a9a6687bf39fdbf4f3294"
     },
     {
       "path": "01_Papers/English/Hangzhou_Passive_Cooling_Course_Essay.md",
@@ -53,13 +53,13 @@
     },
     {
       "path": "01_Papers/English/Hangzhou_Passive_Cooling_Course_Essay.pdf",
-      "bytes": 304763,
-      "sha256": "cc2b5404b3a3735452095062d2b5ad32f1ea6b60a8133f8966104659906a46f5"
+      "bytes": 303666,
+      "sha256": "dc98701e2f24849256e5acc20df76bc475267cd83bbd033dd8d0efeef4a0fa6d"
     },
     {
       "path": "01_Papers/English/PROVENANCE.json",
-      "bytes": 1749,
-      "sha256": "2a5efcfcad9382c138aa68e3eac0180ee4879223a77f86612c22f4a792d37e70"
+      "bytes": 1754,
+      "sha256": "bf1ebcd3408029284f5b188527b14683a0b4f6ae14ecc97ba51416fc94361e14"
     },
     {
       "path": "01_Papers/English/修改说明与课程要求核对.md",
@@ -178,13 +178,13 @@
     },
     {
       "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay/FORMAT_CHECKS.json",
-      "bytes": 2572,
-      "sha256": "99cdec6fa7a247948f70e40fbf2a764f18c0d0a31c77ca82e0f3b601b661e280"
+      "bytes": 2596,
+      "sha256": "4aba555737bc952faad75b13cc8e06d72df68061d136a9d990782cec41898687"
     },
     {
       "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay/Hangzhou_Passive_Cooling_Course_Essay.docx",
-      "bytes": 247288,
-      "sha256": "04daee949a0bffe7838c25457e7f9e4bac89147a1a820b63c25adc347b079722"
+      "bytes": 246637,
+      "sha256": "52a7861a81d44c0089522912125522a93aaf09a0b64a9a6687bf39fdbf4f3294"
     },
     {
       "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay/Hangzhou_Passive_Cooling_Course_Essay.md",
@@ -193,13 +193,13 @@
     },
     {
       "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay/Hangzhou_Passive_Cooling_Course_Essay.pdf",
-      "bytes": 304763,
-      "sha256": "cc2b5404b3a3735452095062d2b5ad32f1ea6b60a8133f8966104659906a46f5"
+      "bytes": 303666,
+      "sha256": "dc98701e2f24849256e5acc20df76bc475267cd83bbd033dd8d0efeef4a0fa6d"
     },
     {
       "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay/PROVENANCE.json",
-      "bytes": 1749,
-      "sha256": "2a5efcfcad9382c138aa68e3eac0180ee4879223a77f86612c22f4a792d37e70"
+      "bytes": 1754,
+      "sha256": "bf1ebcd3408029284f5b188527b14683a0b4f6ae14ecc97ba51416fc94361e14"
     },
     {
       "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay/修改说明与课程要求核对.md",
@@ -208,13 +208,13 @@
     },
     {
       "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay_zh/TRANSLATION_CHECKS.json",
-      "bytes": 574,
-      "sha256": "29ad14fe60956bd6fba680b76853ed002c9f080d362fcdca48f0f7ba16da6de3"
+      "bytes": 358,
+      "sha256": "72c7246bb8ad5df0c92c6e09971973cf42011e90b29867c5d6efb8f7aa3f3fc7"
     },
     {
       "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay_zh/杭州住宅被动降温_英文短稿对应中文版.docx",
-      "bytes": 247108,
-      "sha256": "53de1d21553a1d0c67a9fa1cbb12221876d37beeb0b24353439e171ad8adc538"
+      "bytes": 246443,
+      "sha256": "c3c3f227272a8affe6329068f22b076498435be0802d99d2cf7be0ed4dd7aee6"
     },
     {
       "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay_zh/杭州住宅被动降温_英文短稿对应中文版.md",
@@ -223,8 +223,8 @@
     },
     {
       "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/course_essay_zh/杭州住宅被动降温_英文短稿对应中文版.pdf",
-      "bytes": 450685,
-      "sha256": "32ac0d74b01d347455792fd7f49cbe3925a6561fec013bf674ecef546d389fbf"
+      "bytes": 444788,
+      "sha256": "09208dae83a83cefeb7b3840067052d9933fbad55072cfcad02871d8d9d4e7e7"
     },
     {
       "path": "03_Reproducible_Project/Hangzhou_Codex_Handoff/data/00_current/Hangzhou_Master_Data_Inventory.docx",
@@ -1003,8 +1003,8 @@
     },
     {
       "path": "OUTPUT_MANIFEST.json",
-      "bytes": 51826,
-      "sha256": "beaf3bb773a2b8fb84e7b45be011458e074aed22324d367927e70ac7ff66e0a2"
+      "bytes": 52962,
+      "sha256": "0264b6ffde26619549cc0e38dc3d412976a70fb294f621f1fd54d56e9e7588cb"
     }
   ],
   "git_index_byte_preservation": "PASS",
@@ -1014,12 +1014,12 @@
   "destination_subdirectory": "green-building",
   "base_commit": "08d938dca006aa35b8446539dbeb5b619424cdb9",
   "remote_state_at_preparation": "awaiting authenticated GitHub write access",
-  "editorial_revision": "v1.8",
+  "editorial_revision": "v1.9",
   "model_results_changed": false,
   "layout_revision": "Jacobs-style front matter and double-column body",
   "abstract_graphical_revision": "Explicit operating modes and bilingual mechanism-to-outcomes diagram",
   "unit_typography": "true thermal qualifier subscripts",
-  "course_format_audit": "26 checks PASS; author complete; three-page English PDF",
+  "course_format_audit": "27 checks PASS; no text header; page numbers retained",
   "pending_author_information": false,
   "new_thermal_model_runs": 0,
   "evidence_additions": "Absolute means, sensitivity range and boundary diagnostic extracted from existing CSV outputs",
