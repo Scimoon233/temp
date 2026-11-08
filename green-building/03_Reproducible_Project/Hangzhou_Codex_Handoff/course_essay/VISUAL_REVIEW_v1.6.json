@@ -1,0 +1,19 @@
+{
+  "reviewed_at": "2026-11-08T10:07+08:00",
+  "reviewer": "Assistant visual inspection",
+  "pdf_sha256": "ce52f472766529b258720b82c982c02396d4ea9def1dc7f965a8d3b20aea6e79",
+  "pages_reviewed": [
+    1,
+    2,
+    3
+  ],
+  "items": [
+    "Baseline qualifier in abstract and unchanged graphical abstract inspected.",
+    "Added absolute means and complete first result paragraph checked on page 2.",
+    "Sensitivity range, boundary diagnostic, complete conclusion paragraph and six references inspected on page 3."
+  ],
+  "pending": [
+    "Real author name and affiliation."
+  ],
+  "Chinese_reading_body_reviewed": true
+}

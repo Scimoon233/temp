@@ -1,5 +1,5 @@
 {
-  "version": "English course essay v1.5",
+  "version": "English course essay v1.6",
   "date": "2026-11-08",
   "model_changed": false,
   "source_files": [
@@ -18,10 +18,21 @@
     {
       "path": "config/base.json",
       "sha256": "4985e427bc8cb5c7f7cec7425166478225587e250bb49a843deb4cc022a3dd75"
+    },
+    {
+      "path": "results/draft_diagnostics/cases.json",
+      "sha256": "c2cee1d1a0014403334c53dd11f321fd3643ededb9494c9203e56df1249cb42f"
+    },
+    {
+      "path": "results/variants.json",
+      "sha256": "9188a79e5c81fcde762821ed049b415b42e39eaaf235a37085211b714887789d"
     }
   ],
   "font_package_source": "https://downloads.sourceforge.net/corefonts/times32.exe",
   "font_package_md5": "ed39c8ef91b9fb80f76f702568291bd5",
   "format_check": "FORMAT_CHECKS.json",
-  "editorial_change": "Full course-format audit; corrected page-break word split, reference justification gaps and Highlights hanging indentation. Paragraph spacing adjusted while retaining 12 pt normal text, single spacing and three pages. Content and model data unchanged."
+  "editorial_change": "Added absolute seasonal means, discrete sensitivity ranges, baseline-ranking conditions and a quantified boundary diagnostic; clarified contribution. Detailed alignment and interaction calculations retained in supporting methods. No new thermal-model runs.",
+  "evidence": "EVIDENCE_ADDITIONS_v1.6.json",
+  "supporting_methods": "方法补充与证据来源_v1.6.md",
+  "format_audit": "FORMAT_AUDIT_v1.6.json"
 }

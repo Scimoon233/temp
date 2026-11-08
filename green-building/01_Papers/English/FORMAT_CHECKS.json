@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "version": "v1.5",
+  "version": "v1.6",
   "pages": 3,
   "references_included": true,
   "font": "Times New Roman",
@@ -42,7 +42,7 @@
   "table_values_unchanged": true,
   "references_unchanged": true,
   "model_results_changed": false,
-  "visual_review": "All final English pages and Chinese reference page inspected; first result paragraph starts on page 3, references left aligned with hanging indents, Highlights continuation indentation aligned.",
+  "visual_review": "All final English pages inspected, including baseline qualifier, absolute means, sensitivity ranges, diagnostic case and complete conclusion paragraphs.",
   "author_information": "Awaiting real author name and affiliation; block reserved.",
   "course_overrides": [
     "12 pt Times New Roman",
@@ -59,14 +59,15 @@
     "Markdown": "kWh<sub>th</sub>",
     "Word_base_font_pt": 12,
     "automatic_PDF_subscript_pt": 7,
-    "subscript_occurrences": 10,
+    "subscript_occurrences": 6,
     "literal_kWh_underscore_th_remaining": false
   },
-  "format_audit": "FORMAT_AUDIT_v1.5.json",
-  "format_report": "课程格式逐项复核_v1.5.md",
+  "format_audit": "FORMAT_AUDIT_v1.6.json",
+  "format_report": "课程格式逐项复核_v1.6.md",
   "paragraph_spacing_pt": {
     "default_after": 1,
     "heading_before": 4,
     "heading_after": 3
-  }
+  },
+  "added_evidence_checks": "4 checks against existing CSV outputs; 24 total checks PASS"
 }

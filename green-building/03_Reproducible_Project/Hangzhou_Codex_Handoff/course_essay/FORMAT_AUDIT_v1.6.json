@@ -1,0 +1,199 @@
+{
+  "audit_version": "v1.6",
+  "checked_at": "2026-11-08 10:07 CST",
+  "target": "English course-submission paper",
+  "course_format_status": "PASS",
+  "failures": [],
+  "author_information": "PENDING: real author name and affiliation have not been supplied; reserved block remains blank.",
+  "manual_review": {
+    "status": "PASS",
+    "evidence": "VISUAL_REVIEW_v1.6.json",
+    "matches_current_PDF": true
+  },
+  "scope": "Checks course formatting and reference-inspired organization. Similarity screening, novelty grading and course marks are outside this audit.",
+  "files": {
+    "Hangzhou_Passive_Cooling_Course_Essay.pdf": "ce52f472766529b258720b82c982c02396d4ea9def1dc7f965a8d3b20aea6e79",
+    "Hangzhou_Passive_Cooling_Course_Essay.docx": "e64add78cded710436921fc84fb24205106783dbe0621e282cd379be6d917e43"
+  },
+  "checks": {
+    "page_count": {
+      "status": "PASS",
+      "evidence": {
+        "pages": 3,
+        "includes_references": true
+      }
+    },
+    "font_family": {
+      "status": "PASS",
+      "evidence": [
+        "TimesNewRomanPS-BoldMT",
+        "TimesNewRomanPS-ItalicMT",
+        "TimesNewRomanPSMT"
+      ]
+    },
+    "fonts_embedded": {
+      "status": "PASS",
+      "evidence": {
+        "embedded_font_objects": 5
+      }
+    },
+    "normal_font_size": {
+      "status": "PASS",
+      "evidence": {
+        "normal_pt": 12,
+        "PDF_sizes": {
+          "12.0": 260,
+          "7.0": 6
+        },
+        "only_smaller_text": "automatic thermal-unit subscript th"
+      }
+    },
+    "Word_base_font_size": {
+      "status": "PASS",
+      "evidence": "All explicit Word font sizes are 24 half-points = 12 pt."
+    },
+    "single_spacing": {
+      "status": "PASS",
+      "evidence": {
+        "Word_line": 240,
+        "Word_line_rule": "auto",
+        "paragraph_gaps": "1 pt; headings 4 pt before and 3 pt after"
+      }
+    },
+    "PDF_submission": {
+      "status": "PASS",
+      "evidence": {
+        "format": "PDF",
+        "password_protected": false
+      }
+    },
+    "paper_sections": {
+      "status": "PASS",
+      "evidence": [
+        "Abstract",
+        "1. Introduction",
+        "2. Methods",
+        "3. Results",
+        "4. Discussion and conclusions",
+        "4.3. Conclusions",
+        "References"
+      ]
+    },
+    "front_matter": {
+      "status": "PASS",
+      "evidence": [
+        "Highlights",
+        "Graphical abstract",
+        "Keywords",
+        "Abstract"
+      ]
+    },
+    "two_column_body": {
+      "status": "PASS",
+      "evidence": {
+        "body_columns": "2",
+        "column_gap_cm": 0.501
+      }
+    },
+    "thermal_unit_notation": {
+      "status": "PASS",
+      "evidence": {
+        "real_subscripts": 6,
+        "literal_underscore_units": false
+      }
+    },
+    "text_not_lost_on_export": {
+      "status": "PASS",
+      "evidence": {
+        "Word_nonspace_characters": 7745,
+        "PDF_nonspace_characters": 7745,
+        "method": "NFKC-normalized character counts, excluding running header/footer; complemented by page rendering"
+      }
+    },
+    "no_missing_glyph_markers": {
+      "status": "PASS",
+      "evidence": true
+    },
+    "page_boundaries": {
+      "status": "PASS",
+      "evidence": "All English text stays inside page and selected margins; trailing-space tolerance included."
+    },
+    "graph_font_size": {
+      "status": "PASS",
+      "evidence": {
+        "source_graph_font_pt": 12,
+        "display_width_cm": 12
+      }
+    },
+    "graph_not_cropped": {
+      "status": "PASS",
+      "evidence": "Embedded PNG matches inspected source; no crop rectangle in Word."
+    },
+    "references_and_links": {
+      "status": "PASS",
+      "evidence": {
+        "reference_entries": 6,
+        "clickable_PDF_links": 6
+      }
+    },
+    "table_values": {
+      "status": "PASS",
+      "evidence": {
+        "scenario_rows": 8,
+        "numeric_values_checked": 24
+      }
+    },
+    "model_data_preserved": {
+      "status": "PASS",
+      "evidence": [
+        "results/base_metrics.csv",
+        "results/all_metrics.csv",
+        "results/draft_diagnostics/metrics.csv",
+        "config/base.json"
+      ]
+    },
+    "result_paragraph_pagination": {
+      "status": "PASS",
+      "evidence": {
+        "complete_result_paragraph_pages": [
+          2,
+          3
+        ],
+        "description": "Each results paragraph is kept on a single page."
+      }
+    },
+    "added_absolute_means": {
+      "status": "PASS",
+      "evidence": [
+        "40.04°C",
+        "37.92°C",
+        "38.36°C",
+        "36.51°C"
+      ]
+    },
+    "added_sensitivity_endpoints": {
+      "status": "PASS",
+      "evidence": {
+        "endpoints": [
+          "10.86%",
+          "28.06%",
+          "3.63%",
+          "13.43%"
+        ],
+        "comparisons_per_metric": 40,
+        "input_sets": 20
+      }
+    },
+    "boundary_diagnostic_mean": {
+      "status": "PASS",
+      "evidence": {
+        "scenario": "S0 in combined_lower_gain boundary check",
+        "mean": "36.18°C"
+      }
+    },
+    "baseline_condition_stated": {
+      "status": "PASS",
+      "evidence": "Individual-measure ranking qualified in abstract and results."
+    }
+  }
+}

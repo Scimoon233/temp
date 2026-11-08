@@ -1,0 +1,99 @@
+{
+  "new_model_runs": 0,
+  "baseline": {
+    "2025": {
+      "S0_mean_C": 40.04394063797722,
+      "S3_mean_C": 37.92317840862203,
+      "mean_reduction_C": 2.1207622293551935,
+      "S3_DH28_reduction_pct": 17.512607662373558,
+      "S3_cooling_reduction_pct": 7.005188843960369
+    },
+    "2026": {
+      "S0_mean_C": 38.36291904910456,
+      "S3_mean_C": 36.51185810138524,
+      "mean_reduction_C": 1.8510609477193185,
+      "S3_DH28_reduction_pct": 17.711891681325195,
+      "S3_cooling_reduction_pct": 6.4444026733234425
+    }
+  },
+  "sensitivity": {
+    "free": {
+      "metric": "DH28_Kh",
+      "S3_minimum_groups": 40,
+      "group_count": 40,
+      "min_pct": 10.860442929848416,
+      "max_pct": 28.06232130453586,
+      "endpoints": [
+        {
+          "variant": "ach_open=0.8",
+          "year": 2026,
+          "reduction_pct": 10.860442929848416
+        },
+        {
+          "variant": "ach_open=3.0",
+          "year": 2026,
+          "reduction_pct": 28.06232130453586
+        }
+      ],
+      "comparison": "Each variant uses its own same-year S0. Ranges are extrema over the tested settings."
+    },
+    "ideal": {
+      "metric": "cool_kWh_th",
+      "S3_minimum_groups": 40,
+      "group_count": 40,
+      "min_pct": 3.630171590801485,
+      "max_pct": 13.431404114848164,
+      "endpoints": [
+        {
+          "variant": "shade_direct_removed=0.25",
+          "year": 2026,
+          "reduction_pct": 3.630171590801485
+        },
+        {
+          "variant": "shade_direct_removed=1.0",
+          "year": 2025,
+          "reduction_pct": 13.431404114848164
+        }
+      ],
+      "comparison": "Each variant uses its own same-year S0. Ranges are extrema over the tested settings."
+    }
+  },
+  "boundary_check": {
+    "2025": {
+      "variant": "combined_lower_gain",
+      "scenario": "S0",
+      "mode": "free",
+      "mean_C": 36.17977577070377,
+      "peak_C": 44.078203654103135
+    },
+    "2026": {
+      "variant": "combined_lower_gain",
+      "scenario": "S0",
+      "mode": "free",
+      "mean_C": 34.78506184430958,
+      "peak_C": 43.33766796102523
+    }
+  },
+  "interaction": {
+    "2025": {
+      "DH28_Kh": -203.14362529168284,
+      "cool_kWh_th": -0.8760459714735589
+    },
+    "2026": {
+      "DH28_Kh": -159.67283555872564,
+      "cool_kWh_th": -0.7446048934666578
+    }
+  },
+  "input_sets": 20,
+  "boundary_check_settings": {
+    "canopy_projection_m": 1.0,
+    "gain_scale": 0.5,
+    "balcony_secondary_fraction": 0.0
+  },
+  "source_sha256": {
+    "results/base_metrics.csv": "bce93ceac51e6130c4ddd53ce97223180645414aa5fc6f483b701eb4e5e1ab66",
+    "results/all_metrics.csv": "6a5931d1da43023df0f61b709d679a5a156d721dbb3362ab2571c215485eddcb",
+    "results/draft_diagnostics/metrics.csv": "a0d1b96fddd67f851cb822cbef4937e1ce28aa80ca190b0a71a96f9c6521a4e3",
+    "results/draft_diagnostics/cases.json": "c2cee1d1a0014403334c53dd11f321fd3643ededb9494c9203e56df1249cb42f"
+  }
+}

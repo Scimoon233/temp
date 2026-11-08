@@ -264,16 +264,20 @@ def build_english(root,out,title,sections,results,refs,data):
         else:ps=parts[name]
         for index,text in enumerate(ps):
             p=paragraph(doc,text,indent=True)
-            if name=='3. Results' and index==0:p.paragraph_format.keep_together=True
+            if name=='3. Results':p.paragraph_format.keep_together=True
             md += ['',text,'']
     heading(doc,'4. Discussion and conclusions');md+=['## 4. Discussion and conclusions','']
     for sub,ps in [('4.1. Design implications',parts['4. Discussion'][:2]),('4.2. Scope and further work',parts['4. Discussion'][2:]),('4.3. Conclusions',parts['5. Conclusion'])]:
         heading(doc,sub,sub=True);md+=['### '+sub,'']
-        for text in ps:paragraph(doc,text,indent=True);md += [text,'']
+        for text in ps:
+            p=paragraph(doc,text,indent=True)
+            if sub=='4.3. Conclusions':p.paragraph_format.keep_together=True
+            md += [text,'']
     heading(doc,'References');md+=['## References','']
     for prefix,label,url in refs:
         p=paragraph(doc,prefix);link(p,label,url);r=p.add_run(' (accessed 7 November 2026).' if 'n.d.' in prefix else '.');font(r)
         p.alignment=WD_ALIGN_PARAGRAPH.LEFT
+        p.paragraph_format.keep_together=True
         p.paragraph_format.left_indent=Cm(.35);p.paragraph_format.first_line_indent=Cm(-.35)
         md.append(prefix+'['+label+']('+url+')'+(' (accessed 7 November 2026).' if 'n.d.' in prefix else '.')+'\n')
     save(doc,out,'Hangzhou_Passive_Cooling_Course_Essay',title)
@@ -285,6 +289,7 @@ def build_chinese(root,out,text,rows):
     front(doc,title,abstract,root,out,True)
     # English section organization is mirrored in the Chinese reading copy.
     text=text.replace('## 4 讨论','## 4 讨论与结论\n### 4.1 设计启示').replace('本研究属于未经实测校准的原型比较。','### 4.2 研究范围与后续工作\n本研究属于未经实测校准的原型比较。').replace('## 5 结论','### 4.3 结论')
+    text=text.replace('较高的基准温度与峰值','### 4.2 研究范围与后续工作\n较高的基准温度与峰值')
     body=text.split('## 1 引言',1)[1];lines=('## 1 引言'+body).splitlines();in_table=False;in_references=False
     for line_ in lines:
         line_=line_.strip()
@@ -303,8 +308,11 @@ def build_chinese(root,out,text,rows):
                 font(p.add_run(line_[pos:m.start()]),True);link(p,m[1],m[2],True);pos=m.end()
             font(p.add_run(line_[pos:]),True)
             if line_.startswith('三种措施均改善'):p.paragraph_format.keep_together=True
+            if line_.startswith('S3使'):p.paragraph_format.keep_together=True
+            if line_.startswith('对于本研究的杭州住宅原型'):p.paragraph_format.keep_together=True
             if in_references:
                 p.alignment=WD_ALIGN_PARAGRAPH.LEFT
+                p.paragraph_format.keep_together=True
                 p.paragraph_format.left_indent=Cm(.35);p.paragraph_format.first_line_indent=Cm(-.35)
     save(doc,out,'杭州住宅被动降温_英文短稿对应中文版',title,True)
     (out/'杭州住宅被动降温_英文短稿对应中文版.md').write_text(text.replace('kWh_th','kWh<sub>th</sub>'))

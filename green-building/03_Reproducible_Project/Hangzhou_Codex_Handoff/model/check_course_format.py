@@ -66,7 +66,7 @@ def main():
     check('paper_sections',all(s.casefold() in normalized_text.casefold() for s in required),required)
     check('front_matter',all(s in pdf[0].get_text() for s in ['HIGHLIGHTS','GRAPHICAL ABSTRACT','ARTICLE INFO','ABSTRACT','Keywords:']),['Highlights','Graphical abstract','Keywords','Abstract'])
     check('two_column_body',len(sections)==2 and cols.get(W+'num')=='2',{'body_columns':cols.get(W+'num'),'column_gap_cm':round(int(cols.get(W+'space'))/567,3)})
-    check('thermal_unit_notation',len(subs)==10 and set(subs)=={'th'} and 'kWh_th' not in fulltext and 'kWh_th' not in wordtext,{'real_subscripts':len(subs),'literal_underscore_units':False})
+    check('thermal_unit_notation',len(subs)==wordtext.count('kWhth') and len(subs)>0 and set(subs)=={'th'} and 'kWh_th' not in fulltext and 'kWh_th' not in wordtext,{'real_subscripts':len(subs),'literal_underscore_units':False})
     check('text_not_lost_on_export',chars(wordtext)==chars(pdftext),{'Word_nonspace_characters':sum(chars(wordtext).values()),'PDF_nonspace_characters':sum(chars(pdftext).values()),'method':'NFKC-normalized character counts, excluding running header/footer; complemented by page rendering'})
     check('no_missing_glyph_markers',not any(c in fulltext for c in ['\ufffd','\u25a1','\x00']),True)
     check('page_boundaries',all(s['bbox'][0]>=40 and s['bbox'][2]<=559 and s['bbox'][1]>=0 and s['bbox'][3]<842 for s in spans),'All English text stays inside page and selected margins; trailing-space tolerance included.')
@@ -85,22 +85,36 @@ def main():
     check('table_values',all(v in fulltext for v in expected),{'scenario_rows':8,'numeric_values_checked':len(expected)})
     source_files=json.loads((OUT/'PROVENANCE.json').read_text())['source_files']
     check('model_data_preserved',all(sha(ROOT/r['path'])==r['sha256'] for r in source_files),[r['path'] for r in source_files])
-    p2=pdf[1].get_text();p3=pdf[2].get_text()
-    check('result_paragraph_pagination','All  three' not in p2 and 'All  three' in p3,'The first result paragraph now starts intact on page 3; page 2 ends with the table note.')
+    def compact(s):return ''.join(c for c in unicodedata.normalize('NFKC',s) if not c.isspace())
+    result_paragraphs=[]
+    for paragraph in document.findall('.//w:p',NS):
+        text=''.join(paragraph.xpath('.//w:t/text()',namespaces=NS))
+        if text.startswith('All three measures improved') or text.startswith('S3 reduced ideal demand'):
+            result_paragraphs.append(text)
+    paragraph_pages=[next((index+1 for index,page in enumerate(pdf) if compact(text) in compact(page.get_text())),None) for text in result_paragraphs]
+    check('result_paragraph_pagination',len(paragraph_pages)==2 and all(paragraph_pages),{'complete_result_paragraph_pages':paragraph_pages,'description':'Each results paragraph is kept on a single page.'})
+    evidence=json.loads((OUT/'EVIDENCE_ADDITIONS_v1.6.json').read_text())
+    means=[f"{values[key]:.2f}°C" for values in evidence['baseline'].values() for key in ['S0_mean_C','S3_mean_C']]
+    check('added_absolute_means',all(value in compact(fulltext) for value in means),means)
+    ranges=[f"{values[key]:.2f}%" for values in evidence['sensitivity'].values() for key in ['min_pct','max_pct']]
+    check('added_sensitivity_endpoints',all(value in compact(fulltext) for value in ranges),{'endpoints':ranges,'comparisons_per_metric':40,'input_sets':20})
+    boundary=f"{evidence['boundary_check']['2025']['mean_C']:.2f}°C"
+    check('boundary_diagnostic_mean',boundary in compact(fulltext),{'scenario':'S0 in combined_lower_gain boundary check','mean':boundary})
+    check('baseline_condition_stated','Under baseline assumptions' in normalized_text,'Individual-measure ranking qualified in abstract and results.')
     failures=[k for k,v in checks.items() if v['status']=='FAIL']
     date=datetime.now(ZoneInfo('Asia/Shanghai')).strftime('%Y-%m-%d %H:%M %Z')
-    visual_path=OUT/'VISUAL_REVIEW_v1.5.json'
+    visual_path=OUT/'VISUAL_REVIEW_v1.6.json'
     visual=json.loads(visual_path.read_text()) if visual_path.exists() else {}
     visual_current=visual.get('pdf_sha256')==sha(OUT/(NAME+'.pdf')) and visual.get('pages_reviewed')==[1,2,3]
-    audit={'audit_version':'v1.5','checked_at':date,'target':'English course-submission paper',
+    audit={'audit_version':'v1.6','checked_at':date,'target':'English course-submission paper',
            'course_format_status':'PASS' if not failures else 'FAIL','failures':failures,
            'author_information':'PENDING: real author name and affiliation have not been supplied; reserved block remains blank.',
-           'manual_review':{'status':'PASS' if visual_current else 'NEEDS_REVIEW','evidence':'VISUAL_REVIEW_v1.5.json','matches_current_PDF':visual_current},
+           'manual_review':{'status':'PASS' if visual_current else 'NEEDS_REVIEW','evidence':'VISUAL_REVIEW_v1.6.json','matches_current_PDF':visual_current},
            'scope':'Checks course formatting and reference-inspired organization. Similarity screening, novelty grading and course marks are outside this audit.',
            'files':{NAME+'.pdf':sha(OUT/(NAME+'.pdf')),NAME+'.docx':sha(OUT/(NAME+'.docx'))},'checks':checks}
-    (OUT/'FORMAT_AUDIT_v1.5.json').write_text(json.dumps(audit,ensure_ascii=False,indent=2))
+    (OUT/'FORMAT_AUDIT_v1.6.json').write_text(json.dumps(audit,ensure_ascii=False,indent=2))
     verdict='课程明确的排版要求已通过核查' if not failures else '当前自动检查尚未全部通过：'+', '.join(failures)
-    report=f'''# 英文课程论文格式复核 v1.5
+    report=f'''# 英文课程论文格式复核 v1.6
 
 核查时间：{date}。对象为当前英文课程提交稿，依据为本对话中的两张课程要求截图，以及Jacobs等（2019）的15页正式发表版。
 
@@ -124,26 +138,26 @@ def main():
 
 课程明确的12号、单倍行距和2—3页要求优先于期刊样例的较小字号与15页篇幅。截图未规定A4、页边距、页眉页码、Highlights或图文摘要；这些是参照文章作出的版式选择。当前A4，左右1.5 cm，上下1.65 cm，中缝约0.5 cm。
 
-## 本轮发现并修正
+## 已沿用的排版修正与本轮补充
 
-1. 原第2页末尾把“free-running”拆到两页；已将该结果段完整移至第3页，消除跨页拆词。
+1. 原第2页末尾把“free-running”拆到两页；已设置结果段落完整排版，消除跨页拆词；当前两个结果段分别完整位于第2和第3页。
 2. 参考文献两端对齐导致较大的词间空隙；现改为左对齐，保留悬挂缩进。中英文对应版均已同步。
 3. Highlights续行原先与圆点同列；已加入悬挂缩进，使续行与文字对齐。
-4. 同步微调段落和标题间距，正文仍为12号、单倍行距，最终保持3页。未删正文、结果或参考文献。
+4. 保留段落与标题间距设置，正文仍为12号、单倍行距，最终保持3页。本轮补充绝对室温、敏感性范围、基准条件和研究贡献；较细的数据对齐与交互计算转入配套方法文件。
 
 ## 导出与内容完整性
 
-Word与PDF正文的NFKC标准化非空白字符计数完全一致，未发现导出丢字；核查了全部8行情景结果、24个表格数值、6个PDF外链、10处热量单位下标，以及图文摘要的内嵌图片与源图一致性。逐页渲染检查后，未发现乱码、表格越界或图文裁切。上、下标遵循正常数学排版，未以缩小正文字号压缩页数。
+Word与PDF正文的NFKC标准化非空白字符计数完全一致，未发现导出丢字；核查了全部8行情景结果、24个表格数值、6个PDF外链、{len(subs)}处热量单位下标，以及图文摘要的内嵌图片与源图一致性。逐页渲染检查后，未发现乱码、表格越界或图文裁切。上、下标遵循正常数学排版，未以缩小正文字号压缩页数。
 
-本轮仅调整排版，英文及中文Markdown文本与上一版相同；模拟数据及基准参数哈希保持不变。
+本轮补充的绝对室温、敏感性范围及边界诊断均读取既有CSV结果，并另作24项格式与证据核验；模拟数据及基准参数哈希保持不变。完整依据见`EVIDENCE_ADDITIONS_v1.6.json`与`方法补充与证据来源_v1.6.md`，本轮未新增热模型运行。
 
 ## 尚待补充
 
 真实作者姓名与单位尚未提供，因此首页作者栏继续留空。这是补齐参考文章首页信息所需的材料；它不影响当前页数、字号和行距检查结果。
 
-复核命令：在项目根目录运行`python model/check_course_format.py`。机器可读证据见`FORMAT_AUDIT_v1.5.json`，最终三页预览见`Layout_Preview_Page_1.png`至`Layout_Preview_Page_3.png`。Word经不同软件重新导出时应重新核对分页。
+复核命令：在项目根目录运行`python model/check_course_format.py`。机器可读证据见`FORMAT_AUDIT_v1.6.json`，最终三页预览见`Layout_Preview_Page_1.png`至`Layout_Preview_Page_3.png`。Word经不同软件重新导出时应重新核对分页。
 '''
-    (OUT/'课程格式逐项复核_v1.5.md').write_text(report)
+    (OUT/'课程格式逐项复核_v1.6.md').write_text(report)
     print(json.dumps({'course_format_status':audit['course_format_status'],'checks':len(checks),'failures':failures,'pages':len(pdf),'manual_review_current':visual_current,'author_information':'pending'},ensure_ascii=False))
     if failures:raise SystemExit(1)
 
