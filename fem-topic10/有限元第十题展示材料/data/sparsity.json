@@ -1,0 +1,14 @@
+{
+  "n": 16,
+  "NT": 24576,
+  "NV": 4913,
+  "NE": 31024,
+  "N": 35937,
+  "format": "csr",
+  "stored_entries_including_explicit_zeros": 977793,
+  "explicit_zero_entries": 184832,
+  "csr_arrays_bytes": 11877268,
+  "dense_float64_bytes": 10331743752,
+  "assembly_local_rows_cols_bytes": 58982400,
+  "scope": "Final full matrix arrays only; excludes factorization and process peak memory."
+}
