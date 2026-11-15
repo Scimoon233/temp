@@ -1,0 +1,72 @@
+{
+  "runtime": "Python / NumPy / SciPy; MATLAB source supplied separately",
+  "mesh": "6 Kuhn tetrahedra per cube; global axis ordering; h=sqrt(3)/n",
+  "quadrature": "stiffness: degree-2 4-point rule; load/errors: 5x5x5 Duffy-Gauss, sum(w)=1",
+  "checks": {
+    "nodal_duality_max": 0.0,
+    "partition_error": 2.220446049250313e-16,
+    "gradient_sum_error": 5.551115123125783e-16,
+    "duffy_weight_sum": 0.9999999999999999,
+    "degree2_moment_error": 1.3877787807814457e-16,
+    "stiffness_rank_4point": 9,
+    "stiffness_rank_centroid": 3
+  },
+  "polynomial": {
+    "n": 2,
+    "NT": 48,
+    "NV": 27,
+    "NE": 98,
+    "Ndof": 125,
+    "Nfree": 27,
+    "E0": 5.88057163681161e-16,
+    "E1": 4.103847880577246e-15,
+    "residual": 3.704975146103488e-16,
+    "max_nodal_error": 3.1086244689504383e-15,
+    "seconds": 0.017371012000012342
+  },
+  "sine": [
+    {
+      "n": 4,
+      "NT": 384,
+      "NV": 125,
+      "NE": 604,
+      "Ndof": 729,
+      "Nfree": 343,
+      "E0": 0.005664655009620581,
+      "E1": 0.1689782004873906,
+      "residual": 3.104570293049268e-15,
+      "max_nodal_error": 0.012054935483885476,
+      "seconds": 0.04590394400020159
+    },
+    {
+      "n": 8,
+      "NT": 3072,
+      "NV": 729,
+      "NE": 4184,
+      "Ndof": 4913,
+      "Nfree": 3375,
+      "E0": 0.0007040837046735301,
+      "E1": 0.04498214335926811,
+      "residual": 1.8127158630853938e-14,
+      "max_nodal_error": 0.0008644866762463899,
+      "seconds": 0.38765172600005826
+    },
+    {
+      "n": 16,
+      "NT": 24576,
+      "NV": 4913,
+      "NE": 31024,
+      "Ndof": 35937,
+      "Nfree": 29791,
+      "E0": 8.777105277756453e-05,
+      "E1": 0.011474613575561135,
+      "residual": 1.4878519993123861e-13,
+      "max_nodal_error": 5.606474028718722e-05,
+      "seconds": 12.864500574999965
+    }
+  ],
+  "quadrature_check_m5_vs_m6_n4": {
+    "E0": 5.870902190208484e-06,
+    "E1": 7.200832157232148e-08
+  }
+}
