@@ -1,0 +1,163 @@
+{
+  "main_slides": 23,
+  "appendix_slides": 3,
+  "planned_seconds": 705,
+  "slides": [
+    {
+      "slide": 1,
+      "title": "三维四面体 P2 元的编程实现",
+      "main": true,
+      "seconds": 15
+    },
+    {
+      "slide": 2,
+      "title": "求解什么问题，程序按什么顺序工作？",
+      "main": true,
+      "seconds": 25
+    },
+    {
+      "slide": 3,
+      "title": "十个局部自由度怎样获得全局编号？",
+      "main": true,
+      "seconds": 35
+    },
+    {
+      "slide": 4,
+      "title": "λ 是什么，为什么适合构造形函数？",
+      "main": true,
+      "seconds": 30
+    },
+    {
+      "slide": 5,
+      "title": "顶点形函数为什么是 λᵢ(2λᵢ−1)？",
+      "main": true,
+      "seconds": 30
+    },
+    {
+      "slide": 6,
+      "title": "边中点形函数为什么是 4λᵢλⱼ？",
+      "main": true,
+      "seconds": 25
+    },
+    {
+      "slide": 7,
+      "title": "参考梯度为什么乘 B 的逆转置？",
+      "main": true,
+      "seconds": 40
+    },
+    {
+      "slide": 8,
+      "title": "先怎样求四个重心坐标的物理梯度？",
+      "main": true,
+      "seconds": 30
+    },
+    {
+      "slide": 9,
+      "title": "再怎样求十个二次形函数的物理梯度？",
+      "main": true,
+      "seconds": 35
+    },
+    {
+      "slide": 10,
+      "title": "积分换元怎样保证体积因子不多乘、漏乘？",
+      "main": true,
+      "seconds": 25
+    },
+    {
+      "slide": 11,
+      "title": "四个点如何做到二次精确？",
+      "main": true,
+      "seconds": 40
+    },
+    {
+      "slide": 12,
+      "title": "刚度矩阵怎样从积分变成稀疏系统？",
+      "main": true,
+      "seconds": 40
+    },
+    {
+      "slide": 13,
+      "title": "载荷为什么要另外检查求积精度？",
+      "main": true,
+      "seconds": 30
+    },
+    {
+      "slide": 14,
+      "title": "怎样从四面体找出真正的边界面？",
+      "main": true,
+      "seconds": 35
+    },
+    {
+      "slide": 15,
+      "title": "边界面怎样给出全部边界自由度？",
+      "main": true,
+      "seconds": 35
+    },
+    {
+      "slide": 16,
+      "title": "为什么端点在边界，不代表整条边在边界？",
+      "main": true,
+      "seconds": 25
+    },
+    {
+      "slide": 17,
+      "title": "共享面的六个节点为什么能保证连续？",
+      "main": true,
+      "seconds": 25
+    },
+    {
+      "slide": 18,
+      "title": "非齐次 Dirichlet 条件为什么要修正右端？",
+      "main": true,
+      "seconds": 40
+    },
+    {
+      "slide": 19,
+      "title": "怎样确认实现能够再现二次多项式？",
+      "main": true,
+      "seconds": 40
+    },
+    {
+      "slide": 20,
+      "title": "正弦解在三级网格上的结果如何？",
+      "main": true,
+      "seconds": 35
+    },
+    {
+      "slide": 21,
+      "title": "E₀、E₁ 怎样由解向量实际算出来？",
+      "main": true,
+      "seconds": 35
+    },
+    {
+      "slide": 22,
+      "title": "数值解在一个截面上是什么样？",
+      "main": true,
+      "seconds": 20
+    },
+    {
+      "slide": 23,
+      "title": "实现与核验形成了怎样的一条链？",
+      "main": true,
+      "seconds": 15
+    },
+    {
+      "slide": 24,
+      "title": "补充｜重心单点求积为什么不够？",
+      "main": false,
+      "seconds": 0
+    },
+    {
+      "slide": 25,
+      "title": "补充｜稀疏矩阵实际节约多少存储？",
+      "main": false,
+      "seconds": 0
+    },
+    {
+      "slide": 26,
+      "title": "补充｜方法来源与运行范围",
+      "main": false,
+      "seconds": 0
+    }
+  ]
+}
